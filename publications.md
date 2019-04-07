@@ -2,15 +2,15 @@
 layout: page
 title: Publications
 subtitle: 
-use-site-title: true
+use-site-title: false
 ---
 
-19. N. Farmakidis/*, N. Youngblood/*, X. Li, J. Tan, J. Swett, C. Zengguang, & H. Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Preprint available on* **Arxiv** 1811.07651 (2018)
+19. N. Farmakidis\*, N. Youngblood\*, X. Li, J. Tan, J. Swett, C. Zengguang, & H. Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Preprint available on* ***Arxiv*** 1811.07651 (2018)
 \footnotetext{Equal contribution}
 
-18. Youngblood, N., Talagrand, C., Porter, B., Galante, C. G., Kneepkens, S., Yarmolich, D., Bonilla, S., Hosseini, P., Taylor, R., & Bhaskaran, H. ``Broadly-tunable smart glazing using an ultra-thin phase-change material,'' {\bf \em Submitted} (2018)
+18. N. Youngblood, C. Talagrand, B. Porter, C.G. Galante, S. Kneepkens, D. Yarmolich, S. Bonilla, P. Hosseini, R. Taylor, & H. Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2018)
 
-17. Feldmann, J., {\bf Youngblood, N.}, Wright, C. D., Bhaskaran, H., \&  Pernice, W. H. P. ``All-optical spiking neurons with self-learning capabilities'' {\bf \em Under Review} (2018)
+17. J. Feldmann, N. Youngblood, C.D. Wright, H. Bhaskaran, & W.H.P Pernice, "All-optical spiking neurons with self-learning capabilities" ***Accepted*** (2018)
 
 16. {\bf Youngblood, N.}, Rios, C., Gemo, E., Feldmann, J., Cheng, Z., Baldycheva, A., Pernice, W. H. P., Wright, C. D., \& Bhaskaran, H. ``Tunable volatility of Ge$_2$Sb$_2$Te$_5$ in integrated photonics,'' {\em Accepted for publication in} {\bf \em Advanced Functional Materials} (2018)
 
