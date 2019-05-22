@@ -62,7 +62,7 @@ footer-link-col: "#404040"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
+author: Nathan Youngblood
   name: Nathan Youngblood
 
 # Select your active Social Network Links.
