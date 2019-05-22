@@ -1,20 +1,35 @@
 ---
 layout: page
-title: My website
-subtitle: Hello world
-use-site-title: true
+show-avatar: true
 ---
 
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 0px 0px 10px 0px" src="/img/pittsburgh_skyline_cropped.jpg"/>
+<h2 style="text-align: center;">Welcome to the Youngblood Photonics Lab @ Pitt!</h2>
+Our research combines unique optoelectronic materials with nanophotonics to create new platforms for high-efficiency machine learning and high-precision biosensing. Key to our work is a fundamental understanding of light-matter interaction at the nanoscale and use of advanced nanofabrication techniques to address major challenges facing these disciplines. The following areas of research in our group are: <em>1) Photonic Devices and Architectures for Machine Learning; 2) Bistable Optical Materials for Energy Efficient Photonics; 3) Waveguide-Integrated Nanoplasmonics for High Density Biosensing;</em> and <em>4) Waveguide-Integrated 2D Materials for High Performance Optoelectronics.</em>
+</div>
+
+<hr>
+
+<div style="display: inline-block; width: 100%;">
+<h2 style="text-align: center;">Openings:</h2>
+<h3>Calling all grad students!</h3>
+We have immediate openings for PhD students starting this academic year. Prospective graduate students interested in joining our group should apply to the PhD program in the ECE Department @ Pitt. Please email Nathan with your CV and research interests if you have an undergraduate degree in physics, EE, or a related field and would like to join the group.
+</div>
+
+<hr>
+
 <div class="posts-list">
+<h2 style="text-align: center;">News:</h2>
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h3 class="post-title">{{ post.title }}</h3>
 
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h4 class="post-subtitle">
 	    {{ post.subtitle }}
-	  </h3>
+	  </h4>
 	  {% endif %}
     </a>
 

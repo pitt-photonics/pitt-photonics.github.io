@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://username.github.io"
+url: "https://pitt-photonics.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Photonics Lab
+title: Youngblood Photonics Lab
 
 # Short description of your site
 description: Research website for the Youngblood Photonics Lab
@@ -24,14 +24,14 @@ description: Research website for the Youngblood Photonics Lab
 # List of links in the navigation bar
 navbar-links:
   Home: "http://pitt-photonics.github.io"
-  #Research: "research"
-  #Team: "members"
-  #Publications: "publications"
-  #Wiki: "wiki"
+  Research: "research"
+  Team: "members"
+  Publications: "publications"
+  Wiki: "wiki"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/avatar-icon.png"
+avatar: "/img/pittlogo.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -71,7 +71,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
 #  rss: true
-  email: "someone@example.com"
+#  email: "someone@example.com"
 #  facebook: daattali
 #  github: daattali
 #  twitter: daattali
@@ -106,7 +106,7 @@ share-links-active:
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-140578948-1"
 
 # Google Tag Manager ID
 #gtm: ""

@@ -5,41 +5,63 @@ subtitle:
 use-site-title: false
 ---
 
-19. N. Farmakidis\*, N. Youngblood\*, X. Li, J. Tan, J. Swett, C. Zengguang, & H. Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Preprint available on* ***Arxiv*** 1811.07651 (2018)
-\footnotetext{Equal contribution}
+<h2>Journal Articles</h2>
 
-18. N. Youngblood, C. Talagrand, B. Porter, C.G. Galante, S. Kneepkens, D. Yarmolich, S. Bonilla, P. Hosseini, R. Taylor, & H. Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2018)
+<h3>2019</h3>
 
-17. J. Feldmann, N. Youngblood, C.D. Wright, H. Bhaskaran, & W.H.P Pernice, "All-optical spiking neurons with self-learning capabilities" ***Accepted*** (2018)
+* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019)
 
-16. {\bf Youngblood, N.}, Rios, C., Gemo, E., Feldmann, J., Cheng, Z., Baldycheva, A., Pernice, W. H. P., Wright, C. D., \& Bhaskaran, H. ``Tunable volatility of Ge$_2$Sb$_2$Te$_5$ in integrated photonics,'' {\em Accepted for publication in} {\bf \em Advanced Functional Materials} (2018)
+* Johannes Feldmann, Nathan Youngblood, C. David Wright, Harish Bhaskaran, Wolfram H. P. Pernice, "All-optical spiking neurosynaptic networks with self-learning capabilities" ***Nature*** 569, 208--214 (2019) [Link](https://doi.org/10.1038/s41586-019-1157-8)
 
-15. Sarwat, S. G., {\bf Youngblood, N.}, Yin, Y., Mol, J. A., Wright, C. D., \& Bhaskaran, H. ``Engineering interface-dependent photoconductivity in Ge$_2$Sb$_2$Te$_5$ nanoscale devices,'' {\em Accepted for publication in} {\bf \em ACS Applied Materials and Interfaces} (2018)
+* Nathan Youngblood, Carlos A. Rios, Emanuele Gemo, Johannes Feldmann, Zengguang Cheng, Anna Baldycheva, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Tunable volatility of Ge2Sb2Te5 in integrated photonics," ***Advanced Functional Materials*** 29, 1807571 (2019) [Link](https://doi.org/10.1002/adfm.201807571)
 
-14. Rios, C.$^1$, {\bf Youngblood, N.}$^1$, Cheng, Z., Le Gallo, M., Pernice, W. H. P., Wright, C. D., Sebastian, A., \& Bhaskaran, H. ``In-memory computing on a photonic platform,'' {\em Accepted for publication in} {\bf \em Science Advances} (2018)
+* Xuan Li, Nathan Youngblood, Carlos A. Rios, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Fast and reliable storage using a 5-bit, non-volatile photonic memory cell," ***Optica***, 6(1), 1--6 (2019) [Link](https://doi.org/10.1364/OPTICA.6.000001)  
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on the cover of [***Optica***](https://www.osapublishing.org/optica/aboutthecover.cfm?volume=6&issue=1)
 
-13. Li, X., {\bf Youngblood, N.}, Rios, C., Cheng, Z., Pernice, W. H. P., Wright, C. D., \& Bhaskaran, H. ``Fast and reliable storage using a 5-bit, non-volatile photonic memory cell,'' {\bf \em Optica}, 6(1), 1--6 (2019)
+<h3>2018</h3>
 
-12. Rios, C., Stegmaier, M., Cheng, Z., {\bf Youngblood, N.}, Wright, C. D., Pernice, W. H. P., \& Bhaskaran, H. ``Controlled switching of phase-change materials by evanescent-field coupling in integrated photonics [Invited],'' {\bf \em Optical Materials Express} 8(9), 2455--2470 (2018)
+* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Preprint available on **Arxiv*** 1811.07651 (2018) [Link](https://arxiv.org/abs/1811.07651)
 
-11. Cheng, Z., Rios, C., {\bf Youngblood, N.}, Wright, C. D., Pernice, W. H. P., \& Bhaskaran, H. ``Device-level photonic memories and logic applications using phase-change materials,'' {\bf \em Advanced Materials} 30, 1802435 (2018)
+* Carlos A. Rios\*, Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2018) [Link](http://doi.org/10.1126/sciadv.aau5759)  
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on IBM's [research blog](https://www.ibm.com/blogs/research/2019/02/photonic-memory-devices/) and [***Nature Electronics***](https://www.nature.com/articles/s41928-019-0226-1)
 
-10. Cheng, Z., Rios, C., {\bf Youngblood, N.}, Wright, C. D., Pernice, W. H. P., \& Bhaskaran, H. ``On-chip phase-change photonic memory and computing,'' {\bf \em SPIE Proceedings}, 10345:1034519 (2017)
+* Syed Ghazi Sarwat, Nathan Youngblood, Yat-Yin Au, Jan A. Mol, C. David Wright, Harish Bhaskaran, "Engineering interface-dependent photoconductivity in Ge2Sb2Te5 nanoscale devices," ***ACS Applied Materials and Interfaces*** 10(51), 44906--44914 (2018) [Link](http://doi.org/10.1021/acsami.8b17602)
 
-9. Peng, R., Khaliji, K., {\bf Youngblood, N.}, Grassi, R., Low, T., \& Li, M.``Mid-infrared electro-optic modulation in few-layer black phosphorus,'' {\bf \em Nano Letters}, 17, 6315--6320 (2017)
+* Carlos A. Rios, Stegmaier, M., Zengguang Cheng, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Controlled switching of phase-change materials by evanescent-field coupling in integrated photonics [Invited]," ***Optical Materials Express*** 8(9), 2455--2470 (2018) [Link](https://doi.org/10.1364/OME.8.002455)
 
-8. Xu, M., Gu, Y., Peng, R., {\bf Youngblood, N.}, \& Li, M. ``Black phosphorus mid-infrared photodetectors,'' {\bf \em Applied Physics B}, 123:130 (2017)
+* Zengguang Cheng, Carlos A. Rios, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Device-level photonic memories and logic applications using phase-change materials," ***Advanced Materials*** 30, 1802435 (2018) [Link]( https://doi.org/10.1002/adma.201802435)
 
-7. {\bf Youngblood, N.} \& Li, M. ``Ultrafast photocurrent measurements of a black phosphorus photodetector,'' {\bf \em Applied Physics Letters}, 110, 051102 (2017)
+<h3>2017</h3>
 
-6. Chen, C., {\bf Youngblood, N.}, Peng, R., Yoo, D., Mohr, D. A., Johnson, T. W., Oh, S. H., \& Li, M. ``Three-dimensional integration of black phosphorus photodetector with silicon photonics and nanoplasmonics,'' {\bf \em Nano Letters}, 17, 6315--6320 (2017)
+* Zengguang Cheng, Carlos A. Rios, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "On-chip phase-change photonic memory and computing," ***SPIE Proceedings***, 10345:1034519 (2017) [Link](https://doi.org/10.1117/12.2272127)
 
-5. {\bf Youngblood, N.}, Peng, R., Nemilentsau, A., Low, T., \& Li, M. ``Layer tunable third-harmonic generation in multilayer black phosphorus,'' {\bf \em ACS Photonics}, 4(1), 8--14 (2017)
+* Rouming Peng, Khaliji, K., Nathan Youngblood, Grassi, R., Tony Low, Mo Li, "Mid-infrared electro-optic modulation in few-layer black phosphorus," ***Nano Letters***, 17, 6315--6320 (2017) [Link](http://doi.org/10.1021/acs.nanolett.7b03050)
 
-4. {\bf Youngblood, N.} \& Li, M. ``Integration of 2D materials on a silicon photonics platform for optoelectronics applications,'' {\em Invited Review Article for {\bf \em Nanophotonics}}, 6(6), 1205--1218 (2016)
+* Mei Xu, Yuqian Gu, Rouming Peng, Nathan Youngblood, Mo Li, "Black phosphorus mid-infrared photodetectors," ***Applied Physics B***, 123:130 (2017) [Link](https://link.springer.com/article/10.1007/s00340-017-6698-7)
 
-3. {\bf Youngblood, N.}, Chen, C., Koester, S. J., \& Li, M. ``Waveguide-integrated black phosphorus photodetector with high responsivity and low dark current,'' {\bf \em Nature Photonics}, {\bf 9}, 249--252 (2015).
+* Nathan Youngblood, Mo Li, "Ultrafast photocurrent measurements of a black phosphorus photodetector," ***Applied Physics Letters***, 110, 051102 (2017) [Link](https://doi.org/10.1063/1.4975360)
 
-2. Lee, S. C., {\bf Youngblood, N.}, Jiang, Y. B., Peterson, E. J., Stark, C. J. M., Detchprohm, T., Wetzel, C., \& Brueck, S. R. J. ``Incorporation of indium on cubic GaN epitaxially induced on a nanofaceted Si(001) substrate by phase transition,'' {\bf \em Applied Physics Letters}, 107(23), 231905 (2015).
+* Che Chen, Nathan Youngblood, Rouming Peng, Daehan Yoo, Daniel A. Mohr, Timothy W. Johnson, Sang-Hyun Oh, Mo Li, "Three-dimensional integration of black phosphorus photodetector with silicon photonics and nanoplasmonics," ***Nano Letters***, 17, 6315--6320 (2017) [Link](http://doi.org/10.1021/acs.nanolett.6b04332)
 
-1. {\bf Youngblood, N.}, Anugrah, Y., Ma, R., Koester, S. J., \& Li, M. ``Multifunctional graphene optical modulator and photodetector integrated on silicon waveguides,''  {\bf \em Nano Letters}, 14(5), 2741--2746 (2014).
+* Nathan Youngblood, Rouming Peng, Andrei Nemilentsau, Tony Low, Mo Li, "Layer tunable third-harmonic generation in multilayer black phosphorus," ***ACS Photonics***, 4(1), 8--14 (2017) [Link](http://doi.org/10.1021/acsphotonics.6b00639)
+
+<h3>2016 to 2014</h3>
+
+* Nathan Youngblood, Mo Li, "Integration of 2D materials on a silicon photonics platform for optoelectronics applications," *Invited Review Article for **Nanophotonics***, 6(6), 1205--1218 (2016) [Link](https://doi.org/10.1515/nanoph-2016-0155)
+
+* Nathan Youngblood, Che Chen, Steven J. Koester, Mo Li, "Waveguide-integrated black phosphorus photodetector with high responsivity and low dark current," ***Nature Photonics***, 9, 249--252 (2015) [Link](https://doi.org/10.1038/nphoton.2015.23)
+
+* S. C. Lee, Nathan Youngblood, Y. B. Jiang, E. J. Peterson, C. J. M. Stark, T. Detchprohm, C. Wetzel, Steven R. J. Brueck, "Incorporation of indium on cubic GaN epitaxially induced on a nanofaceted Si(001) substrate by phase transition," ***Applied Physics Letters***, 107(23), 231905 (2015) [Link](https://doi.org/10.1063/1.4936772)
+
+* Nathan Youngblood, Yoska Anugrah, Rui Ma, Steven J. Koester, Mo Li, "Multifunctional graphene optical modulator and photodetector integrated on silicon waveguides,"  ***Nano Letters***, 14(5), 2741--2746 (2014) [Link](https://doi.org/10.1021/nl500712u)
+
+<h2>Selected Talks</h2>
+* Nathan Youngblood, Xuan Li, Harish Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited]," ***LIMIS***, Changsha, China (2018)
+
+* Nathan Youngblood, Clement Talagrand, Peiman Hosseini, Harish Bhaskaran, "Dynamic Smart Windows Using Phase Change Materials [Late Breaking Paper]," ***MRS Spring Meeting***, Phoenix, Arizona USA (2018)
+
+* Nathan Youngblood, Carlos Rios, Emanuele Gemo, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Phase change materials exhibit tunable volatility in integrated photonics," ***SPIE Photonics West***, San Francisco, California USA (2018)
+
+* Nathan Youngblood, Mo Li, "Ultrafast photocurrent spectroscopy in a black phosphorus van der waals heterostructure [Invited]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2016)
+
+* Nathan Youngblood, Rouming Peng, Andrei Nemilentsau, Tony Low, Mo Li, "Thickness dependent third-harmonic generation in few-layer black phosphorus [Post-Deadline Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2016)
