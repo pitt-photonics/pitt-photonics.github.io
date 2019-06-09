@@ -34,7 +34,7 @@ Related Publications: <a href="https://arxiv.org/abs/1811.07651"><b><em>Arxiv</e
 <h3>Waveguide-Integrated Nanoplasmonics for High Density Biosensing</h3>
 <img style="float: left; margin: 10px 15px 5px 0px" src="/img/Lab-on-chip_2.jpeg" height="199" width="250"/>
 <p style="margin: 10px 0">
-Combining plasmonics with integrated photonics allows for hybrid devices where we can overcome the high propagation loss of plasmonics and diffraction-limited dimensions of photonics. We have exploited this device geometry to enhance the performance of optoelectronic devices and are now interested in using what we have learned to achieve high-speed, low-concentration biosensing on-chip.
+Combining plasmonics with integrated photonics allows for hybrid devices where we can overcome the high propagation loss of plasmonics and diffraction-limited dimensions of photonics. We have exploited this device geometry to enhance the performance of optoelectronic devices and are now interested in using what we have learned to achieve high-speed, low-concentration biosensing on-chip. (Image credit: Jacob Swett and Nick Farmakidis)
 </p>
 </div>
 <div style="display: inline-block; width: 100%;">
