@@ -18,19 +18,6 @@ Related Publications: <a href="https://doi.org/10.1038/s41586-019-1157-8"><b><em
 <hr>
 
 <div style="display: inline-block; width: 100%;">
-<h3>Bistable Optical Materials for Energy Efficient Photonics</h3>
-<img style="float: left; margin: 10px 15px 5px 0px" src="/img/research_low_loss_PCM.png" height="169" width="250"/>
-<p style="margin: 10px 0">
-Phase-change chalcogenides are a high configurable class of materials that can allow for very large, non-volatile changes in refractive index and electrical conductivity based on a bistable phase-transition. This has been successfully commercialized in both optical discs (rewriteable CDs and DVDs) and electrical phase-change memory (Intel and Micron's 3D Xpoint memory). By integrating these materials on a waveguide, one can store non-volatile information in the optical domain by manipulating the optical phase and amplitude. We are currently investigating new phase-change materials that have very low optical loss and ways of controlling their state electrically. This would enable programmable photonic "FPGAs" that require no power once configured. Applications for these low-loss materials range from smart glazings to reconfigureable quantum photonics. 
-</p>
-</div>
-<div style="display: inline-block; width: 100%;">
-Related Publications: <a href="https://arxiv.org/abs/1811.07651"><b><em>Arxiv</em></b> 1811.07651 (2018)</a>
-</div>
-
-<hr>
-
-<div style="display: inline-block; width: 100%;">
 <h3>Waveguide-Integrated Nanoplasmonics for High Density Biosensing</h3>
 <img style="float: left; margin: 10px 15px 5px 0px" src="/img/Lab-on-chip_2.jpeg" height="199" width="250"/>
 <p style="margin: 10px 0">
