@@ -11,16 +11,20 @@ use-site-title: false
 
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019)
 
+* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Accepted for publication in **Science Advances*** (2019) [ArXiv](https://arxiv.org/abs/1811.07651)
+
+* Syed Ghazi Sarwat, Zengguang Cheng, Nathan Youngblood, Mohd Sharizal Alias, Sapna Sinha, Jamie H. Warner, Harish Bhaskaran, "Strong Opto-structural coupling in low dimensional GeSe3 films," ***Nano Letters*** (2019) [Link](https://doi.org/10.1021/acs.nanolett.9b03039)
+
+* Emanuele Gemo, Santiago Garcia-Cuevas Carrillo, Carlota Ruiz De Galarreta, Anna Baldycheva, Hasan Hayat, Nathan Youngblood, Harish Bhaskaran, Wolfram H. P. Pernice, C. David Wright, "Plasmonically-enhanced all-optical integrated phase-change memory," ***Optics Express*** 27(17), 24724--24737 (2019) [Link](https://doi.org/10.1364/OE.27.024724)
+
 * Johannes Feldmann, Nathan Youngblood, C. David Wright, Harish Bhaskaran, Wolfram H. P. Pernice, "All-optical spiking neurosynaptic networks with self-learning capabilities" ***Nature*** 569, 208--214 (2019) [Link](https://doi.org/10.1038/s41586-019-1157-8)
 
 * Nathan Youngblood, Carlos A. Rios, Emanuele Gemo, Johannes Feldmann, Zengguang Cheng, Anna Baldycheva, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Tunable volatility of Ge2Sb2Te5 in integrated photonics," ***Advanced Functional Materials*** 29, 1807571 (2019) [Link](https://doi.org/10.1002/adfm.201807571)
 
-* Xuan Li, Nathan Youngblood, Carlos A. Rios, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Fast and reliable storage using a 5-bit, non-volatile photonic memory cell," ***Optica***, 6(1), 1--6 (2019) [Link](https://doi.org/10.1364/OPTICA.6.000001)  
+* Xuan Li, Nathan Youngblood, Carlos A. Rios, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Fast and reliable storage using a 5-bit, non-volatile photonic memory cell," ***Optica*** 6(1), 1--6 (2019) [Link](https://doi.org/10.1364/OPTICA.6.000001)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on the cover of [***Optica***](https://www.osapublishing.org/optica/aboutthecover.cfm?volume=6&issue=1)
 
 <h3>2018</h3>
-
-* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Preprint available on **Arxiv*** 1811.07651 (2018) [Link](https://arxiv.org/abs/1811.07651)
 
 * Carlos A. Rios\*, Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2018) [Link](http://doi.org/10.1126/sciadv.aau5759)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on IBM's [research blog](https://www.ibm.com/blogs/research/2019/02/photonic-memory-devices/) and [***Nature Electronics***](https://www.nature.com/articles/s41928-019-0226-1)
