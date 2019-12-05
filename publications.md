@@ -9,9 +9,9 @@ use-site-title: false
 
 <h3>2019</h3>
 
-* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019)
+* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
-* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Accepted for publication in **Science Advances*** (2019) [ArXiv](https://arxiv.org/abs/1811.07651)
+* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Accepted for publication in **Science Advances*** (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)
 
 * Syed Ghazi Sarwat, Zengguang Cheng, Nathan Youngblood, Mohd Sharizal Alias, Sapna Sinha, Jamie H. Warner, Harish Bhaskaran, "Strong Opto-structural coupling in low dimensional GeSe3 films," ***Nano Letters*** (2019) [Link](https://doi.org/10.1021/acs.nanolett.9b03039)
 
