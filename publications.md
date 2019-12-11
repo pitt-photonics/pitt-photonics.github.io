@@ -9,11 +9,11 @@ use-site-title: false
 
 <h3>2019</h3>
 
-* Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," **Accepted for publication in *IEEE JSTQE*** [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
+* Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," *Accepted for publication in **IEEE JSTQE*** [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
 
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
-* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)
+* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Research Highlights***](https://www.nature.com/articles/d41586-019-03740-9)
 
 * Santiago G-C Carrillo, Emanuele Gemo, Xuan Li, Nathan Youngblood, Andrew Katumba, Peter Bienstman, Wolfram Pernice, Harish Bhaskaran, C. David Wright, "Behavioral modeling of integrated phase-change photonic devices for neuromorphic computing applications," ***APL Materials*** 7, 091113 (2019) [Link](https://doi.org/10.1063/1.5111840)
@@ -22,7 +22,8 @@ use-site-title: false
 
 * Emanuele Gemo, Santiago Garcia-Cuevas Carrillo, Carlota Ruiz De Galarreta, Anna Baldycheva, Hasan Hayat, Nathan Youngblood, Harish Bhaskaran, Wolfram H. P. Pernice, C. David Wright, "Plasmonically-enhanced all-optical integrated phase-change memory," ***Optics Express*** 27(17), 24724--24737 (2019) [Link](https://doi.org/10.1364/OE.27.024724)
 
-* Johannes Feldmann, Nathan Youngblood, C. David Wright, Harish Bhaskaran, Wolfram H. P. Pernice, "All-optical spiking neurosynaptic networks with self-learning capabilities" ***Nature*** 569, 208--214 (2019) [Link](https://doi.org/10.1038/s41586-019-1157-8)
+* Johannes Feldmann, Nathan Youngblood, C. David Wright, Harish Bhaskaran, Wolfram H. P. Pernice, "All-optical spiking neurosynaptic networks with self-learning capabilities" ***Nature*** 569, 208--214 (2019) [Link](https://doi.org/10.1038/s41586-019-1157-8)  
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature News and Views***](https://www.nature.com/articles/d41586-019-01406-0)
 
 * Nathan Youngblood, Carlos A. Rios, Emanuele Gemo, Johannes Feldmann, Zengguang Cheng, Anna Baldycheva, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Tunable volatility of Ge2Sb2Te5 in integrated photonics," ***Advanced Functional Materials*** 29, 1807571 (2019) [Link](https://doi.org/10.1002/adfm.201807571)
 

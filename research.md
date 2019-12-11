@@ -25,7 +25,7 @@ Combining plasmonics with integrated photonics allows for hybrid devices where w
 </p>
 </div>
 <div style="display: inline-block; width: 100%;">
-Related Publications: <a href="https://arxiv.org/abs/1811.07651"><b><em>Arxiv</em></b> 1811.07651 (2018)</a>, <a href="http://doi.org/10.1021/acs.nanolett.6b04332"><b><em>Nano Letters</em></b> 17, 6315-6320 (2017)</a>
+Related Publications: <a href="https://doi.org/10.1126/sciadv.aaw2687"><b><em>Science Advances</em></b> 5(11), eaaw2687 (2019)</a>, <a href="http://doi.org/10.1021/acs.nanolett.6b04332"><b><em>Nano Letters</em></b> 17, 6315-6320 (2017)</a>
 </div>
 
 <hr>
