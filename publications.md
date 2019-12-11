@@ -9,11 +9,16 @@ use-site-title: false
 
 <h3>2019</h3>
 
+* Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," **Accepted for publication in *IEEE JSTQE*** [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
+
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
-* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," *Accepted for publication in **Science Advances*** (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)
+* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Research Highlights***](https://www.nature.com/articles/d41586-019-03740-9)
 
-* Syed Ghazi Sarwat, Zengguang Cheng, Nathan Youngblood, Mohd Sharizal Alias, Sapna Sinha, Jamie H. Warner, Harish Bhaskaran, "Strong Opto-structural coupling in low dimensional GeSe3 films," ***Nano Letters*** (2019) [Link](https://doi.org/10.1021/acs.nanolett.9b03039)
+* Santiago G-C Carrillo, Emanuele Gemo, Xuan Li, Nathan Youngblood, Andrew Katumba, Peter Bienstman, Wolfram Pernice, Harish Bhaskaran, C. David Wright, "Behavioral modeling of integrated phase-change photonic devices for neuromorphic computing applications," ***APL Materials*** 7, 091113 (2019) [Link](https://doi.org/10.1063/1.5111840)
+
+* Syed Ghazi Sarwat, Zengguang Cheng, Nathan Youngblood, Mohd Sharizal Alias, Sapna Sinha, Jamie H. Warner, Harish Bhaskaran, "Strong Opto-structural coupling in low dimensional GeSe3 films," ***Nano Letters*** 19 (10), 7377--7384 (2019) [Link](https://doi.org/10.1021/acs.nanolett.9b03039)
 
 * Emanuele Gemo, Santiago Garcia-Cuevas Carrillo, Carlota Ruiz De Galarreta, Anna Baldycheva, Hasan Hayat, Nathan Youngblood, Harish Bhaskaran, Wolfram H. P. Pernice, C. David Wright, "Plasmonically-enhanced all-optical integrated phase-change memory," ***Optics Express*** 27(17), 24724--24737 (2019) [Link](https://doi.org/10.1364/OE.27.024724)
 
@@ -33,7 +38,7 @@ use-site-title: false
 
 * Carlos A. Rios, Stegmaier, M., Zengguang Cheng, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Controlled switching of phase-change materials by evanescent-field coupling in integrated photonics [Invited]," ***Optical Materials Express*** 8(9), 2455--2470 (2018) [Link](https://doi.org/10.1364/OME.8.002455)
 
-* Zengguang Cheng, Carlos A. Rios, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Device-level photonic memories and logic applications using phase-change materials," ***Advanced Materials*** 30, 1802435 (2018) [Link]( https://doi.org/10.1002/adma.201802435)
+* Zengguang Cheng, Carlos A. Rios, Nathan Youngblood, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Device-level photonic memories and logic applications using phase-change materials," ***Advanced Materials*** 30, 1802435 (2018) [Link](https://doi.org/10.1002/adma.201802435)
 
 <h3>2017</h3>
 
