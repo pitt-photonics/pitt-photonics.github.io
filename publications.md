@@ -9,7 +9,7 @@ use-site-title: false
 
 <h3>2020</h3>
 
-* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," *Under Review* (2020) [ArXiV](https://arxiv.org/abs/2002.00281)
+* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," *Under Review* (2020) [ArXiv](https://arxiv.org/abs/2002.00281)
 
 * Xuan Li, Nathan Youngblood, Zengguang Cheng, Santiago Garcia-Cuevas Carrillo, Emanuele Gemo, Wen Zhou, Wolfram Pernice, C. David Wright, Harish Bhaskaran, "Experimental investigation of silicon and silicon nitride platforms for phase change photonic in-memory computing," *Accepted for publication in **Optica*** (2020)
 
