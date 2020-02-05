@@ -7,13 +7,19 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2020</h3>
+
+* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," *Under Review* (2020) [ArXiV](https://arxiv.org/abs/2002.00281)
+
+* Xuan Li, Nathan Youngblood, Zengguang Cheng, Santiago Garcia-Cuevas Carrillo, Emanuele Gemo, Wen Zhou, Wolfram Pernice, C. David Wright, Harish Bhaskaran, "Experimental investigation of silicon and silicon nitride platforms for phase change photonic in-memory computing," *Accepted for publication in **Optica*** (2020)
+
 <h3>2019</h3>
 
 * Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," *Accepted for publication in **IEEE JSTQE*** [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
 
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
-* Nikolaos Farmakidis\*, Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)  
+* Nikolaos Farmakidis\* / Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Research Highlights***](https://www.nature.com/articles/d41586-019-03740-9)
 
 * Santiago G-C Carrillo, Emanuele Gemo, Xuan Li, Nathan Youngblood, Andrew Katumba, Peter Bienstman, Wolfram Pernice, Harish Bhaskaran, C. David Wright, "Behavioral modeling of integrated phase-change photonic devices for neuromorphic computing applications," ***APL Materials*** 7, 091113 (2019) [Link](https://doi.org/10.1063/1.5111840)
@@ -32,7 +38,7 @@ use-site-title: false
 
 <h3>2018</h3>
 
-* Carlos A. Rios\*, Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2018) [Link](http://doi.org/10.1126/sciadv.aau5759)  
+* Carlos A. Rios\* / Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2018) [Link](http://doi.org/10.1126/sciadv.aau5759)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on IBM's [research blog](https://www.ibm.com/blogs/research/2019/02/photonic-memory-devices/) and [***Nature Electronics***](https://www.nature.com/articles/s41928-019-0226-1)
 
 * Syed Ghazi Sarwat, Nathan Youngblood, Yat-Yin Au, Jan A. Mol, C. David Wright, Harish Bhaskaran, "Engineering interface-dependent photoconductivity in Ge2Sb2Te5 nanoscale devices," ***ACS Applied Materials and Interfaces*** 10(51), 44906--44914 (2018) [Link](http://doi.org/10.1021/acsami.8b17602)
