@@ -9,15 +9,15 @@ use-site-title: false
 
 <h3>2020</h3>
 
-* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," *Under Review* (2020) [ArXiv](https://arxiv.org/abs/2002.00281)
+* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," ***Under Review*** (2020) [ArXiv](https://arxiv.org/abs/2002.00281)
 
-* Xuan Li, Nathan Youngblood, Zengguang Cheng, Santiago Garcia-Cuevas Carrillo, Emanuele Gemo, Wen Zhou, Wolfram Pernice, C. David Wright, Harish Bhaskaran, "Experimental investigation of silicon and silicon nitride platforms for phase change photonic in-memory computing," *Accepted for publication in **Optica*** (2020)
+* Xuan Li, Nathan Youngblood, Zengguang Cheng, Santiago Garcia-Cuevas Carrillo, Emanuele Gemo, Wen Zhou, Wolfram Pernice, C. David Wright, Harish Bhaskaran, "Experimental investigation of silicon and silicon nitride platforms for phase change photonic in-memory computing," ***Optica*** 7(3), 218--225 (2020) [Link](https://doi.org/10.1364/OPTICA.379228)
+
+* Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," ***IEEE JSTQE*** 26(2), 1--7 (2020) [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
 
 <h3>2019</h3>
 
-* Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," *Accepted for publication in **IEEE JSTQE*** [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
-
-* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Submitted*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
+* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Under Review*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Research Highlights***](https://www.nature.com/articles/d41586-019-03740-9)
@@ -72,6 +72,8 @@ use-site-title: false
 * Nathan Youngblood, Yoska Anugrah, Rui Ma, Steven J. Koester, Mo Li, "Multifunctional graphene optical modulator and photodetector integrated on silicon waveguides,"  ***Nano Letters***, 14(5), 2741--2746 (2014) [Link](https://doi.org/10.1021/nl500712u)
 
 <h2>Selected Talks</h2>
+* Nathan Youngblood, Nikolaos Farmakidis, Xuan Li, Harish Bhaskaran, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics [Invited]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2020)
+
 * Nathan Youngblood, Xuan Li, Harish Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited]," ***LIMIS***, Changsha, China (2018)
 
 * Nathan Youngblood, Clement Talagrand, Peiman Hosseini, Harish Bhaskaran, "Dynamic Smart Windows Using Phase Change Materials [Late Breaking Paper]," ***MRS Spring Meeting***, Phoenix, Arizona USA (2018)
