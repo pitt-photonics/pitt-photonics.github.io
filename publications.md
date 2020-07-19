@@ -72,7 +72,11 @@ use-site-title: false
 * Nathan Youngblood, Yoska Anugrah, Rui Ma, Steven J. Koester, Mo Li, "Multifunctional graphene optical modulator and photodetector integrated on silicon waveguides,"  ***Nano Letters***, 14(5), 2741--2746 (2014) [Link](https://doi.org/10.1021/nl500712u)
 
 <h2>Selected Talks</h2>
-* Nathan Youngblood, Nikolaos Farmakidis, Xuan Li, Harish Bhaskaran, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics [Invited]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2020)
+* Nathan Youngblood, Nikolaos Farmakidis, Xuan Li, Harish Bhaskaran, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics [Highlighted Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2020)
+
+* Nathan Youngblood, "Phase-change materials for photonic memory, computing, and beyond [ECE Graduate Seminar]," ***University of Minnesota***, Minneapolis, MN (2020)
+
+* Nathan Youngblood, "Phase-change photonic computing and beyond [ECE Graduate Seminar]," ***University of Pittsburgh***, Pittsburgh, PA (2019)
 
 * Nathan Youngblood, Xuan Li, Harish Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited]," ***LIMIS***, Changsha, China (2018)
 
