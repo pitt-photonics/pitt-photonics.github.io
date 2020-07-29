@@ -25,6 +25,19 @@ Email: nathan [dot] youngblood [at] pitt.edu<br>
 
 <h2>Graduate Students</h2>
 <div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_vivswan.jpg" height="250" width="250"/>
+<h3>Vivswan Shah</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Fall 2020-Present)<br>
+Educational background:<br>
+ - BSc in Physics and Computer Science (double major), Illinois College (2017-2020)<br>
+Email: vivswanshah [at] pitt.edu<br>
+Website: <a href="https://vivswan.github.io">vivswan.github.io</a>
+</p>
+</div>
+
+<div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_futurama.jpg" height="188" width="250"/>
 <h3>Awesome PhD Students Wanted</h3>
 <p style="margin: 10px 0">
