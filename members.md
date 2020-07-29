@@ -31,7 +31,7 @@ Email: nathan [dot] youngblood [at] pitt.edu<br>
 PhD Student<br>
  - ECE Department, University of Pittsburgh (Fall 2020-Present)<br>
 Educational background:<br>
- - BSc in Physics and Computer Science (double major), Illinois College (2017-2020)<br>
+ - BSc in Physics and Computer Science, Illinois College (2017-2020)<br>
 Email: vivswanshah [at] pitt.edu<br>
 Website: <a href="https://vivswan.github.io">vivswan.github.io</a>
 </p>
