@@ -11,9 +11,9 @@ use-site-title: false
 
 * Johannes Feldmann\* / Nathan Youngblood\*, Maxim Karpov, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," ***Accepted for publication in Nature*** (2020) [ArXiv](https://arxiv.org/abs/2002.00281)
 
-* Qiang He, Nathan Youngblood, Zengguang Cheng, Xiangshui Miao, Harish Bhaskaran, "Dynamically Tunable Transmissive Color Filters using Ultra-thin Phase Change Materials,"  ***Accepted for publication in Optics Express*** (2020)
-
 * Xuezhi Ma, Nathan Youngblood, Xiaoze Liu, Yan Cheng, Preston Cunha, Kaushik Kudtarkar, Xiaomu Wang, Shoufeng Lan, "Engineering photonic environments for two-dimensional materials," ***Accepted for publication in Nanophotonics*** (2020) [ArXiv](https://arxiv.org/abs/2009.09133)
+
+* Qiang He, Nathan Youngblood, Zengguang Cheng, Xiangshui Miao, Harish Bhaskaran, "Dynamically tunable transmissive color filters using ultra-thin phase change materials,"  ***Optics Express*** 28, 39841--39849 (2020) [Link](https://doi.org/10.1364/OE.411874)
 
 * Xuan Li, Nathan Youngblood, Zengguang Cheng, Santiago Garcia-Cuevas Carrillo, Emanuele Gemo, Wen Zhou, Wolfram Pernice, C. David Wright, Harish Bhaskaran, "Experimental investigation of silicon and silicon nitride platforms for phase change photonic in-memory computing," ***Optica*** 7(3), 218--225 (2020) [Link](https://doi.org/10.1364/OPTICA.379228)
 
