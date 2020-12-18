@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nature paper on photonic in-memory tensor core accepted for publication
+title: Paper on photonic in-memory tensor core to be published in Nature!
 sub-title: 
 image: /img/ML_photonics.png
 tags: [machine learning, phase-change photonics, reconfigurable photonics]
