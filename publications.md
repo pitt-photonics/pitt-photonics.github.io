@@ -7,9 +7,12 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
-<h3>2020</h3>
+<h3>2021</h3>
 
-* Johannes Feldmann\* / Nathan Youngblood\*, Maxim Karpov, Helge Gehring, Xuan Li, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," ***Accepted for publication in Nature*** (2020) [ArXiv](https://arxiv.org/abs/2002.00281)
+* Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Maik Stappers, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," ***Nature*** 589, 52--58 (2021) [Link](https://www.nature.com/articles/s41586-020-03070-1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature News and Views***](https://www.nature.com/articles/d41586-020-03572-y)
+
+<h3>2020</h3>
 
 * Xuezhi Ma, Nathan Youngblood, Xiaoze Liu, Yan Cheng, Preston Cunha, Kaushik Kudtarkar, Xiaomu Wang, Shoufeng Lan, "Engineering photonic environments for two-dimensional materials," ***Accepted for publication in Nanophotonics*** (2020) [ArXiv](https://arxiv.org/abs/2009.09133)
 

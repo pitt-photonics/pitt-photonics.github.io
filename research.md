@@ -7,12 +7,12 @@ use-site-title: false
 
 <div style="display: inline-block; width: 100%;">
 <h3>Photonic Devices and Architectures for Machine Learning</h3>
-<img style="float: left; margin: 10px 15px 5px 0px" src="/img/ScienceAdvancesCover.jpg" height="250" width="250"/>
+<img style="float: left; margin: 10px 15px 5px 0px" src="/img/PhotonicTensorCore.png" height="250" width="250"/>
 <p style="margin: 10px 0">
 Optics has the unique ability to perform linear operations with (theoretically) no energy consumption. This allows for high-speed, low-energy matrix-vector multiplications in the optical domain. Since matrix multiplications form the basis for nearly all machine learning algorithms, hybrid hardware accelerators based on integrated photonics and electronics could significantly increase data throughput by leveraging the wavelength multiplexing and high modulation speeds of silicon photonics.</p>
 </div>
 <div style="display: inline-block; width: 100%;">
-Related Publications: <a href="https://doi.org/10.1038/s41586-019-1157-8"><b><em>Nature</em></b> 569, 208-214 (2019)</a>, <a href="https://doi.org/10.1364/OPTICA.6.000001"><b><em>Optica</em></b> 6(1), 1-6 (2019)</a>, <a href="https://doi.org/10.1002/adfm.201807571"><b><em>Advanced Functional Materials</em></b> 29, 1807571 (2019)</a>, <a href="http://doi.org/10.1126/sciadv.aau5759"><b><em>Science Advances</em></b> 5(2), eaau5759 (2018)</a>
+Related Publications: <a href="https://www.nature.com/articles/s41586-020-03070-1"><b><em>Nature</em></b> 589, 52–58 (2021)</a>, <a href="https://doi.org/10.1038/s41586-019-1157-8"><b><em>Nature</em></b> 569, 208-214 (2019)</a>, <a href="https://doi.org/10.1364/OPTICA.6.000001"><b><em>Optica</em></b> 6(1), 1-6 (2019)</a>, <a href="https://doi.org/10.1002/adfm.201807571"><b><em>Advanced Functional Materials</em></b> 29, 1807571 (2019)</a>, <a href="http://doi.org/10.1126/sciadv.aau5759"><b><em>Science Advances</em></b> 5(2), eaau5759 (2018)</a>
 </div>
 
 <hr>
