@@ -22,6 +22,8 @@ use-site-title: false
 
 * Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," ***IEEE JSTQE*** 26(2), 1--7 (2020) [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
 
+*Farzaneh Zokaee, Qian Lou, Nathan Youngblood, Weichen Liu, Yiyuan Xie, Lei Jiang, "LightBulb: a photonic-nonvolatile-memory-based accelerator for binarized convolutional neural networks" ***DATE 2020*** 1438--1443 (2020)
+
 <h3>2019</h3>
 
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Under Review*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
