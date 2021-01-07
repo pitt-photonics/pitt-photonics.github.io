@@ -14,7 +14,7 @@ use-site-title: false
 
 <h3>2020</h3>
 
-* Xuezhi Ma, Nathan Youngblood, Xiaoze Liu, Yan Cheng, Preston Cunha, Kaushik Kudtarkar, Xiaomu Wang, Shoufeng Lan, "Engineering photonic environments for two-dimensional materials," ***Accepted for publication in Nanophotonics*** (2020) [ArXiv](https://arxiv.org/abs/2009.09133)
+* Xuezhi Ma, Nathan Youngblood, Xiaoze Liu, Yan Cheng, Preston Cunha, Kaushik Kudtarkar, Xiaomu Wang, Shoufeng Lan, "Engineering photonic environments for two-dimensional materials," ***Nanophotonics*** (2020) [Link](https://doi.org/10.1515/nanoph-2020-0524)
 
 * Qiang He, Nathan Youngblood, Zengguang Cheng, Xiangshui Miao, Harish Bhaskaran, "Dynamically tunable transmissive color filters using ultra-thin phase change materials,"  ***Optics Express*** 28, 39841--39849 (2020) [Link](https://doi.org/10.1364/OE.411874)
 
