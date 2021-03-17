@@ -14,6 +14,8 @@ use-site-title: false
 
 <h3>2020</h3>
 
+* Xuan Li, Nathan Youngblood, Wen Zhou, Johannes Feldmann, Jacob Swett, Samarth Aggarwal, Abu Sebastian, C. David Wright, Wolfram Pernice, Harish Bhaskaran, "On-chip Phase Change Optical Matrix Multiplication Core," ***2020 IEEE International Electron Devices Meeting (IEDM)***, San Francisco, CA, 7.5.1--7.5.4 (2020) [Link](https://doi.org/10.1109/IEDM13553.2020.9372052)
+
 * Xuezhi Ma, Nathan Youngblood, Xiaoze Liu, Yan Cheng, Preston Cunha, Kaushik Kudtarkar, Xiaomu Wang, Shoufeng Lan, "Engineering photonic environments for two-dimensional materials," ***Nanophotonics*** (2020) [Link](https://doi.org/10.1515/nanoph-2020-0524)
 
 * Qiang He, Nathan Youngblood, Zengguang Cheng, Xiangshui Miao, Harish Bhaskaran, "Dynamically tunable transmissive color filters using ultra-thin phase change materials,"  ***Optics Express*** 28, 39841--39849 (2020) [Link](https://doi.org/10.1364/OE.411874)
