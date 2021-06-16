@@ -1,0 +1,399 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Convolutional Example: Tetris Blocks</title>
+	
+	<script language="JavaScript">
+		// Create initial tetris blocks and matrices:
+		var tableData = Array.from(Array(16+1), () => new Array(16+1).fill(0));
+		var kernelData = Array.from(Array(3), () => new Array(3).fill(0));
+		var convData = Array.from(Array(16+1), () => new Array(16+1).fill(0));
+		
+		var jblock = [[0, 0, 0],
+					  [1, 0, 0],
+					  [1, 1, 1]]
+		
+		var lblock = [[0, 0, 0],
+					  [0, 0, 2],
+					  [2, 2, 2]]
+					  
+		var oblock = [[0, 0, 0],
+					  [0, 3, 3],
+					  [0, 3, 3]]
+
+		var sblock = [[0, 0, 0],
+					  [0, 4, 4],
+					  [4, 4, 0]]
+					  
+		var tblock = [[0, 0, 0],
+					  [0, 5, 0],
+					  [5, 5, 5]]
+
+		var zblock = [[0, 0, 0],
+					  [6, 6, 0],
+					  [0, 6, 6]]
+				  
+	
+		function createTable() {
+		  for(var i = 0; i < Math.floor(tableData.length/4); i++) {
+			for(var j = 0; j < Math.floor(tableData[0].length/4); j++) {
+				switch(Math.floor(Math.random() * 6)){
+					case 0:
+						var temp = jblock;
+						break;
+					case 1:
+						var temp = lblock;
+						break;
+					case 2:
+						var temp = oblock;
+						break;
+					case 3:
+						var temp = sblock;
+						break;
+					case 4:
+						var temp = tblock;
+						break;
+					case 5:
+						var temp = zblock;
+						break;
+				}
+			
+				// Replace subarray with random tetris block
+				switch(Math.floor(Math.random() * 2)){
+					case 0:
+						tableData[i*4+1].splice(j*4+1, 3, temp[0][0], temp[0][1], temp[0][2]);
+						tableData[i*4+2].splice(j*4+1, 3, temp[1][0], temp[1][1], temp[1][2]);
+						tableData[i*4+3].splice(j*4+1, 3, temp[2][0], temp[2][1], temp[2][2]);
+						break;
+					case 1:
+						tableData[i*4+1].splice(j*4+1, 3, temp[0][0], temp[1][0], temp[2][0]);
+						tableData[i*4+2].splice(j*4+1, 3, temp[0][1], temp[1][1], temp[2][1]);
+						tableData[i*4+3].splice(j*4+1, 3, temp[0][2], temp[1][2], temp[2][2]);
+						break;
+				}
+
+			}
+		  }
+		
+		  var table = document.createElement('table');
+		  var tableBody = document.createElement('tbody');
+
+		  var i = 0;
+		  tableData.forEach(function(rowData) {
+			// Create row header for pixel labels
+			var header_row = document.createElement('tr');
+			
+			// Add the pixel data from tableData array
+			var row = document.createElement('tr');
+			var j = 0;
+			rowData.forEach(function(cellData) {
+			
+			  // Add header labels
+			  if (i == 0) {
+				if ( j == 0 ) {
+					var empty_cell = document.createElement('td');
+					empty_cell.appendChild(document.createTextNode(" "));
+					header_row.appendChild(empty_cell); 
+				}
+				var header_cell = document.createElement('th');
+				header_cell.setAttribute('class','header_cell');
+				header_cell.appendChild(document.createTextNode(j));
+				header_row.appendChild(header_cell);
+			  }
+			  
+			  if ( j == 0 ) { 
+				var header_cell = document.createElement('th');
+				header_cell.setAttribute('class','header_cell');
+				header_cell.appendChild(document.createTextNode(i));
+				row.appendChild(header_cell);
+			  }
+			  
+			  var cell = document.createElement('td');
+			  
+			  if(cellData == 0) { 
+				cell.setAttribute('class', 'zero');
+				cell.appendChild(document.createTextNode("0"));
+			  } else { 
+				switch(cellData) {
+					case 1:
+						cell.setAttribute('class', 'jblock');
+						break;
+					case 2:
+						cell.setAttribute('class', 'lblock');
+						break;
+					case 3:
+						cell.setAttribute('class', 'oblock');
+						break;
+					case 4:
+						cell.setAttribute('class', 'sblock');
+						break;
+					case 5:
+						cell.setAttribute('class', 'tblock');
+						break;
+					case 6:
+						cell.setAttribute('class', 'zblock');
+						break;						
+				}
+				cell.appendChild(document.createTextNode("1"));
+				tableData[i][j] = 1;
+			  }
+			  row.appendChild(cell);
+			  j++;
+			});
+			if (i == 0) { tableBody.appendChild(header_row); }
+			i++;
+			tableBody.appendChild(row);
+		  });
+
+		  table.appendChild(tableBody);
+		  
+		  var div = document.getElementById('tetris_table');
+		  div.replaceChild(table, div.childNodes[0]);		  
+		}
+		
+		
+		function readTable() {
+			document.getElementById('info').innerHTML = "";
+			var myTab = document.getElementById('kernel');
+
+			// LOOP THROUGH EACH ROW OF THE TABLE AFTER HEADER.
+			for (i = 0; i < myTab.rows.length; i++) {
+
+				// GET THE CELLS COLLECTION OF THE CURRENT ROW.
+				var objCells = myTab.rows.item(i).cells;
+
+				// LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
+				for (var j = 0; j < objCells.length; j++) {
+					if (isNaN(parseFloat(objCells.item(j).childNodes[0].value))) {
+						kernelData[i][j] = 0;
+					} else {
+						kernelData[i][j] = parseFloat(objCells.item(j).childNodes[0].value);
+					}
+				}
+				convolve(tableData, kernelData);
+			}
+		}
+		
+		function convolve(imageArray, kernel) {
+		  // Compute convolution and update convData
+		  var maxVal = 0; var minVal = 0;
+		  for(var i = 1; i < imageArray.length - 1; i++) {
+			var imageVector = imageArray[i];
+			for(var j = 1; j < imageVector.length - 1; j++) {
+			  // Kernel sum
+			  convData[i][j] = 0;
+			  for(var m = 0; m < kernel.length; m++) {
+				for(var n = 0; n < kernel.length; n++) {
+				  convData[i][j] = convData[i][j] + kernel[m][n] * imageArray[i - 1 + m][j - 1 + n];
+			      //if(i == 2 && j == 1) {
+				   //console.log("i = " + i + ", j = " + j + ", m = " + m + ", n = " + n + ", convData = " + kernel[m][n] + " * " + imageArray[i - 1 + m][j - 1 + n]);
+				  //}
+				}
+			  }
+			  if(convData[i][j] > maxVal) { maxVal = convData[i][j]; }
+			  if(convData[i][j] < minVal) { minVal = convData[i][j]; }
+			}
+		  }
+		  //console.log(maxVal + " " + minVal);
+		  // Update convolution table
+		  var table = document.createElement('table');
+		  var tableBody = document.createElement('tbody');
+		  var i = 0;
+		  convData.forEach(function(rowData) {
+			// Create row header for pixel labels
+			var header_row = document.createElement('tr');
+			
+			// Add the pixel data from kernelData array
+			var row = document.createElement('tr');
+			var j = 0;
+			rowData.forEach(function(cellData) {
+			
+			  // Add header labels
+			  if (i == 0) {
+				if ( j == 0 ) {
+					var empty_cell = document.createElement('td');
+					empty_cell.appendChild(document.createTextNode(" "));
+					header_row.appendChild(empty_cell); 
+				}
+				var header_cell = document.createElement('th');
+				header_cell.setAttribute('class','header_cell');
+				header_cell.appendChild(document.createTextNode(j));
+				header_row.appendChild(header_cell);
+			  }
+			  
+			  if ( j == 0 ) { 
+				var header_cell = document.createElement('th');
+				header_cell.setAttribute('class','header_cell');
+				header_cell.appendChild(document.createTextNode(i));
+				row.appendChild(header_cell);
+			  }			
+			
+			  var cell = document.createElement('td');
+
+			  var hexVal = Math.round(255 * (cellData - minVal) / (maxVal - minVal));
+			  if (hexVal == 255) {
+				cell.setAttribute('style', 'background-color: #' + ("0" + hexVal.toString(16)).slice(-2).repeat(3) + "; color: #FF3213; font-weight: bold;");
+			  } else if (hexVal >= 150) {
+				cell.setAttribute('style', 'background-color: #' + ("0" + hexVal.toString(16)).slice(-2).repeat(3) + "; color: #222222;");
+			  } else {
+				cell.setAttribute('style', 'background-color: #' + ("0" + hexVal.toString(16)).slice(-2).repeat(3) + "; color: #EEEEEE;");
+			  }
+			  cell.appendChild(document.createTextNode(cellData));
+				
+			  row.appendChild(cell);
+			  j++;
+			});
+			if (i == 0) { tableBody.appendChild(header_row); }
+			tableBody.appendChild(row);
+			i++;
+		  });
+		  table.appendChild(tableBody);
+		  
+		  var div = document.getElementById('conv_table');
+		  div.replaceChild(table, div.childNodes[0]);		  
+		}
+		
+		function pageLoad() {
+			createTable();
+			convolve(tableData, kernelData);
+		}
+	</script>
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			text-align: center;
+		}
+		body { font-family: Helvetica, sans-serif; }
+		h2, h3 { margin-top:0; }
+		form { margin-top: 15px; }
+		form > input { margin-right: 15px; }
+
+		.row {
+		  margin:auto;
+		  width: 850px;
+		}
+		  
+		.column {
+		  float: left;
+		  width: 40%;
+		  margin: auto;
+		  padding: 5px;
+		  text-align: center;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		
+		table tr {
+			background-color: #ffffff;
+			font-weight: normal;
+			font-size: 10pt;
+			color: #555555;
+		}
+		td {
+			border: 1px solid #CCCCCC;
+			padding: 0px;
+			width: 15px;
+			height: 15px;
+			overflow: hidden;
+			white-space: nowrap;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.column table { border: 1px solid #222222; margin: auto; }
+		td.jblock { background-color: #0341AE; color: #EEEEEE}
+		td.lblock { background-color: #FF971C; color: #EEEEEE}
+		td.oblock { background-color: #FFD500; color: #222222}
+		td.sblock { background-color: #72CB3B; color: #222222}
+		td.tblock { background-color: #800080; color: #EEEEEE}
+		td.zblock { background-color: #FF3213; color: #EEEEEE}
+		td.zero { background-color: #FFFFFF }
+		
+		/*
+		#tetris_table { float: right;}
+		#conv_table { float: left; } */
+		#kernel_form { width: 20% }
+		#kernel input {text-align: center;}
+		
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+		@media screen and (max-width: 750px) {
+			.row {
+			  margin:auto;
+			  width: 100%;
+			}
+			.column {
+			  width: 100%;
+			  margin: auto;
+			  text-align: center;
+			}
+		  .column table { }
+		}
+
+
+	</style>
+</head>
+<body onload="pageLoad()">
+
+	<h1>Convolutional Example: Find the tetris blocks!</h1>
+	<h3>Configure the convolutional kernel to find the tetris block</h3>
+
+
+	
+	
+	<div id="output_tables" class="row">
+		<div class="column">
+			<div id="tetris_table">
+				<h3 style="text-align: center">Image Pixels</h3>
+				<table></table>
+			</div>
+		</div>
+		
+		<div id="kernel_form" class="column">
+			<p><b>Convolution Kernel:</b></p>
+		 <table id="kernel">
+			<tbody>
+			   <tr>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+			   </tr>
+			   <tr>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+			   </tr>
+			   <tr>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+				<td><input type="text" size="2"/></td>
+			   </tr>
+		   </tbody>
+		</table>
+		
+		<p><button type="button" onclick='readTable()'>Compute Convolution</button></p>
+		<p><button type="button" onclick='createTable()'>Create New Tetris Image</button></p>
+		
+		</div>
+		
+		<div class="column">
+			<div id="conv_table">
+				<h3 style="text-align: center">Convolution Result</h3>
+				<table></table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Code to handle taking the snapshot and displaying it locally -->
+	
+	<p id="info"></p>
+	
+</body>
+</html>
