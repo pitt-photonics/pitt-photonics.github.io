@@ -38,7 +38,7 @@ Website: <a href="https://vivswan.github.io">vivswan.github.io</a>
 </div>
 
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_futurama.jpg" height="188" width="250"/>
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_xingyu.jpg" height="188" width="250"/>
 <h3>Xingyu Zhang</h3>
 <p style="margin: 10px 0">
 PhD Student (co-advised by Prof. Feng Xiong)<br>
