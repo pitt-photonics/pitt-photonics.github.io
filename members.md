@@ -63,15 +63,3 @@ Educational background:<br>
  - BSc in ECE, University of Pittsburgh (2018-Present)<br>
 </p>
 </div>
-
-<hr>
-
-<h2>Open Positions</h2>
-
-<div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_futurama.jpg" height="188" width="250"/>
-<h3>Awesome PhD Students Wanted</h3>
-<p style="margin: 10px 0">
-This could be you! Please email me with your CV and research interests if you have an undergraduate degree in physics, EE, or a related field and would like to join the group.
-</p>
-</div>
