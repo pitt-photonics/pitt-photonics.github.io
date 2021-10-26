@@ -13,14 +13,14 @@ use-site-title: false
 
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***Under Review*** (2021)
 
-* Nikolaos Farmakidis\*, Jacob L. Swett\*, Nathan Youngblood, Xuan Li, Charalambos Evangeli, Samarth Aggarwal, Jan A. Mol, Harish Bhaskaran, "Exploiting rotational asymmetry for sub-50 nm mechanical nanocalligraphy," ***Microsystems & Nanoengineering*** 7, 84 (2021) [Link](https://doi.org/10.1038/s41378-021-00300-y)
+* Nikolaos Farmakidis\* / Jacob L. Swett\*, Nathan Youngblood, Xuan Li, Charalambos Evangeli, Samarth Aggarwal, Jan A. Mol, Harish Bhaskaran, "Exploiting rotational asymmetry for sub-50 nm mechanical nanocalligraphy," ***Microsystems & Nanoengineering*** 7, 84 (2021) [Link](https://doi.org/10.1038/s41378-021-00300-y)
 
 * Johannes Feldmann\* / Nathan Youngblood\* / Maxim Karpov\*, Helge Gehring, Xuan Li, Maik Stappers, Manuel Le Gallo, Xin Fu, Anton Lukashchuk, Arslan Raja, Junqiu Liu, C. David Wright, Abu Sebastian, Tobias Kippenberg, Wolfram Pernice, Harish Bhaskaran, "Parallel convolution processing using an integrated photonic tensor core," ***Nature*** 589, 52--58 (2021) [Link](https://www.nature.com/articles/s41586-020-03070-1)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature News and Views***](https://www.nature.com/articles/d41586-020-03572-y)
 
 <h3>2020</h3>
 
-* James Y. S. Tan1\*, Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Under Review*** (2020) [ArXiv](https://arxiv.org/abs/2011.14709)
+* James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Under Review*** (2020) [ArXiv](https://arxiv.org/abs/2011.14709)
 
 * Xuan Li, Nathan Youngblood, Wen Zhou, Johannes Feldmann, Jacob Swett, Samarth Aggarwal, Abu Sebastian, C. David Wright, Wolfram Pernice, Harish Bhaskaran, "On-chip Phase Change Optical Matrix Multiplication Core," ***2020 IEEE International Electron Devices Meeting (IEDM)***, San Francisco, CA, 7.5.1--7.5.4 (2020) [Link](https://doi.org/10.1109/IEDM13553.2020.9372052)
 
