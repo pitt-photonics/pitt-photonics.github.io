@@ -9,9 +9,11 @@ use-site-title: false
 
 <h3>2021</h3>
 
-* John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics through a multiphysics simulation framework," ***Submitted*** (2021)
+* John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics through a multiphysics simulation framework," ***Under Review*** (2021)
 
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***Under Review*** (2021)
+
+* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***ACS Photonics*** (2021) [Link](https://doi.org/10.1021/acsphotonics.1c01128)
 
 * Nikolaos Farmakidis\* / Jacob L. Swett\*, Nathan Youngblood, Xuan Li, Charalambos Evangeli, Samarth Aggarwal, Jan A. Mol, Harish Bhaskaran, "Exploiting rotational asymmetry for sub-50 nm mechanical nanocalligraphy," ***Microsystems & Nanoengineering*** 7, 84 (2021) [Link](https://doi.org/10.1038/s41378-021-00300-y)
 
@@ -35,8 +37,6 @@ use-site-title: false
 * Farzaneh Zokaee, Qian Lou, Nathan Youngblood, Weichen Liu, Yiyuan Xie, Lei Jiang, "LightBulb: a photonic-nonvolatile-memory-based accelerator for binarized convolutional neural networks," ***DATE 2020*** 1438--1443 (2020)
 
 <h3>2019</h3>
-
-* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***Under Review*** (2019) [ArXiv](https://arxiv.org/abs/1911.02990)
 
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, Xuan Li, James Tan, Jacob L. Swett, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Plasmonic nanogap enhanced phase change devices with dual electrical-optical functionality," ***Science Advances*** 5(11), eaaw2687 (2019) [Link](https://doi.org/10.1126/sciadv.aaw2687)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Research Highlights***](https://www.nature.com/articles/d41586-019-03740-9)
