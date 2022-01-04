@@ -7,6 +7,10 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2022</h3>
+
+* Nikolaos Farmakidis\* / Nathan Youngblood\*, June Sang Lee, Johannes Feldmann, Alessandro Lodi, Xuan Li, Samarth Agarwal, Wen Zhou, Lapo Bogani, Wolfram HP Pernice, C David Wright, Harish Bhaskaran, "Electronically reconfigurable photonic switches incorporating phase change plasmonics," ***Under Review*** (2022)
+
 <h3>2021</h3>
 
 * John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics through a multiphysics simulation framework," ***Under Review*** (2021)
