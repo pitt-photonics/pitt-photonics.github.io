@@ -50,16 +50,14 @@ Email: xiz219 [at] pitt.edu<br>
 </p>
 </div>
 
-<hr>
-
-<h2>Undergraduate Students</h2>
 <div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nic.jpg" height="250" width="250"/>
 <h3>Nicohlas Nobile</h3>
 <p style="margin: 10px 0">
-Undergraduate Student Researcher<br>
- - ECE Department, University of Pittsburgh (Fall 2020-Present)<br>
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
 Educational background:<br>
- - BSc in ECE, University of Pittsburgh (2018-Present)<br>
+ - BSc in ECE, University of Pittsburgh (2018-2021)<br>
+Email: nan65 [at] pitt.edu<br>
 </p>
 </div>
