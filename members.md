@@ -61,3 +61,16 @@ Educational background:<br>
 Email: nan65 [at] pitt.edu<br>
 </p>
 </div>
+
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_sadra.jpg" height="250" width="250"/>
+<h3>Sadra Rahimi Kari</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
+Educational background:<br>
+ - MSc in Electronics and Telecommunications Engineering, Istanbul Technical University, Turkey (2020-2021)<br>
+ - BSc in Electrical and Electronics Engineering, University of Tabriz, Iran (2015-2019)<br>
+Email: sar247 [at] pitt.edu<br>
+</p>
+</div>
