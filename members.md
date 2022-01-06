@@ -69,7 +69,7 @@ Email: nan65 [at] pitt.edu<br>
 PhD Student<br>
  - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
 Educational background:<br>
- - MSc in Electronics and Telecommunications Engineering, Istanbul Technical University, Turkey (2020-2021)<br>
+ - Research Assistant, Istanbul Technical University, Turkey (2020-2021)<br>
  - BSc in Electrical and Electronics Engineering, University of Tabriz, Iran (2015-2019)<br>
 Email: sar247 [at] pitt.edu<br>
 </p>
