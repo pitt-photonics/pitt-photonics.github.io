@@ -44,8 +44,8 @@ Website: <a href="https://vivswan.github.io">vivswan.github.io</a>
 PhD Student (co-advised by Prof. Feng Xiong)<br>
  - MEMS Department, University of Pittsburgh (Fall 2020-Present)<br>
 Educational background:<br>
- - MSc in Materials Science and Engineering, University of Pennsylvania (2019-2020)<br>
- - BSc in Materials Science and Engineering, Ohio State University (2015-2017)<br>
+ - MSc in MSE, University of Pennsylvania (2019-2020)<br>
+ - BSc in MSE, Ohio State University (2015-2017)<br>
 Email: xiz219 [at] pitt.edu<br>
 </p>
 </div>
@@ -70,7 +70,20 @@ PhD Student<br>
  - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
 Educational background:<br>
  - Research Assistant, Istanbul Technical University, Turkey (2020-2021)<br>
- - BSc in Electrical and Electronics Engineering, University of Tabriz, Iran (2015-2019)<br>
+ - BSc in Electrical Engineering, University of Tabriz, Iran (2015-2019)<br>
 Email: sar247 [at] pitt.edu<br>
+</p>
+</div>
+
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_daniel.jpg" height="250" width="250"/>
+<h3>Daniel Vaz</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
+Educational background:<br>
+ - MSc in MSE, University of Illinois at Urbana-Champaign (2020-2021)<br>
+ - BSc in MSE and Engineering Physics, University of Illinois at Urbana-Champaign (2015-2020)<br>
+Email: dav56 [at] pitt.edu<br>
 </p>
 </div>
