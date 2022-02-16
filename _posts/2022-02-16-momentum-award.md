@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Youngblood Photonics Lab awarded Pitt funding for efficient deep learning
+title: YPL receives grant for efficient and scalable photonic processors
 sub-title: 
 image: /img/Pitt_Cubes.png
 tags: [hybrid photonic computing, artificial intelligence]
