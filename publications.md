@@ -11,13 +11,15 @@ use-site-title: false
 
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, June Sang Lee, Johannes Feldmann, Alessandro Lodi, Xuan Li, Samarth Agarwal, Wen Zhou, Lapo Bogani, Wolfram HP Pernice, C David Wright, Harish Bhaskaran, "Electronically reconfigurable photonic switches incorporating phase change plasmonics," ***Under Review*** (2022)
 
+* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***ACS Photonics*** 9(1), 90–100 (2022) [Link](https://doi.org/10.1021/acsphotonics.1c01128)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***The Times, London***](https://www.thetimes.co.uk/article/turn-on-the-windows-to-keep-warm-zd7052xld) and [***The Daily Mail***](https://www.dailymail.co.uk/sciencetech/article-10493017/Smart-window-absorbs-heat-winter-reflects-summer-reduce-energy-use-34.html)
+
 <h3>2021</h3>
 
 * John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics through a multiphysics simulation framework," ***Under Review*** (2021)
 
-* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***Under Review*** (2021)
-
-* Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***ACS Photonics*** (2021) [Link](https://doi.org/10.1021/acsphotonics.1c01128)
+* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication [Invited]," ***Under Review*** (2021)
 
 * Nikolaos Farmakidis\* / Jacob L. Swett\*, Nathan Youngblood, Xuan Li, Charalambos Evangeli, Samarth Aggarwal, Jan A. Mol, Harish Bhaskaran, "Exploiting rotational asymmetry for sub-50 nm mechanical nanocalligraphy," ***Microsystems & Nanoengineering*** 7, 84 (2021) [Link](https://doi.org/10.1038/s41378-021-00300-y)
 
