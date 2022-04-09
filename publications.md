@@ -11,7 +11,7 @@ use-site-title: false
 
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, June Sang Lee, Johannes Feldmann, Alessandro Lodi, Xuan Li, Samarth Agarwal, Wen Zhou, Lapo Bogani, Wolfram HP Pernice, C David Wright, Harish Bhaskaran, "Electronically reconfigurable photonic switches incorporating phase change plasmonics," *accepted for publication in **Advanced Science*** (2022)
 
-* John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics using foundry compatible waveguide-integrated microheaters," ***Optics Express*** 30, 8 (2022) [Link](https://doi.org/10.1364/OE.446984)
+* John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics using foundry compatible waveguide-integrated microheaters," ***Optics Express*** 30, 13673-13689 (2022) [Link](https://doi.org/10.1364/OE.446984)
 
 * Nathan Youngblood, Clement Talagrand, Benjamin Porter, Carmelo Guido Galante, Steven Kneepkens, Dmitry Yarmolich, Ruy S. Bonilla, Peiman Hosseini, Robert Taylor, Harish Bhaskaran, "Broadly-tunable smart glazing using an ultra-thin phase-change material," ***ACS Photonics*** 9(1), 90–100 (2022) [Link](https://doi.org/10.1021/acsphotonics.1c01128)
 <br>
