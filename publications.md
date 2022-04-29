@@ -9,6 +9,10 @@ use-site-title: false
 
 <h3>2022</h3>
 
+* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Accepted: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
+
+* Chuanyu Lian, Christos Vagionas, Theonitsa Alexoudi, Nikos Pleros, Nathan Youngblood, Carlos Ríos, "Photonic (computational) memories: tunable nanophotonics for data storage and computing," *Accepted: **Nanophotonics*** (2022) [Link](https://doi.org/10.1515/nanoph-2022-0089)
+
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, June Sang Lee, Johannes Feldmann, Alessandro Lodi, Xuan Li, Samarth Agarwal, Wen Zhou, Lapo Bogani, Wolfram HP Pernice, C David Wright, Harish Bhaskaran, "Electronically reconfigurable photonic switches incorporating phase change plasmonics," ***Advanced Science*** 2200383 (2022) [Link](https://doi.org/10.1002/advs.202200383)
 
 * John R. Erickson, Vivswan Shah, Qingzhou Wan, Nathan Youngblood, Feng Xiong, "Designing fast and efficient electrically-driven phase change photonics using foundry compatible waveguide-integrated microheaters," ***Optics Express*** 30, 13673-13689 (2022) [Link](https://doi.org/10.1364/OE.446984)
@@ -18,8 +22,6 @@ use-site-title: false
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***The Times, London***](https://www.thetimes.co.uk/article/turn-on-the-windows-to-keep-warm-zd7052xld) and [***The Daily Mail***](https://www.dailymail.co.uk/sciencetech/article-10493017/Smart-window-absorbs-heat-winter-reflects-summer-reduce-energy-use-34.html)
 
 <h3>2021</h3>
-
-* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication [Invited]," ***Under Review*** (2021)
 
 * Nikolaos Farmakidis\* / Jacob L. Swett\*, Nathan Youngblood, Xuan Li, Charalambos Evangeli, Samarth Aggarwal, Jan A. Mol, Harish Bhaskaran, "Exploiting rotational asymmetry for sub-50 nm mechanical nanocalligraphy," ***Microsystems & Nanoengineering*** 7, 84 (2021) [Link](https://doi.org/10.1038/s41378-021-00300-y)
 
