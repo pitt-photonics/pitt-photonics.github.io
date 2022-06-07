@@ -98,19 +98,77 @@ use-site-title: false
 
 * Nathan Youngblood, Yoska Anugrah, Rui Ma, Steven J. Koester, Mo Li, "Multifunctional graphene optical modulator and photodetector integrated on silicon waveguides,"  ***Nano Letters***, 14(5), 2741--2746 (2014) [Link](https://doi.org/10.1021/nl500712u)
 
-<h2>Selected Talks</h2>
-* Nathan Youngblood, Nikolaos Farmakidis, Xuan Li, Harish Bhaskaran, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics [Highlighted Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2020)
+<h2>Conference Proceedings</h2>
 
-* Nathan Youngblood, "Phase-change materials for photonic memory, computing, and beyond [ECE Graduate Seminar]," ***University of Minnesota***, Minneapolis, MN (2020)
+* N. Nobile, J. Erickson, C. Rios, Y. Zhang, JJ Hu, F. Xiong, N. Youngblood, "Dynamic Mapping of Temperature Using Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
-* Nathan Youngblood, "Phase-change photonic computing and beyond [ECE Graduate Seminar]," ***University of Pittsburgh***, Pittsburgh, PA (2019)
+* N. Farmakidis, N. Youngblood, J. S. Lee, J. Feldmann, W. H. P. Pernice, C. D. Wright, H. Bhaskaran, "Plasmonically Enhanced Electronically Addressable Photonic Switches Incorporating Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
-* Nathan Youngblood, Xuan Li, Harish Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited]," ***LIMIS***, Changsha, China (2018)
+* W. Zhou, X. Li, N. Youngblood, W. H. P. Pernice, C. D. Wright, H. Bhaskaran, "Electrical switching of Ge2Sb2Te5 memory cells based on silicon photonic waveguide microheaters," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
-* Nathan Youngblood, Clement Talagrand, Peiman Hosseini, Harish Bhaskaran, "Dynamic Smart Windows Using Phase Change Materials [Late Breaking Paper]," ***MRS Spring Meeting***, Phoenix, Arizona USA (2018)
+* J. Erickson, V. Shah, Q. Wan, N. Youngblood, F. Xiong, “Designing fast and efficient electrically driven phase change photonics using foundry compatible waveguide-integrated microheaters,” ***Photonics and Electronics Research Symposium (PIERS)***, Hangzhou, China (2022)
 
-* Nathan Youngblood, Carlos Rios, Emanuele Gemo, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Phase change materials exhibit tunable volatility in integrated photonics," ***SPIE Photonics West***, San Francisco, California USA (2018)
+* J. Tan, Z. Cheng, J. Feldmann, X. Li, N. Youngblood, U. E. Ali, C. D. Wright, W. H. P. Pernice, H. Bhaskaran, "Associative learning on phase change photonics," ***SPIE Nanoscience + Engineering***, San Diego, CA (2021)
 
-* Nathan Youngblood, Mo Li, "Ultrafast photocurrent spectroscopy in a black phosphorus van der waals heterostructure [Invited]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2016)
+* E. Gemo, S. G. C. Carrillo, J. Faneca, C. Ruíz de Galarreta, H. Hayat, N. Youngblood, A. Baldycheva, W. H. P. Pernice, H. Bhaskaran, C. D. Wright, "Sub-wavelength plasmonic-enhanced phase-change memory," ***SPIE OPTO***, San Francisco, CA (2020)
 
-* Nathan Youngblood, Rouming Peng, Andrei Nemilentsau, Tony Low, Mo Li, "Thickness dependent third-harmonic generation in few-layer black phosphorus [Post-Deadline Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2016)
+* X. Li, N. Youngblood, W. Zhou, J. Feldmann, J. L. Swett, S. Aggarwal, A. Sebastian, C. D. Wright, W. H. P. Pernice, H. Bhaskaran, "On-chip Phase Change Optical Matrix Multiplication Core," ***2020 IEEE International Electron Devices Meeting (IEDM)***, San Francisco, CA, 7.5.1–7.5.4 (2020)
+
+* N. Youngblood, N. Farmakidis, X. Li, H. Bhaskaran, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics [Highlighted Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2020) 
+
+* E. Gemo, S. G. C. Carrillo, J. Faneca, N. Youngblood, W. H. P. Pernice, H. Bhaskaran, C. D. Wright, "A plasmonic route towards the energy scaling of on-chip integrated all-photonic phase-change memories," ***European Phase-Change and Ovonic Symposium (E\PCOS)***, Grenoble, France (2019)
+
+* N. Youngblood, Z. Cheng, N. Farmakidis, X. Li, J. Tan, H. Bhaskaran, "Phase change photonics for brain-inspired computing," ***SPIE Defense + Commercial Sensing***, Baltimore, MD (2019)
+
+* C. Ríos, N. Youngblood, Z. Cheng, M. Le Gallo, W. H. P. Pernice, C. D. Wright, A. Sebastian, and H. Bhaskaran, "All-photonic in-memory computing based on phase-change materials," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2019)
+
+* C. D. Wright, H. Bhaskaran, W. H. P. Pernice, S. G. Carrillo, E. Gemo, A. Baldycheva, Z. Cheng, X. Li, C. Rios, N. Youngblood, J. Feldmann, N. Gruhler, and M. Stegmaier, "Integrated Phase-change Photonics: A Strategy for Merging Communication and Computing," ***Optical Fiber Communication Conference (OFC)***, San Diego, CA (2019)
+
+* E. Gemo, N. Youngblood, Z. Cheng, C. Ríos, M. Stegmaier, A. Baldycheva, W. H. P. Pernice, H. Bhaskaran, C. D. Wright, "Modelling phase-change integrated photonic devices," ***European Phase-Change and Ovonic Symposium (E\PCOS)***, Catania, Italy (2018)
+
+* N. Youngblood, X. Li, H. Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited Talk]," ***LIMIS***, Changsha, China (2018)
+
+* N. Youngblood, C. Talagrand, P. Hosseini, H. Bhaskaran, "Dynamic Smart Windows Using Phase Change Materials [Late Breaking Paper]," ***MRS Spring Meeting***, Phoenix, Arizona USA (2018) 
+
+* N. Youngblood, C. Rios, E. Gemo, Z. Cheng, W. H. P. Pernice, C. D. Wright, H. Bhaskaran, "Phase change materials exhibit tunable volatility in integrated photonics," ***SPIE Photonics West***, San Francisco, California USA (2018)
+
+* R. Peng, K. Khaliji, N. Youngblood, R. Grassi , T. Low, M. Li, "Mid-infrared electro-optic modulation in few-layer black phosphorus," ***SPIE OPTO***, San Francisco, CA (2018)
+
+* Z. Cheng, C. Ríos, N. Youngblood, C. D. Wright, W. H. P. Pernice, H. Bhaskaran, "On-chip phase-change photonic memory and computing," ***SPIE Nanoscience + Engineering***, San Diego, CA (2017)
+
+* S. G. C. Carrillo, E. Gemo, N. Youngblood, X. Li, A. Katumba, P. Bienstman, W. H. P. Pernice, H. Bhaskaran, C. D. Wright, "A behavioural model for integrated phase-change photonics," ***European Phase-Change and Ovonic Symposium (E\PCOS)***, Aachen, Germany (2017)
+
+* R. Peng, N. Youngblood, M. Li, "Mid-infrared electro-optic modulation in black phosphorus," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2017)
+
+* C. Chen, D. Yoo, N. Youngblood, S. Oh, M. Li, "Mid-infrared plasmonic coaxial nanorings for surface enhanced infrared absorption (SEIRA) spectroscopy," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2017)
+
+* N. Youngblood, M. Li, "Ultrafast photocurrent spectroscopy in a black phosphorus van der waals heterostructure [Invited Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2016)
+
+* C. Chen, N. Youngblood, D. Mohr, D. Yoo, T. Johnson, R. Peng, S. Oh, and M. Li, "Black Phosphorus Photodetector on Silicon Photonic and Plasmonic Hybrid Platform," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2016)
+
+* N. Youngblood, R. Peng, A. Nemilentsau, T. Low, M. Li, "Thickness dependent third-harmonic generation in few-layer black phosphorus [Post-Deadline Talk]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2016)
+
+* C. Chen, N. Youngblood, M. Li, "Study of black phosphorus anisotropy on silicon photonic waveguide," ***IEEE Optoelectronics Global Conference (OGC)***, Shenzhen, China (2015)
+
+* N. Youngblood, C. Chen, S. J. Koester, M. Li, "A black phosphorus FET integrated on a silicon waveguide for high speed, low dark current photodetection," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2015)
+
+* N. Youngblood, Y. Anugrah, R. Ma, S. J. Koester, M. Li, "Simultaneous optical modulation and detection using graphene integrated on a silicon waveguide," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2014)
+
+
+<h2>Invited Talks</h2>
+
+* N. Youngblood, "Phase change materials for photonic memory and neuromorphic computing [Guest Lecture]," ***CMC Active Silicon Photonics Fabrication Course***, Virtual Event (June 2022)
+
+* N. Youngblood, "Reconfigurable photonic systems for optical memory, computation, and beyond [ECE Graduate Seminar]," ***Tufts University***, Medford, MA (March 2022)
+
+* N. Youngblood, "Reconfigurable photonic processors for ultrafast and efficient computation," ***Accipiter Systems***, Wexford, PA (March 2022)
+
+* N. Youngblood, "Nanoscale Optoelectronic Memory with Nonvolatile Phase-Change Photonics," ***Pittsburgh Quantum Institute***, Pittsburgh, PA (July 2020) 
+
+* N. Youngblood, "Phase-change materials for photonic memory, computing, and beyond [ECE Graduate Seminar]," ***University of Minnesota***, Minneapolis, MN (2020)
+
+* N. Youngblood, "Phase-change photonic computing and beyond [ECE Graduate Seminar]," ***University of Pittsburgh***, Pittsburgh, PA (2019)
+
+* N. Youngblood, X. Li, H. Bhaskaran, "Phase-change materials for non-volatile, integrated photonic memory and computation [Invited]," ***LIMIS***, Changsha, China (2018)
+
+* N. Youngblood, M. Li, "Ultrafast photocurrent spectroscopy in a black phosphorus van der waals heterostructure [Invited]," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, California USA (2016)
