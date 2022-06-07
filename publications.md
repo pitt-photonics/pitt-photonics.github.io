@@ -9,6 +9,8 @@ use-site-title: false
 
 <h3>2022</h3>
 
+* James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" *Accepted **Optica*** (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
+
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Accepted: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
 * Chuanyu Lian, Christos Vagionas, Theonitsa Alexoudi, Nikos Pleros, Nathan Youngblood, Carlos Ríos, "Photonic (computational) memories: tunable nanophotonics for data storage and computing," *Accepted: **Nanophotonics*** (2022) [Link](https://doi.org/10.1515/nanoph-2022-0089)
@@ -29,8 +31,6 @@ use-site-title: false
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature News and Views***](https://www.nature.com/articles/d41586-020-03572-y)
 
 <h3>2020</h3>
-
-* James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Under Review*** (2020) [ArXiv](https://arxiv.org/abs/2011.14709)
 
 * Xuan Li, Nathan Youngblood, Wen Zhou, Johannes Feldmann, Jacob Swett, Samarth Aggarwal, Abu Sebastian, C. David Wright, Wolfram Pernice, Harish Bhaskaran, "On-chip Phase Change Optical Matrix Multiplication Core," ***2020 IEEE International Electron Devices Meeting (IEDM)***, San Francisco, CA, 7.5.1--7.5.4 (2020) [Link](https://doi.org/10.1109/IEDM13553.2020.9372052)
 
