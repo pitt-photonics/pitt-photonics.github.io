@@ -87,3 +87,16 @@ Educational background:<br>
 Email: dav56 [at] pitt.edu<br>
 </p>
 </div>
+
+<hr>
+
+<h2>Undergraduate Students</h2>
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_dominique.jpg" height="250" width="250"/>
+<h3>Dominique Pantin</h3>
+<p style="margin: 10px 0">
+Undergraduate Student<br>
+ - ECE Department, University of Pittsburgh (Fall 2021-Present)<br>
+Email: dlp80 [at] pitt.edu<br>
+</p>
+</div>
