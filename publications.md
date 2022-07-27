@@ -9,7 +9,9 @@ use-site-title: false
 
 <h3>2022</h3>
 
-* James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" *Accepted **Optica*** (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
+* Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for optical computing,” ***Under Review*** (2022)
+
+* James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
 
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Accepted: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
@@ -156,6 +158,10 @@ use-site-title: false
 
 
 <h2>Invited Talks</h2>
+
+* N. Nobile, J. Erickson, C. Ríos, Y. Zhang, JJ Hu, F Xiong, N. Youngblood, "Design and characterization of electrically programmable phase change photonic devices [Invited]," ***12th International Conference on Metamaterials, Photonic Crystals and Plasmonics (META 2022)***, Torremolinos, Spain (July 2022)
+
+* N. Youngblood, "Controlling and characterizing phase change devices for photonic computing applications [Advanced Nanoscale Engineering Group Seminar]," ***University of Oxford***, Oxford, UK (July 2022)
 
 * N. Youngblood, "Phase change materials for photonic memory and neuromorphic computing [Guest Lecture]," ***CMC Active Silicon Photonics Fabrication Course***, Virtual Event (June 2022)
 
