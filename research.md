@@ -5,6 +5,8 @@ subtitle:
 use-site-title: false
 ---
 
+<img style="float: left; margin: 0px 0px 10px 0px" src="/img/research_topics_banner.jpg"/>
+
 <div style="display: inline-block; width: 100%;">
 <h3>Photonic Devices and Architectures for Machine Learning</h3>
 <img style="float: left; margin: 10px 15px 5px 0px" src="/img/PhotonicTensorCore.png" height="250" width="250"/>

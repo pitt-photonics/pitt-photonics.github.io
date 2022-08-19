@@ -5,6 +5,8 @@ subtitle:
 use-site-title: false
 ---
 
+<img style="float: left; margin: 0px 0px 10px 0px" src="/img/publications_banner.jpg"/>
+
 <h2>Journal Articles</h2>
 
 <h3>2022</h3>

@@ -5,6 +5,8 @@ subtitle:
 use-site-title: false
 ---
 
+<img style="float: left; margin: 0px 0px 10px 0px" src="/img/group_pic.jpg"/>
+
 <h2>Principal Investigator</h2>
 <div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nathan.jpg" height="250" width="250"/>
