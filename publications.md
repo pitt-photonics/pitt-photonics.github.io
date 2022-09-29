@@ -11,13 +11,15 @@ use-site-title: false
 
 <h3>2022</h3>
 
+* Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," ***Under Review*** (2022)
+
 * Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for optical computing,” ***Under Review*** (2022)
 
 * James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
 
-* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Accepted: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
+* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Early Access: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
-* Chuanyu Lian, Christos Vagionas, Theonitsa Alexoudi, Nikos Pleros, Nathan Youngblood, Carlos Ríos, "Photonic (computational) memories: tunable nanophotonics for data storage and computing," *Accepted: **Nanophotonics*** (2022) [Link](https://doi.org/10.1515/nanoph-2022-0089)
+* Chuanyu Lian, Christos Vagionas, Theonitsa Alexoudi, Nikos Pleros, Nathan Youngblood, Carlos Ríos, "Photonic (computational) memories: tunable nanophotonics for data storage and computing," ***Nanophotonics*** 11(17), 3823-3854 (2022) [Link](https://doi.org/10.1515/nanoph-2022-0089)
 
 * Nikolaos Farmakidis\* / Nathan Youngblood\*, June Sang Lee, Johannes Feldmann, Alessandro Lodi, Xuan Li, Samarth Agarwal, Wen Zhou, Lapo Bogani, Wolfram HP Pernice, C David Wright, Harish Bhaskaran, "Electronically reconfigurable photonic switches incorporating phase change plasmonics," ***Advanced Science*** 2200383 (2022) [Link](https://doi.org/10.1002/advs.202200383)
 
@@ -161,7 +163,9 @@ use-site-title: false
 
 <h2>Invited Talks</h2>
 
-* N. Nobile, J. Erickson, C. Ríos, Y. Zhang, JJ Hu, F Xiong, N. Youngblood, "Design and characterization of electrically programmable phase change photonic devices [Invited]," ***12th International Conference on Metamaterials, Photonic Crystals and Plasmonics (META 2022)***, Torremolinos, Spain (July 2022)
+* N. Youngblood, "Integrated photonics circuits for fast and efficient *(classical)* computing" ***PQI 2022 Conference***, Pittsburgh, PA (Sept 2022)
+
+* N. Nobile, J. Erickson, C. Ríos, Y. Zhang, JJ Hu, F Xiong, N. Youngblood, "Design and characterization of electrically programmable phase change photonic devices," ***12th International Conference on Metamaterials, Photonic Crystals and Plasmonics (META 2022)***, Torremolinos, Spain (July 2022)
 
 * N. Youngblood, "Controlling and characterizing phase change devices for photonic computing applications [Advanced Nanoscale Engineering Group Seminar]," ***University of Oxford***, Oxford, UK (July 2022)
 
