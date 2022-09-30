@@ -48,7 +48,7 @@ use-site-title: false
 
 * Johannes Feldmann, Nathan Youngblood, Xuan Li, David Wright, Harish Bhaskaran, Wolfram Pernice, "Integrated 256 cell photonic phase change memory with 512-bit capacity," ***IEEE JSTQE*** 26(2), 1--7 (2020) [Link](https://doi.org/10.1109/JSTQE.2019.2956871)
 
-* Farzaneh Zokaee, Qian Lou, Nathan Youngblood, Weichen Liu, Yiyuan Xie, Lei Jiang, "LightBulb: a photonic-nonvolatile-memory-based accelerator for binarized convolutional neural networks," ***DATE 2020*** 1438--1443 (2020)
+* Farzaneh Zokaee, Qian Lou, Nathan Youngblood, Weichen Liu, Yiyuan Xie, Lei Jiang, "LightBulb: a photonic-nonvolatile-memory-based accelerator for binarized convolutional neural networks," ***DATE 2020*** 1438--1443 (2020) [Link](https://doi.org/10.23919/DATE48585.2020.9116494)
 
 <h3>2019</h3>
 
