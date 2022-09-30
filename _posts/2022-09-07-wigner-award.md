@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YPL awarded collaborative NSF grant for nanovesicle and virus trapping and sorting
+title: YPL awarded collaborative grant with UMN for trapping and sorting viruses
 sub-title: 
 image: /img/NSF_Logo.png
 tags: [biosensing, integrated photonics, 2D materials]
