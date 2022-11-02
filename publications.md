@@ -11,6 +11,12 @@ use-site-title: false
 
 <h3>2022</h3>
 
+* Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change devices," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.08142)
+
+* Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.10048)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;\- [Software documentation](https://analogvnn.readthedocs.io/en/latest/)
+
 * Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," ***Under Review*** (2022)
 
 * Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for optical computing,” ***Under Review*** (2022)
