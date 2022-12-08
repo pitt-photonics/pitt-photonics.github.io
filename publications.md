@@ -75,10 +75,10 @@ use-site-title: false
 * Xuan Li, Nathan Youngblood, Carlos A. Rios, Zengguang Cheng, Wolfram H. P. Pernice, C. David Wright, Harish Bhaskaran, "Fast and reliable storage using a 5-bit, non-volatile photonic memory cell," ***Optica*** 6(1), 1--6 (2019) [Link](https://doi.org/10.1364/OPTICA.6.000001)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on the cover of [***Optica***](https://www.osapublishing.org/optica/aboutthecover.cfm?volume=6&issue=1)
 
-<h3>2018</h3>
-
-* Carlos A. Rios\* / Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2018) [Link](http://doi.org/10.1126/sciadv.aau5759)  
+* Carlos A. Rios\* / Nathan Youngblood\*, Zengguang Cheng, Manuel Le Gallo, Wolfram H. P. Pernice, C. David Wright, Abu Sebastian, Harish Bhaskaran, "In-memory computing on a photonic platform," ***Science Advances*** 5(2), eaau5759 (2019) [Link](http://doi.org/10.1126/sciadv.aau5759)  
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on IBM's [research blog](https://www.ibm.com/blogs/research/2019/02/photonic-memory-devices/) and [***Nature Electronics***](https://www.nature.com/articles/s41928-019-0226-1)
+
+<h3>2018</h3>
 
 * Syed Ghazi Sarwat, Nathan Youngblood, Yat-Yin Au, Jan A. Mol, C. David Wright, Harish Bhaskaran, "Engineering interface-dependent photoconductivity in Ge2Sb2Te5 nanoscale devices," ***ACS Applied Materials and Interfaces*** 10(51), 44906--44914 (2018) [Link](http://doi.org/10.1021/acsami.8b17602)
 
