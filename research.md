@@ -8,7 +8,7 @@ use-site-title: false
 <img style="float: left; margin: 0px 0px 10px 0px" src="/img/research_topics_banner.jpg"/>
 
 <div style="display: inline-block; width: 100%;">
-<h3>Photonic Devices and Architectures for Machine Learning</h3>
+<h3>Programmable Photonic Devices and Architectures for Machine Learning</h3>
 <img style="float: left; margin: 10px 15px 5px 0px" src="/img/PhotonicTensorCore.png" height="250" width="250"/>
 <p style="margin: 10px 0">
 Optics has the unique ability to perform linear operations with (theoretically) no energy consumption. This allows for high-speed, low-energy matrix-vector multiplications in the optical domain. Since matrix multiplications form the basis for nearly all machine learning algorithms, hybrid hardware accelerators based on integrated photonics and electronics could significantly increase data throughput by leveraging the wavelength multiplexing and high modulation speeds of silicon photonics.</p>
@@ -20,7 +20,7 @@ Related Publications: <a href="https://www.nature.com/articles/s41586-020-03070-
 <hr>
 
 <div style="display: inline-block; width: 100%;">
-<h3>Waveguide-Integrated Nanoplasmonics for High Density Biosensing</h3>
+<h3>Waveguide-Integrated Circuits for Biosensing</h3>
 <img style="float: left; margin: 10px 15px 5px 0px" src="/img/Lab-on-chip_2.jpeg" height="199" width="250"/>
 <p style="margin: 10px 0">
 Combining plasmonics with integrated photonics allows for hybrid devices where we can overcome the high propagation loss of plasmonics and diffraction-limited dimensions of photonics. We have exploited this device geometry to enhance the performance of optoelectronic devices and are now interested in using what we have learned to achieve high-speed, low-concentration biosensing on-chip. (Image credit: Jacob Swett and Nick Farmakidis)
