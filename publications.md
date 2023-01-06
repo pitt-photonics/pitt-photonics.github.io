@@ -9,6 +9,10 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2023</h3>
+
+* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***IEEE JSTQE*** 29(2), 1--11 (2023) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
+
 <h3>2022</h3>
 
 * Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change devices," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.08142)
@@ -22,8 +26,6 @@ use-site-title: false
 * Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for optical computing,” ***Under Review*** (2022)
 
 * James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
-
-* Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," *Early Access: **IEEE JSTQE*** (2022) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
 * Chuanyu Lian, Christos Vagionas, Theonitsa Alexoudi, Nikos Pleros, Nathan Youngblood, Carlos Ríos, "Photonic (computational) memories: tunable nanophotonics for data storage and computing," ***Nanophotonics*** 11(17), 3823-3854 (2022) [Link](https://doi.org/10.1515/nanoph-2022-0089)
 
