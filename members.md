@@ -102,3 +102,13 @@ Undergraduate Student<br>
 Email: dlp80 [at] pitt.edu<br>
 </p>
 </div>
+
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_tianyi.png" height="250" width="250"/>
+<h3>Tianyi Zheng</h3>
+<p style="margin: 10px 0">
+Undergraduate Student<br>
+ - CS and Statistics Departments, University of Pittsburgh (Fall 2020-Present)<br>
+Email: tiz65 [at] pitt.edu<br>
+</p>
+</div>
