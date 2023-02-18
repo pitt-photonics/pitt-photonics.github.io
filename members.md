@@ -11,7 +11,7 @@ use-site-title: false
 <div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nathan.jpg" height="250" width="250"/>
 <h3>Nathan Youngblood</h3>
-<span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_Dec2022.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
+<span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_2023.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
 <p style="margin: 10px 0">
 Assistant Professor<br>
  - ECE Department, University of Pittsburgh (Fall 2019-Present)<br>
@@ -110,5 +110,15 @@ Email: dlp80 [at] pitt.edu<br>
 Undergraduate Student<br>
  - CS and Statistics Departments, University of Pittsburgh (Fall 2020-Present)<br>
 Email: tiz65 [at] pitt.edu<br>
+</p>
+</div>
+
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_guhan.jpg" height="250" width="250"/>
+<h3>Guhan Kumaran</h3>
+<p style="margin: 10px 0">
+Undergraduate Student<br>
+ - ECE Department, University of Pittsburgh (Fall 2021–Present)<br>
+Email: guk11 [at] pitt.edu<br>
 </p>
 </div>

@@ -10,6 +10,11 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2023</h3>
+* John Erickson, Nicholas Nobile, Daniel Vaz, Gouri Vinod, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Comparing the thermal performance and endurance of resistive and PIN silicon microheaters for phase-change photonic applications," ***Under Review*** (2023)
+
+* Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," *to appear in **Nature Photonics*** (2023)
+
+* Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for analog optical computing,” ***IEEE JSTQE*** 29(2), 16100812 (2023) [Link](https://doi-org.pitt.idm.oclc.org/10.1109/JSTQE.2023.3239918)
 
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***IEEE JSTQE*** 29(2), 1--11 (2023) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
@@ -20,10 +25,6 @@ use-site-title: false
 * Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.10048)
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;\- [Software documentation](https://analogvnn.readthedocs.io/en/latest/)
-
-* Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," ***Under Review*** (2022)
-
-* Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for optical computing,” ***Under Review*** (2022)
 
 * James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
 
