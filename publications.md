@@ -10,6 +10,10 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2023</h3>
+* Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," *accepted for publication in **APL Machine Learning*** (2023) [Link](https://arxiv.org/abs/2210.10048)
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;\- [Software documentation](https://analogvnn.readthedocs.io/en/latest/)
+
 * Wen Zhou, Bowei Dong, Nikolaos Farmakidis, Xuan Li, Nathan Youngblood, Kairan Huang, Yuhan He, C David Wright, Wolfram HP Pernice, Harish Bhaskaran, "In-memory photonic dot-product engine with electrically programmable weight banks," *accepted for publication in **Nature Communications*** (2023) [Link](https://arxiv.org/abs/2304.14302)
 
 * John Erickson, Nicholas Nobile, Daniel Vaz, Gouri Vinod, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Comparing the thermal performance and endurance of resistive and PIN silicon microheaters for phase-change photonic applications," ***Under Review*** (2023)
@@ -23,10 +27,6 @@ use-site-title: false
 <h3>2022</h3>
 
 * Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change devices," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.08142)
-
-* Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.10048)
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;\- [Software documentation](https://analogvnn.readthedocs.io/en/latest/)
 
 * James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
 
