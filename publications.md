@@ -14,11 +14,11 @@ use-site-title: false
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;\- [Software documentation](https://analogvnn.readthedocs.io/en/latest/)
 
-* Wen Zhou, Bowei Dong, Nikolaos Farmakidis, Xuan Li, Nathan Youngblood, Kairan Huang, Yuhan He, C David Wright, Wolfram HP Pernice, Harish Bhaskaran, "In-memory photonic dot-product engine with electrically programmable weight banks," *accepted for publication in **Nature Communications*** (2023) [Link](https://arxiv.org/abs/2304.14302)
+* Wen Zhou, Bowei Dong, Nikolaos Farmakidis, Xuan Li, Nathan Youngblood, Kairan Huang, Yuhan He, C David Wright, Wolfram HP Pernice, Harish Bhaskaran, "In-memory photonic dot-product engine with electrically programmable weight banks," ***Nature Communications***  14, 2887 (2023) [Link](https://www.nature.com/articles/s41467-023-38473-x)
 
-* John Erickson, Nicholas Nobile, Daniel Vaz, Gouri Vinod, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Comparing the thermal performance and endurance of resistive and PIN silicon microheaters for phase-change photonic applications," *accepted for publication in **Optics Materials Express*** (2023)
+* John Erickson, Nicholas Nobile, Daniel Vaz, Gouri Vinod, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Comparing the thermal performance and endurance of resistive and PIN silicon microheaters for phase-change photonic applications," ***Optics Materials Express*** 13 (6), 1677-1688 (2023) [Link](https://doi.org/10.1364/OME.488564)
 
-* Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," *to appear in **Nature Photonics*** (2023)
+* Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," *to appear in **Nature Photonics*** (2023) [Link](https://www.nature.com/articles/s41566-023-01217-w)
 
 * Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for analog optical computing,” ***IEEE JSTQE*** 29(2), 16100812 (2023) [Link](https://doi-org.pitt.idm.oclc.org/10.1109/JSTQE.2023.3239918)
 
