@@ -22,7 +22,7 @@ use-site-title: false
 
 * Nathan Youngblood, Carlos Ríos, Wolfram Pernice, Harish Bhaskaran, "Integrated Optical Memristors," ***Nature Photonics*** (2023) [Link](https://www.nature.com/articles/s41566-023-01217-w)
 
-* Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for analog optical computing,” ***IEEE JSTQE*** 29(2), 16100812 (2023) [Link](https://doi-org.pitt.idm.oclc.org/10.1109/JSTQE.2023.3239918)
+* Sadra Rahimi Kari, Carlos Ríos, Lei Jiang, Jiawei Meng, Nicola Peserico, Volker J. Sorger, Juejun Hu, Nathan Youngblood, “Optical and electrical memories for analog optical computing,” ***IEEE JSTQE*** 29(2), 16100812 (2023) [Link](https://doi.org/10.1109/JSTQE.2023.3239918)
 
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***IEEE JSTQE*** 29(2), 1--11 (2023) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
