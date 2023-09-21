@@ -10,6 +10,8 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2023</h3>
+* Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change materials," *Accepted for publication in **ACS Photonics*** (2023) [Link](https://arxiv.org/abs/2210.08142)
+
 * Nicholas A. Nobile, Chuanyu Lian, Hongyi Sun, Yi-Siou Huang, Brian Mills, Cosmin Constantin Popescu, Dennis Callahan, Juejun Hu, Carlos A. Ríos Ocampo, Nathan Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Optical Materials Express*** 13(10), 2700-2710 (2023) [Link](https://doi.org/10.1364/OME.498931)
 
 * Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," ***APL Machine Learning*** 1, 026116 (2023) [Link](https://doi.org/10.1063/5.0134156)
@@ -27,8 +29,6 @@ use-site-title: false
 * Nathan Youngblood, "Coherent photonic crossbar arrays for large-scale matrix-matrix multiplication," ***IEEE JSTQE*** 29(2), 1--11 (2023) [Link](https://doi.org/10.1109/JSTQE.2022.3171167)
 
 <h3>2022</h3>
-
-* Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change devices," ***Under Review*** (2022) [Link](https://arxiv.org/abs/2210.08142)
 
 * James Y. S. Tan\* / Zengguang Cheng\*, Johannes Feldmann, Xuan Li, Nathan Youngblood, Utku E. Ali, C. David Wright, Wolfram H. P. Pernice, Harish Bhaskaran, "Monadic Pavlovian associative learning in a backpropagation-free photonic network" ***Optica*** 9(7), 792--802 (2022) [Link](https://doi.org/10.1364/OPTICA.455864)
 
