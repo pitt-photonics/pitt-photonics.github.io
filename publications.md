@@ -10,7 +10,7 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2023</h3>
-* Nicholas A. Nobile, Chuanyu Lian, Hongyi Sun, Yi-Siou Huang, Brian Mills, Cosmin Constantin Popescu, Dennis Callahan, Juejun Hu, Carlos A. Ríos Ocampo, Nathan Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Under Review*** (2023) [Link](https://arxiv.org/abs/2306.14865)
+* Nicholas A. Nobile, Chuanyu Lian, Hongyi Sun, Yi-Siou Huang, Brian Mills, Cosmin Constantin Popescu, Dennis Callahan, Juejun Hu, Carlos A. Ríos Ocampo, Nathan Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Optical Materials Express*** 13(10), 2700-2710 (2023) [Link](https://doi.org/10.1364/OME.498931)
 
 * Vivswan Shah, Nathan Youngblood, "AnalogVNN: A Fully Modular Framework for Modeling and Optimizing Photonic Neural Networks," ***APL Machine Learning*** 1, 026116 (2023) [Link](https://doi.org/10.1063/5.0134156)
 <br>
