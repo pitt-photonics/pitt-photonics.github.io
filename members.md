@@ -104,7 +104,7 @@ Email: dlp80 [at] pitt.edu<br>
 </div>
 
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_allison.png" height="250" width="250"/>
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_allison.jpg" height="250" width="250"/>
 <h3>Allison Hastings</h3>
 <p style="margin: 10px 0">
 Undergraduate Student<br>
