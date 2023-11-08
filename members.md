@@ -90,6 +90,19 @@ Email: dav56 [at] pitt.edu<br>
 </p>
 </div>
 
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_shenghan.jpg" height="250" width="250"/>
+<h3>Shenghan Gao</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Spring 2020-Present)<br>
+Educational background:<br>
+ - MSc in Optics, University of Rochester (2017-2019)<br>
+ - BSc in Optical Engineering and Applied Mathematics, University of Rochester (2014-2017)<br>
+Email: shg108 [at] pitt.edu<br>
+</p>
+</div>
+
 <hr>
 
 <h2>Undergraduate Students</h2>
