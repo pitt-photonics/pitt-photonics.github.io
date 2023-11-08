@@ -13,7 +13,7 @@ use-site-title: false
 * Sadra Rahimi Kari, Nicholas A. Nobile, Dominique Pantin, Vivswan Shah, Nathan Youngblood, "Realization of an integrated photonic platform for coherent photoelectric
 processing," *Under Review* (2023) [Link](https://doi.org/10.1364/opticaopen.24250795.v1)
 
-* Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change materials," *Accepted for publication in **ACS Photonics*** (2023) [Link](https://doi.org/10.1021/acsphotonics.3c00620)
+* Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change materials," ***ACS Photonics*** 10(10), 3576–3585 (2023) [Link](https://doi.org/10.1021/acsphotonics.3c00620)
 
 * Nicholas A. Nobile, Chuanyu Lian, Hongyi Sun, Yi-Siou Huang, Brian Mills, Cosmin Constantin Popescu, Dennis Callahan, Juejun Hu, Carlos A. Ríos Ocampo, Nathan Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Optical Materials Express*** 13(10), 2700-2710 (2023) [Link](https://doi.org/10.1364/OME.498931)
 
