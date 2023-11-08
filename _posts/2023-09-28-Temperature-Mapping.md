@@ -7,4 +7,4 @@ tags: [phase change materials, publications]
 comments: false
 ---
 
-Nic's article entitled "Time-Resolved Temperature Mapping Leveraging the Strong Thermo-Optic Effect in Phase-Change Materials" is published in [ACS Photonics](https://pubs.acs.org/doi/10.1021/acsphotonics.3c00620)! Congratulations, Nic!
+Group member Nicholas Nobile's article entitled "Time-Resolved Temperature Mapping Leveraging the Strong Thermo-Optic Effect in Phase-Change Materials" is published in [ACS Photonics](https://pubs.acs.org/doi/10.1021/acsphotonics.3c00620)! This work demonstrates a method to experimentally validate dynamic thermal simulations of electrically-switched GST pixels. Congratulations, Nic!

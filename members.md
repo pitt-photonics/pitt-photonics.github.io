@@ -54,7 +54,7 @@ Email: xiz219 [at] pitt.edu<br>
 
 <div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nic.jpg" height="250" width="250"/>
-<h3>Nicohlas Nobile</h3>
+<h3>Nicholas Nobile</h3>
 <p style="margin: 10px 0">
 PhD Student<br>
  - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
@@ -104,12 +104,12 @@ Email: dlp80 [at] pitt.edu<br>
 </div>
 
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_tianyi.png" height="250" width="250"/>
-<h3>Tianyi Zheng</h3>
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_allison.png" height="250" width="250"/>
+<h3>Allison Hastings</h3>
 <p style="margin: 10px 0">
 Undergraduate Student<br>
- - CS and Statistics Departments, University of Pittsburgh (Fall 2020-Present)<br>
-Email: tiz65 [at] pitt.edu<br>
+ - SSOE, University of Pittsburgh (Fall 2021-Present)<br>
+Email: alh294 [at] pitt.edu<br>
 </p>
 </div>
 
