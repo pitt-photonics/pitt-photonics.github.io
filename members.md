@@ -121,7 +121,7 @@ Email: dlp80 [at] pitt.edu<br>
 <h3>Allison Hastings</h3>
 <p style="margin: 10px 0">
 Undergraduate Student<br>
- - SSOE, University of Pittsburgh (Fall 2021-Present)<br>
+ - MEMS Department, University of Pittsburgh (Fall 2021-Present)<br>
 Email: alh294 [at] pitt.edu<br>
 </p>
 </div>
