@@ -10,6 +10,7 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2024</h3>
+
 * Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *Under Review* (2024) [Link](https://arxiv.org/abs/2402.02593)
 
 <h3>2023</h3>
