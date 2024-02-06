@@ -9,6 +9,9 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2024</h3>
+* Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *Under Review* (2024) [Link](https://arxiv.org/abs/2402.02593)
+
 <h3>2023</h3>
 * Sadra Rahimi Kari, Nicholas A. Nobile, Dominique Pantin, Vivswan Shah, Nathan Youngblood, "Realization of an integrated photonic platform for coherent photoelectric
 processing," *Under Review* (2023) [Link](https://doi.org/10.1364/opticaopen.24250795.v1)
