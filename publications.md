@@ -13,9 +13,10 @@ use-site-title: false
 
 * Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *Under Review* (2024) [Link](https://arxiv.org/abs/2402.02593)
 
-<h3>2023</h3>
 * Sadra Rahimi Kari, Nicholas A. Nobile, Dominique Pantin, Vivswan Shah, Nathan Youngblood, "Realization of an integrated photonic platform for coherent photoelectric
-processing," *Under Review* (2023) [Link](https://doi.org/10.1364/opticaopen.24250795.v1)
+processing," *Accepted in ***Optica*** (2024) [Link](https://doi.org/10.1364/opticaopen.24250795.v1)
+
+<h3>2023</h3>
 
 * Nicholas Nobile, John Erickson, Carlos Ríos, Yifei Zhang, Juejun Hu, Steven Vitale, Feng Xiong, Nathan Youngblood, "Time-resolved temperature mapping leveraging the strong thermo-optic effect in phase-change materials," ***ACS Photonics*** 10(10), 3576–3585 (2023) [Link](https://doi.org/10.1021/acsphotonics.3c00620)
 
@@ -126,13 +127,21 @@ processing," *Under Review* (2023) [Link](https://doi.org/10.1364/opticaopen.242
 
 <h2>Conference Proceedings</h2>
 
+* N. Nobile, C. Lian, H. Sun, Y.-S. Huang, B. Mills, C. Constantin Popescu, D. Callahan, J. Hu, C.A. Ríos Ocampo, N. Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, Charlotte, NC (2024)
+
+* F. Vasquez-Aza, H. Sun, C. Lian, Y.S. Huang, S. A. Vitale, I. Takeuchi, J. Hu, N. Youngblood, C. Rios, G. Pavlidis, "Maximizing the Thermal Performance of Microheaters for Non-Volatile Phase Change Photonics: A Comparative Study of Pulse Width Parameter Effects," ***IEEE ITherm 2024***, Denver, CO (May 2024)
+
+* S. Rahimi Kari, D. Pantin, N. Youngblood, "Scalable and efficient coherent photonic unit cell for time-multiplexed multiplication and correlation detection," ***SPIE Photonics West***, San Francisco, CA (Jan 2023)
+
+* V. Shah, N. Youngblood, "AnalogVNN: A Fully Modular Framework for Photonic Analog Neural Networks," ***IEEE IPC 2022***, Vancouver, Canada (Nov 2022)
+
 * N. Nobile, J. Erickson, C. Rios, Y. Zhang, JJ Hu, F. Xiong, N. Youngblood, "Dynamic Mapping of Temperature Using Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
 * N. Farmakidis, N. Youngblood, J. S. Lee, J. Feldmann, W. H. P. Pernice, C. D. Wright, H. Bhaskaran, "Plasmonically Enhanced Electronically Addressable Photonic Switches Incorporating Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
 * W. Zhou, X. Li, N. Youngblood, W. H. P. Pernice, C. D. Wright, H. Bhaskaran, "Electrical switching of Ge2Sb2Te5 memory cells based on silicon photonic waveguide microheaters," ***Conference on Lasers and Electro-Optics (CLEO)***, San Jose, CA (2022)
 
-* J. Erickson, V. Shah, Q. Wan, N. Youngblood, F. Xiong, “Designing fast and efficient electrically driven phase change photonics using foundry compatible waveguide-integrated microheaters,” ***Photonics and Electronics Research Symposium (PIERS)***, Hangzhou, China (2022)
+* J. Erickson, V. Shah, Q. Wan, N. Youngblood, F. Xiong, "Designing fast and efficient electrically driven phase change photonics using foundry compatible waveguide-integrated microheaters," ***Photonics and Electronics Research Symposium (PIERS)***, Hangzhou, China (2022)
 
 * J. Tan, Z. Cheng, J. Feldmann, X. Li, N. Youngblood, U. E. Ali, C. D. Wright, W. H. P. Pernice, H. Bhaskaran, "Associative learning on phase change photonics," ***SPIE Nanoscience + Engineering***, San Diego, CA (2021)
 
