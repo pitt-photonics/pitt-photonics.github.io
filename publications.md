@@ -127,6 +127,8 @@ matrix operations," *Accepted in **Optica*** (2024) [Link](https://doi.org/10.13
 
 <h2>Conference Proceedings</h2>
 
+* S. Rahimi Kari, A. Hastings, N. Nobile, D. Pantin, V. Shah, N. Youngblood, "Integrated Coherent Photonic Crossbar Arrays for Efficient Optical Computing," ***Conference on Lasers and Electro-Optics (CLEO)***, Charlotte, NC (2024)
+
 * N. Nobile, C. Lian, H. Sun, Y.-S. Huang, B. Mills, C. Constantin Popescu, D. Callahan, J. Hu, C.A. Ríos Ocampo, N. Youngblood, "Nonvolatile Tuning of Bragg Structures Using Transparent Phase-Change Materials," ***Conference on Lasers and Electro-Optics (CLEO)***, Charlotte, NC (2024)
 
 * F. Vasquez-Aza, H. Sun, C. Lian, Y.S. Huang, S. A. Vitale, I. Takeuchi, J. Hu, N. Youngblood, C. Rios, G. Pavlidis, "Maximizing the Thermal Performance of Microheaters for Non-Volatile Phase Change Photonics: A Comparative Study of Pulse Width Parameter Effects," ***IEEE ITherm 2024***, Denver, CO (May 2024)
