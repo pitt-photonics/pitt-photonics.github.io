@@ -10,7 +10,7 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2024</h3>
-* Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," Under Review (2024) [Link](https://arxiv.org/abs/2407.00059)
+* Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," *Under Review* (2024) [Link](https://arxiv.org/abs/2407.00059)
 
 * Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *Under Review* (2024) [Link](https://arxiv.org/abs/2402.02593)
 
