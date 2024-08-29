@@ -14,6 +14,7 @@ use-site-title: false
 <span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_2024.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
 <p style="margin: 10px 0">
 Assistant Professor<br>
+ - William Kepler Whiteford Faculty Fellow (Fall 2024-Present)<br>
  - ECE Department, University of Pittsburgh (Fall 2019-Present)<br>
 Educational background:<br>
  - Postdoc in Department of Materials, University of Oxford (2017-2019)<br>
@@ -103,16 +104,29 @@ Email: shg108 [at] pitt.edu<br>
 </p>
 </div>
 
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_max.png" height="250" width="250"/>
+<h3>Max Hinkle</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - ECE Department, University of Pittsburgh (Fall 2024-Present)<br>
+Educational background:<br>
+ - MSc in MSE, Tulane University (2021-2022)<br>
+ - BSc in Engineering Physics, Tulane University (2017-2021)<br>
+Email: mrh241 [at] pitt.edu<br>
+</p>
+</div>
+
 <hr>
 
 <h2>Undergraduate Students</h2>
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_dominique.jpg" height="250" width="250"/>
-<h3>Dominique Pantin</h3>
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_liam.jpg" height="250" width="250"/>
+<h3>Liam O'Sullivan</h3>
 <p style="margin: 10px 0">
 Undergraduate Student<br>
- - ECE Department, University of Pittsburgh (Fall 2021-Present)<br>
-Email: dlp80 [at] pitt.edu<br>
+ - ECE Department, University of Pittsburgh (Fall 2022-Present)<br>
+Email: lao57 [at] pitt.edu<br>
 </p>
 </div>
 
@@ -126,12 +140,15 @@ Email: alh294 [at] pitt.edu<br>
 </p>
 </div>
 
-<div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_guhan.jpg" height="250" width="250"/>
-<h3>Guhan Kumaran</h3>
-<p style="margin: 10px 0">
-Undergraduate Student<br>
- - ECE Department, University of Pittsburgh (Fall 2021–Present)<br>
-Email: guk11 [at] pitt.edu<br>
-</p>
-</div>
+
+<h2>Group Alumni</h2>
+<h3>Graduate Students</h3>
+<p>John Erickson (2023)</p>
+
+<h3>Undergraduate Students</h3>
+<p>Jace Martin</p>
+<p>Christopher Kefalos</p>
+<p>Guhan Kumaran</p>
+<p>Dominique Pantin</p>
+<p>Renzhi Yougtian</p>
+<p>Tianyi Zheng</p>
