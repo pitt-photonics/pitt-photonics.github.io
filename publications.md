@@ -10,7 +10,7 @@ use-site-title: false
 <h2>Journal Articles</h2>
 
 <h3>2024</h3>
-* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” *accepted for publication in **Nature Photonics*** (2024)
+* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** (2024) [Link](https://www.nature.com/articles/s41566-024-01549-1)
 
 * Mengxin Zheng, Cheng Chu, Qian Lou, Nathan Youngblood, Mo Li, Sajjad Moazeni, Lei Jiang, "OFHE: An Electro-Optical Accelerator for Discretized TFHE," ***Proceedings of the 29th ACM/IEEE International Symposium on Low Power Electronics and Design*** (2024) [Link](https://arxiv.org/abs/2405.11607)
 
