@@ -17,7 +17,7 @@ use-site-title: false
 
 * Mengxin Zheng, Cheng Chu, Qian Lou, Nathan Youngblood, Mo Li, Sajjad Moazeni, Lei Jiang, "OFHE: An Electro-Optical Accelerator for Discretized TFHE," ***Proceedings of the 29th ACM/IEEE International Symposium on Low Power Electronics and Design*** (2024) [Link](https://arxiv.org/abs/2405.11607)
 
-* Sadra Rahimi Kari, Marcus Tamura, Zhimu Guo, Yi-Siou Huang, Hongyi Sun, Chuanyu Lian, Nicholas Nobile, John Erickson, Maryam Moridsadat, Carlos A. Ríos Ocampo, Bhavin J Shastri, Nathan Youngblood, "High-Speed Multifunctional Photonic Memory on a Foundry-Processed Photonic Platform," *Under Review* (2024) [Link](https://arxiv.org/abs/2409.13954)
+* Sadra Rahimi Kari, Marcus Tamura, Zhimu Guo, Yi-Siou Huang, Hongyi Sun, Chuanyu Lian, Nicholas Nobile, John Erickson, Maryam Moridsadat, Carlos A. Ríos Ocampo, Bhavin J Shastri, Nathan Youngblood, "High-Speed Multifunctional Photonic Memory on a Foundry-Processed Photonic Platform," ***Optica*** (2024) [Link](https://arxiv.org/abs/2409.13954)
 
 * Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," *Under Review* (2024) [Link](https://arxiv.org/abs/2407.00059)
 
