@@ -11,7 +11,7 @@ use-site-title: false
 
 <h3>2024</h3>
 
-* Daniel Upcraft, Daniel Vaz, Nathan Youngblood, Sang-Hyun Oh, “Efficient TE-polarized mode coupling between a plasmonic tunnel junction and a photonic waveguide,” ***Optics Express*** (2024)
+* Daniel Upcraft, Daniel Vaz, Nathan Youngblood, Sang-Hyun Oh, “Efficient TE-polarized mode coupling between a plasmonic tunnel junction and a photonic waveguide,” ***Optics Express*** 32(26) 47574-47588 (2024) [Link](https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-26-47574&id=565351)
 
 * Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** (2024) [Link](https://www.nature.com/articles/s41566-024-01549-1)
 
