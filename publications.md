@@ -9,11 +9,14 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2025</h3>
+
+* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** 19, 54–-62 (2025) [Link](https://www.nature.com/articles/s41566-024-01549-1)
+&nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Photonics News and Views***](https://doi.org/10.1038/s41566-024-01599-5)
+
 <h3>2024</h3>
 
 * Daniel Upcraft, Daniel Vaz, Nathan Youngblood, Sang-Hyun Oh, “Efficient TE-polarized mode coupling between a plasmonic tunnel junction and a photonic waveguide,” ***Optics Express*** 32(26) 47574-47588 (2024) [Link](https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-26-47574&id=565351)
-
-* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** (2024) [Link](https://www.nature.com/articles/s41566-024-01549-1)
 
 * Mengxin Zheng, Cheng Chu, Qian Lou, Nathan Youngblood, Mo Li, Sajjad Moazeni, Lei Jiang, "OFHE: An Electro-Optical Accelerator for Discretized TFHE," ***Proceedings of the 29th ACM/IEEE International Symposium on Low Power Electronics and Design*** (2024) [Link](https://arxiv.org/abs/2405.11607)
 
