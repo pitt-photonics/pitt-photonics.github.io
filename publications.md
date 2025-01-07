@@ -11,7 +11,8 @@ use-site-title: false
 
 <h3>2025</h3>
 
-* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** 19, 54–-62 (2025) [Link](https://www.nature.com/articles/s41566-024-01549-1)
+* Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** 19, 54-62 (2025) [Link](https://www.nature.com/articles/s41566-024-01549-1)
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;\- Featured on [***Nature Photonics News and Views***](https://doi.org/10.1038/s41566-024-01599-5)
 
 <h3>2024</h3>
