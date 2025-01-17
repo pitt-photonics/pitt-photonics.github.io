@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2025</h3>
 
+* Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics" *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
+
 * Sadra Rahimi Kari, Marcus Tamura, Zhimu Guo, Yi-Siou Huang, Hongyi Sun, Chuanyu Lian, Nicholas Nobile, John Erickson, Maryam Moridsadat, Carlos A. Ríos Ocampo, Bhavin J Shastri, Nathan Youngblood, "High-Speed Multifunctional Photonic Memory on a Foundry-Processed Photonic Platform," ***Optica*** 12(1), 31-38 (2025) [Link](https://doi.org/10.1364/OPTICA.536866)
 
 * Paolo Pintus, Mario Dumont, Vivswan Shah, Toshiya Murai, Yuya Shoji, Duanni Huang, Galan Moody, John E. Bowers, Nathan Youngblood, “Integrated nonreciprocal magneto-optics for photonic in-memory computing,” ***Nature Photonics*** 19, 54-62 (2025) [Link](https://www.nature.com/articles/s41566-024-01549-1)
