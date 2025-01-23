@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2025</h3>
 
+* Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *accepted for publication in **IEEE JSTQE*** (2025) [Link](https://arxiv.org/abs/2402.02593)
+
 * Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics" *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
 
 * Sadra Rahimi Kari, Marcus Tamura, Zhimu Guo, Yi-Siou Huang, Hongyi Sun, Chuanyu Lian, Nicholas Nobile, John Erickson, Maryam Moridsadat, Carlos A. Ríos Ocampo, Bhavin J Shastri, Nathan Youngblood, "High-Speed Multifunctional Photonic Memory on a Foundry-Processed Photonic Platform," ***Optica*** 12(1), 31-38 (2025) [Link](https://doi.org/10.1364/OPTICA.536866)
@@ -26,8 +28,6 @@ use-site-title: false
 * Mengxin Zheng, Cheng Chu, Qian Lou, Nathan Youngblood, Mo Li, Sajjad Moazeni, Lei Jiang, "OFHE: An Electro-Optical Accelerator for Discretized TFHE," ***Proceedings of the 29th ACM/IEEE International Symposium on Low Power Electronics and Design*** (2024) [Link](https://arxiv.org/abs/2405.11607)
 
 * Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," *Under Review* (2024) [Link](https://arxiv.org/abs/2407.00059)
-
-* Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *Under Review* (2024) [Link](https://arxiv.org/abs/2402.02593)
 
 * Sadra Rahimi Kari, Nicholas A. Nobile, Dominique Pantin, Vivswan Shah, Nathan Youngblood, "Realization of an integrated coherent photonic platform for scalable
 matrix operations," ***Optica*** 11(4), 542-551 (2024) [Link](https://doi.org/10.1364/OPTICA.507525)
