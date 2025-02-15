@@ -11,7 +11,9 @@ use-site-title: false
 
 <h3>2025</h3>
 
-* Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments," *accepted for publication in **IEEE JSTQE*** (2025) [Link](https://arxiv.org/abs/2402.02593)
+* Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” Submitted (2025)
+
+* Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments [Invited]," ***IEEE JSTQE*** 31(3), 1-9 (2025) [Link](https://doi.org/10.1109/JSTQE.2025.3534636)
 
 * Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics" *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
 
