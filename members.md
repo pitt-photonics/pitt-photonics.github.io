@@ -130,22 +130,12 @@ Email: lao57 [at] pitt.edu<br>
 </p>
 </div>
 
-<div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_allison.jpg" height="250" width="250"/>
-<h3>Allison Hastings</h3>
-<p style="margin: 10px 0">
-Undergraduate Student<br>
- - MEMS Department, University of Pittsburgh (Fall 2021-Present)<br>
-Email: alh294 [at] pitt.edu<br>
-</p>
-</div>
-
-
 <h2>Group Alumni</h2>
 <h3>Graduate Students</h3>
 <p>John Erickson (2023)</p>
 
 <h3>Undergraduate Students</h3>
+<p>Allison Hastings</p>
 <p>Jace Martin</p>
 <p>Christopher Kefalos</p>
 <p>Guhan Kumaran</p>
