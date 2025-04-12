@@ -117,6 +117,21 @@ Email: mrh241 [at] pitt.edu<br>
 </p>
 </div>
 
+<div style="display: inline-block; width: 100%;">
+<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_chunchun.jpg" height="250" width="250"/>
+<h3>Chunchun Wu</h3>
+<p style="margin: 10px 0">
+PhD Student<br>
+ - Department of Physics and Astronomy, University of Pittsburgh (Fall 2021-Present)<br>
+ - Andrew W. Mellon Fellowship 2024<br>
+Educational background:<br>
+ - Research Assistant, School of Physics, Peking University (2016-2021)<br>
+ - MS in Materials Science and Engineering, UESTC (2017-2021)<br>
+ - BS in Electrical Engineering, University of Electronic Science and Technology of China. (2013-2017)<br>
+Email: chw218 [at] pitt.edu<br>
+</p>
+</div>
+
 <hr>
 
 <h2>Undergraduate Students</h2>
