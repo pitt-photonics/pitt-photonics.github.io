@@ -13,6 +13,8 @@ use-site-title: false
 
 * Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” Submitted (2025) [Link](https://arxiv.org/abs/2502.10846)
 
+* Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," ***Nature Communications*** 16, 4291 (2025) [Link](https://doi.org/10.1038/s41467-025-59399-6)
+
 * Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments [Invited]," ***IEEE JSTQE*** 31(3), 1-9 (2025) [Link](https://doi.org/10.1109/JSTQE.2025.3534636)
 
 * Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics" *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
@@ -28,8 +30,6 @@ use-site-title: false
 * Daniel Upcraft, Daniel Vaz, Nathan Youngblood, Sang-Hyun Oh, “Efficient TE-polarized mode coupling between a plasmonic tunnel junction and a photonic waveguide,” ***Optics Express*** 32(26) 47574-47588 (2024) [Link](https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-26-47574&id=565351)
 
 * Mengxin Zheng, Cheng Chu, Qian Lou, Nathan Youngblood, Mo Li, Sajjad Moazeni, Lei Jiang, "OFHE: An Electro-Optical Accelerator for Discretized TFHE," ***Proceedings of the 29th ACM/IEEE International Symposium on Low Power Electronics and Design*** (2024) [Link](https://arxiv.org/abs/2405.11607)
-
-* Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," *Under Review* (2024) [Link](https://arxiv.org/abs/2407.00059)
 
 * Sadra Rahimi Kari, Nicholas A. Nobile, Dominique Pantin, Vivswan Shah, Nathan Youngblood, "Realization of an integrated coherent photonic platform for scalable
 matrix operations," ***Optica*** 11(4), 542-551 (2024) [Link](https://doi.org/10.1364/OPTICA.507525)
