@@ -15,7 +15,9 @@ use-site-title: false
 <p style="margin: 10px 0">
 Assistant Professor<br>
  - William Kepler Whiteford Faculty Fellow (Fall 2024-Present)<br>
- - ECE Department, University of Pittsburgh (Fall 2019-Present)<br>
+ - ECE Department, University of Pittsburgh (Spring 2025-Present)<br>
+ Assistant Professor<br>
+ - ECE Department, University of Pittsburgh (Fall 2019-Spring 2025)<br>
 Educational background:<br>
  - Postdoc in Department of Materials, University of Oxford (2017-2019)<br>
  - PhD in Electrical Engineering, University of Minnesota (2012-2016)<br>
