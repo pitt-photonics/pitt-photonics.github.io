@@ -13,10 +13,11 @@ use-site-title: false
 <h3>Nathan Youngblood</h3>
 <span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_2024.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
 <p style="margin: 10px 0">
-Assistant Professor<br>
+Associate Professor<br>
  - William Kepler Whiteford Faculty Fellow (Fall 2024-Present)<br>
  - ECE Department, University of Pittsburgh (Spring 2025-Present)<br>
- Assistant Professor<br>
+ - Physics and Astronomy Department (Secondary), University of Pittsburgh (Spring 2025-Present)<br>
+Assistant Professor<br>
  - ECE Department, University of Pittsburgh (Fall 2019-Spring 2025)<br>
 Educational background:<br>
  - Postdoc in Department of Materials, University of Oxford (2017-2019)<br>
