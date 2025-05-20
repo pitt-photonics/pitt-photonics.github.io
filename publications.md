@@ -11,7 +11,11 @@ use-site-title: false
 
 <h3>2025</h3>
 
-* Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” Submitted (2025) [Link](https://arxiv.org/abs/2502.10846)
+* Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” *Under Review* (2025) [Link](https://arxiv.org/abs/2502.10846)
+
+* Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor V. Bondarev, David W. Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” *Under Review* (2025)
+
+* Liang Liu, Sadra Rahimi Kari, Xin Xin, Nathan Youngblood, Youtao Zhang, Jun Yang, “LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning,” ***The 52nd ACM International Symposium on Computer Architecture (ISCA)***, Tokyo, Japan (2025)
 
 * Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," ***Nature Communications*** 16, 4291 (2025) [Link](https://doi.org/10.1038/s41467-025-59399-6)
 
