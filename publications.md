@@ -11,11 +11,15 @@ use-site-title: false
 
 <h3>2025</h3>
 
+* Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptibility on integrated photonic platform" *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
+
+* Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, MP Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene" *Under Review* (2025) [Link](https://www.researchsquare.com/article/rs-6838264/v1)
+
 * Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” *Under Review* (2025) [Link](https://arxiv.org/abs/2502.10846)
 
-* Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor V. Bondarev, David W. Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” *Under Review* (2025)
+* Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor V. Bondarev, David W. Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” *Under Review* (2025) [Link](https://arxiv.org/abs/2412.06941)
 
-* Liang Liu, Sadra Rahimi Kari, Xin Xin, Nathan Youngblood, Youtao Zhang, Jun Yang, “LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning,” ***The 52nd ACM International Symposium on Computer Architecture (ISCA)***, Tokyo, Japan (2025)
+* Liang Liu, Sadra Rahimi Kari, Xin Xin, Nathan Youngblood, Youtao Zhang, Jun Yang, “LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning,” ***The 52nd ACM International Symposium on Computer Architecture (ISCA)***, Tokyo, Japan (2025) [Link](https://dl.acm.org/doi/pdf/10.1145/3695053.3731053)
 
 * Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," ***Nature Communications*** 16, 4291 (2025) [Link](https://doi.org/10.1038/s41467-025-59399-6)
 
