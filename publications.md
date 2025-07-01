@@ -19,6 +19,8 @@ use-site-title: false
 
 * Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor V. Bondarev, David W. Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” *Under Review* (2025) [Link](https://arxiv.org/abs/2412.06941)
 
+* Nicholas A. Nobile, Vivswan Shah, Nathan Youngblood, "A Flexible Testbed for Prototyping Photonic Processors," *Accepted for publication in **Optics Express*** (2025)
+
 * Liang Liu, Sadra Rahimi Kari, Xin Xin, Nathan Youngblood, Youtao Zhang, Jun Yang, “LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning,” ***The 52nd ACM International Symposium on Computer Architecture (ISCA)***, Tokyo, Japan (2025) [Link](https://dl.acm.org/doi/pdf/10.1145/3695053.3731053)
 
 * Hongyi Sun, Chuanyu Lian, Francis Vásquez-Aza, Sadra Rahimi Kari, Yi-Siou Huang, Alessandro Restelli, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Georges Pavlidis, Carlos A. Ríos Ocampo, "Microheater hotspot engineering for repeatable multi-level switching in foundry-processed phase change silicon photonics," ***Nature Communications*** 16, 4291 (2025) [Link](https://doi.org/10.1038/s41467-025-59399-6)
