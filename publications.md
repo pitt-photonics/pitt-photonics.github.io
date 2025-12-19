@@ -21,7 +21,7 @@ use-site-title: false
 
 * Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor Bondarev and David Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” ***Reports on Progress in Physics*** (2025) [Link](https://iopscience.iop.org/article/10.1088/1361-6633/ae2ba1)
 
-* Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, M. P. Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene" ***npj Unconventional Computing*** 2, 28 (2025) [Link](https://www.researchsquare.com/article/rs-6838264/v1)
+* Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, M. P. Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene" ***npj Unconventional Computing*** 2, 28 (2025) [Link](https://doi.org/10.1038/s44335-025-00042-4)
 
 * Nicholas A. Nobile, Vivswan Shah, Nathan Youngblood, "A Flexible Testbed for Prototyping Photonic Processors," ***Optics Express*** 33(21), 45154-45170 (2025) [Link](https://doi.org/10.1364/OE.566311)
 
