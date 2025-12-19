@@ -13,6 +13,8 @@ use-site-title: false
 
 * Xingyu Zhang, Nathan Rooney, Sadra R. Kari, Nicholas Nobile, Marcus Tamura, Zhimu Guo, Chuanyu Lian, Carlos A. Ríos Ocampo, Bhavin J Shastri, Feng Xiong, Nathan Youngblood, "Non-Volatile Trimming of Photonic Micro-Rings using Integrated and Electrically Programmable Phase-Change Elements" *Under Review* (2025)
 
+* Chih-Yu Lee, Yi-Siou Huang, Felix Adams, Chuanyu Lian, Hongyi Sun, Jie Zhao, Zichao Ye, Nathan Youngblood, Juejun Hu, Leslie H Allen, Yifei Mo, Ichiro Takeuchi, Carlos A. Ríos Ocampo, "Incorporating Si into Sb2Se3: Tailoring Optical Phase Change Materials via Nanocomposites" *Under Review* (2025) [Link](https://arxiv.org/abs/2510.14990)
+
 * Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptability on integrated photonic platform" *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
 
 * Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” *Under Review* (2025) [Link](https://arxiv.org/abs/2502.10846)
