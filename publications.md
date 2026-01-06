@@ -9,19 +9,23 @@ use-site-title: false
 
 <h2>Journal Articles</h2>
 
+<h3>2026</h3>
+
+* Carlos A. Ríos Ocampo, Nathan Youngblood, "Multiplying matrices in a single pass with light," ***Nature Photonics*** 20, 3-4 (2026) [Link](https://doi.org/10.1038/s41566-025-01828-5)
+
 <h3>2025</h3>
 
-* Xingyu Zhang, Nathan Rooney, Sadra R. Kari, Nicholas Nobile, Marcus Tamura, Zhimu Guo, Chuanyu Lian, Carlos A. Ríos Ocampo, Bhavin J Shastri, Feng Xiong, Nathan Youngblood, "Non-Volatile Trimming of Photonic Micro-Rings using Integrated and Electrically Programmable Phase-Change Elements" *Under Review* (2025)
+* Xingyu Zhang, Nathan Rooney, Sadra R. Kari, Nicholas Nobile, Marcus Tamura, Zhimu Guo, Chuanyu Lian, Carlos A. Ríos Ocampo, Bhavin J Shastri, Feng Xiong, Nathan Youngblood, "Non-Volatile Trimming of Photonic Micro-Rings using Integrated and Electrically Programmable Phase-Change Elements," *Under Review* (2025)
 
-* Chih-Yu Lee, Yi-Siou Huang, Felix Adams, Chuanyu Lian, Hongyi Sun, Jie Zhao, Zichao Ye, Nathan Youngblood, Juejun Hu, Leslie H Allen, Yifei Mo, Ichiro Takeuchi, Carlos A. Ríos Ocampo, "Incorporating Si into Sb2Se3: Tailoring Optical Phase Change Materials via Nanocomposites" *Under Review* (2025) [Link](https://arxiv.org/abs/2510.14990)
+* Chih-Yu Lee, Yi-Siou Huang, Felix Adams, Chuanyu Lian, Hongyi Sun, Jie Zhao, Zichao Ye, Nathan Youngblood, Juejun Hu, Leslie H Allen, Yifei Mo, Ichiro Takeuchi, Carlos A. Ríos Ocampo, "Incorporating Si into Sb2Se3: Tailoring Optical Phase Change Materials via Nanocomposites," *Under Review* (2025) [Link](https://arxiv.org/abs/2510.14990)
 
-* Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptability on integrated photonic platform" *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
+* Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptability on integrated photonic platform," *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
 
 * Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” *Under Review* (2025) [Link](https://arxiv.org/abs/2502.10846)
 
 * Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor Bondarev and David Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” ***Reports on Progress in Physics*** (2025) [Link](https://iopscience.iop.org/article/10.1088/1361-6633/ae2ba1)
 
-* Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, M. P. Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene" ***npj Unconventional Computing*** 2, 28 (2025) [Link](https://doi.org/10.1038/s44335-025-00042-4)
+* Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, M. P. Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene," ***npj Unconventional Computing*** 2, 28 (2025) [Link](https://doi.org/10.1038/s44335-025-00042-4)
 
 * Nicholas A. Nobile, Vivswan Shah, Nathan Youngblood, "A Flexible Testbed for Prototyping Photonic Processors," ***Optics Express*** 33(21), 45154-45170 (2025) [Link](https://doi.org/10.1364/OE.566311)
 
@@ -31,7 +35,7 @@ use-site-title: false
 
 * Vivswan Shah, Nathan Youngblood, "Leveraging Continuously Differentiable Activation Functions for Learning in Quantized Noisy Environments [Invited]," ***IEEE JSTQE*** 31(3), 1-9 (2025) [Link](https://doi.org/10.1109/JSTQE.2025.3534636)
 
-* Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics" *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
+* Nathan Youngblood, Carlos A. Ríos Ocampo, Juejun Hu, "Non-Volatile Materials for Photonic Computing" *to appear in* "Roadmap on Nueromorphic Photonics," *Under Review* (2025) [Link](https://arxiv.org/abs/2501.07917)
 
 * Sadra Rahimi Kari, Marcus Tamura, Zhimu Guo, Yi-Siou Huang, Hongyi Sun, Chuanyu Lian, Nicholas Nobile, John Erickson, Maryam Moridsadat, Carlos A. Ríos Ocampo, Bhavin J Shastri, Nathan Youngblood, "High-Speed Multifunctional Photonic Memory on a Foundry-Processed Photonic Platform," ***Optica*** 12(1), 31-38 (2025) [Link](https://doi.org/10.1364/OPTICA.536866)
 
