@@ -11,7 +11,7 @@ use-site-title: false
 <div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nathan.jpg" height="250" width="250"/>
 <h3>Nathan Youngblood</h3>
-<span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_2024.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
+<span style="font-family: 'Lora', 'Times New Roman', serif; font-size: 18px; color: #404040;">(<a href="../Youngblood_CV_2025.pdf">CV</a>, <a href="https://orcid.org/0000-0003-2552-9376">ORCID</a>, <a href="https://scholar.google.com/citations?user=TFgaqTwAAAAJ&hl=en">Google Scholar</a>)</span>
 <p style="margin: 10px 0">
 Associate Professor<br>
  - William Kepler Whiteford Faculty Fellow (Fall 2024-Present)<br>
@@ -31,19 +31,6 @@ Email: nathan [dot] youngblood [at] pitt.edu<br>
 
 <h2>Graduate Students</h2>
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_vivswan.jpg" height="250" width="250"/>
-<h3>Vivswan Shah</h3>
-<p style="margin: 10px 0">
-PhD Student<br>
- - ECE Department, University of Pittsburgh (Fall 2020-Present)<br>
-Educational background:<br>
- - BSc in Physics and Computer Science, Illinois College (2017-2020)<br>
-Email: vivswanshah [at] pitt.edu<br>
-Website: <a href="https://vivswan.github.io">vivswan.github.io</a>
-</p>
-</div>
-
-<div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_xingyu.jpg" height="250" width="250"/>
 <h3>Xingyu Zhang</h3>
 <p style="margin: 10px 0">
@@ -53,18 +40,6 @@ Educational background:<br>
  - MSc in MSE, University of Pennsylvania (2019-2020)<br>
  - BSc in MSE, Ohio State University (2015-2017)<br>
 Email: xiz219 [at] pitt.edu<br>
-</p>
-</div>
-
-<div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_nic.jpg" height="250" width="250"/>
-<h3>Nicholas Nobile</h3>
-<p style="margin: 10px 0">
-PhD Student<br>
- - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
-Educational background:<br>
- - BSc in ECE, University of Pittsburgh (2018-2021)<br>
-Email: nan65 [at] pitt.edu<br>
 </p>
 </div>
 
@@ -139,20 +114,40 @@ Email: chw218 [at] pitt.edu<br>
 
 <h2>Undergraduate Students</h2>
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_liam.jpg" height="250" width="250"/>
-<h3>Liam O'Sullivan</h3>
+<!-- <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_liam.jpg" height="250" width="250"/> -->
+<h3>Nathan Rooney</h3>
 <p style="margin: 10px 0">
 Undergraduate Student<br>
- - ECE Department, University of Pittsburgh (Fall 2022-Present)<br>
-Email: lao57 [at] pitt.edu<br>
+Email: NCR39 [at] pitt.edu<br>
+</p>
+</div>
+
+<div style="display: inline-block; width: 100%;">
+<!-- <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_liam.jpg" height="250" width="250"/> -->
+<h3>Shriya Krishnamurthy</h3>
+<p style="margin: 10px 0">
+Undergraduate Student<br>
+Email: shriya.k [at] pitt.edu<br>
 </p>
 </div>
 
 <h2>Group Alumni</h2>
 <h3>Graduate Students</h3>
-<p>John Erickson (2023)</p>
+<p>Nicholas Nobile (2026)<br>
+ - Current Position: Postdoc at Sandia National Labs
+</p>
+<p>Sadra Rahimi Kari (2025)<br>
+ - Current Position: Postdoc at UC Berkeley
+</p>
+<p>Vivswan Shah (2025)<br>
+ - Current Position: AI/ML Research Engineer at Microsoft AI
+</p>
+<p>John Erickson (2023)<br>
+ - Current Position: Scientist at BPMI
+</p>
 
 <h3>Undergraduate Students</h3>
+<p>Liam O'Sullivan</p>
 <p>Allison Hastings</p>
 <p>Jace Martin</p>
 <p>Christopher Kefalos</p>
