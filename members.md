@@ -44,19 +44,6 @@ Email: xiz219 [at] pitt.edu<br>
 </div>
 
 <div style="display: inline-block; width: 100%;">
-<img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_sadra.jpg" height="250" width="250"/>
-<h3>Sadra Rahimi Kari</h3>
-<p style="margin: 10px 0">
-PhD Student<br>
- - ECE Department, University of Pittsburgh (Spring 2022-Present)<br>
-Educational background:<br>
- - Research Assistant, Istanbul Technical University, Turkey (2020-2021)<br>
- - BSc in Electrical Engineering, University of Tabriz, Iran (2015-2019)<br>
-Email: sar247 [at] pitt.edu<br>
-</p>
-</div>
-
-<div style="display: inline-block; width: 100%;">
 <img style="float: left; margin: 20px 15px 15px 0px" src="/img/members_daniel.jpg" height="250" width="250"/>
 <h3>Daniel Vaz</h3>
 <p style="margin: 10px 0">
