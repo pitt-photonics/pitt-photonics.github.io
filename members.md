@@ -118,6 +118,8 @@ Email: shriya.k [at] pitt.edu<br>
 </p>
 </div>
 
+<hr>
+
 <h2>Group Alumni</h2>
 <h3>Graduate Students</h3>
 <p>Nicholas Nobile (2026)<br>
