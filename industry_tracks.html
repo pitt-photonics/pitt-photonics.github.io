@@ -103,6 +103,22 @@
             color: var(--pitt-gold);
         }
 
+        .salary-badge .amount sup {
+            font-size: 0.7rem;
+            margin-left: 2px;
+        }
+
+        .header-footnotes {
+            margin-top: 1.25rem;
+            font-size: 0.75rem;
+            opacity: 0.7;
+            line-height: 1.6;
+        }
+
+        .header-footnotes p {
+            margin: 0.25rem 0;
+        }
+
         main {
             max-width: 1100px;
             margin: 0 auto;
@@ -321,12 +337,16 @@
             <div class="salary-badges">
                 <div class="salary-badge">
                     <p class="industry">Optics &amp; Photonics Industry</p>
-                    <p class="amount">Median Salary: $158k</p>
+                    <p class="amount">Median Salary: $158k<sup>1</sup></p>
                 </div>
                 <div class="salary-badge">
                     <p class="industry">Semiconductor Industry</p>
-                    <p class="amount">Median Salary: $170k</p>
+                    <p class="amount">Median Salary: $170k<sup>2</sup></p>
                 </div>
+            </div>
+            <div class="header-footnotes">
+                <p><sup>1</sup> SPIE Optics &amp; Photonics Global Salary Report (2025)</p>
+                <p><sup>2</sup> Semiconductor Industry Association &amp; Oxford Economics Report (2021)</p>
             </div>
         </div>
     </header>
