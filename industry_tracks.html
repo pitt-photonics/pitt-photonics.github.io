@@ -167,14 +167,54 @@
         }
 
         .course {
-            display: flex;
-            align-items: baseline;
-            padding: 0.625rem 0;
             border-bottom: 1px solid #f0f0f0;
         }
 
         .course:last-child {
             border-bottom: none;
+        }
+
+        .course details {
+            padding: 0.625rem 0;
+        }
+
+        .course details summary {
+            display: flex;
+            align-items: baseline;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .course details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .course details summary::before {
+            content: '+';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--pitt-navy);
+            background: #f0f4f8;
+            border-radius: 3px;
+            flex-shrink: 0;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .course details[open] summary::before {
+            content: '−';
+            background: var(--pitt-gold);
+            color: var(--pitt-navy-dark);
+        }
+
+        .course details summary:hover::before {
+            background: var(--pitt-gold);
+            color: var(--pitt-navy-dark);
         }
 
         .course-number {
@@ -194,6 +234,17 @@
             color: var(--text-secondary);
             font-size: 0.85rem;
             margin-left: 0.5rem;
+        }
+
+        .course-description {
+            margin-top: 0.75rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-left: 3px solid var(--pitt-gold);
+            border-radius: 0 4px 4px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
         }
 
         footer {
@@ -240,9 +291,20 @@
                 padding: 1.25rem 1.5rem;
             }
 
-            .course {
+            .course details summary {
                 flex-direction: column;
                 gap: 0.25rem;
+            }
+
+            .course details summary::before {
+                position: absolute;
+                right: 0;
+                top: 0.625rem;
+            }
+
+            .course details {
+                position: relative;
+                padding-right: 30px;
             }
 
             .course-number {
@@ -279,28 +341,58 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">ECE 2272</span>
-                        <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2272</span>
+                                <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                            </summary>
+                            <div class="course-description">The goal of this course is to enable students to design basic photonic integrated circuits by providing them with an intuitive understanding of core photonic components (e.g. waveguides, couplers, resonators, etc.) as well as a solid grasp of the tools needed to simulate multi-component designs. By the end of the course, students should understand the steps needed to take a PIC design from original concept to fabrication at a foundry. This includes such topics as: on-chip filtering/routing using ring resonators and Bragg gratings; methods for optimizing bandwidth and on/off-chip coupling efficiency using edge and grating couplers; integrated high-speed silicon PN modulator design and optimization; integrated high-speed germanium PIN photodetector design and optimization; full photonic circuit simulation using the S-parameter method. Prerequisites: an undergraduate course covering the fundamentals of electromagnetic waves.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2240</span>
-                        <span class="course-title">Nano-Optics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2240</span>
+                                <span class="course-title">Nano-Optics</span>
+                            </summary>
+                            <div class="course-description">A graduate level course designed for students who want to understand the mechanisms of interaction of light and matter at the nanometer scale, and become acquainted with nano-optics-based technologies. Topics include: electromagnetic theory of optical interaction with matter, optical waves in periodic media, photonic bandgap structures, surface plasmons, optical interaction with metal nanostructures (metal nanoapertures and arrays, and metal nanoparticles), surface plasmon resonance spectroscopy, plasmon coupling and concentration/funneling of electromagnetic energy, surface-enhanced raman scattering, near-field imaging and microscopy, and negative refraction. Prerequisite: junior or senior level em theory course.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3235</span>
-                        <span class="course-title">Semiconductor Lasers</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3235</span>
+                                <span class="course-title">Semiconductor Lasers</span>
+                            </summary>
+                            <div class="course-description">Properties of heterojunctions, stimulated emission in semiconductors, carrier and optical confinement, fabrication and operating characteristics of semiconductor lasers including double-heterostructure lasers, quantum well lasers, distributed feedback lasers, surface emitting lasers, various modulation techniques of semiconductor lasers.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2231</span>
-                        <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2231</span>
+                                <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                            </summary>
+                            <div class="course-description">Fundamental quantum theory, electron in potential well, harmonic oscillator, band theory of solids, Kronig-Penny Model.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2192</span>
-                        <span class="course-title">Introduction to VLSI Design</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2192</span>
+                                <span class="course-title">Introduction to VLSI Design</span>
+                            </summary>
+                            <div class="course-description">Understand basic concepts and introductory techniques of modern integrated digital circuit design using Complementary Metal-Oxide-Semiconductor (CMOS) transistors. Learn how to design/simulate essential CMOS circuits for digital Very Large Scale Integration (VLSI) designs using state-of-the-art Computer Aided Design (CAD) tools.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2237</span>
-                        <span class="course-title">Analog Circuit Design</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2237</span>
+                                <span class="course-title">Analog Circuit Design</span>
+                            </summary>
+                            <div class="course-description">The objectives of this course are: to understand the operation of essential CMOS analog circuits and learn how to design them. To design the analog circuits using a 45nm CMOS process and verify their performance by SPICE simulation using a commercial EDA tool (Cadence Spectre). Topics include: comparators; two-stage amplifiers; folded-cascade amplifiers; voltage and current references; oscillators; linear regulators; switched-capacitor circuits; digital-to-analog converters, analog-to-digital converters; SAR ADCs; delta-sigma ADCs; second order effects & noise assignment; sensor interfaces. Prerequisites: ECE 1286 or equivalent</div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -315,28 +407,58 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">ECE 2235</span>
-                        <span class="course-title">Monolithic Integrated Circuits</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2235</span>
+                                <span class="course-title">Monolithic Integrated Circuits</span>
+                            </summary>
+                            <div class="course-description">Fabrication of integrated silicon monolithic circuits, thermal oxidation, solid state diffusion, epitaxial growth, ion implantation, photo and electron lithography, design considerations, active and passive elements in monolithic blocks, surface effects.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2231</span>
-                        <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2231</span>
+                                <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                            </summary>
+                            <div class="course-description">Fundamental quantum theory, electron in potential well, harmonic oscillator, band theory of solids, Kronig-Penny Model.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2233</span>
-                        <span class="course-title">Focused Ion Beam and Scanning Electron Microscopy</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2233</span>
+                                <span class="course-title">Focused Ion Beam and Scanning Electron Microscopy</span>
+                            </summary>
+                            <div class="course-description">This course introduces the basic theory of FIB, SEM, X-EDS, and EBSD instrumentation, milling, deposition, and analytical capabilities. It discusses and presents the theory directly related to applications and techniques used in FIB/SEM dual beam platform instruments. Throughout the course, the students will be exposed to these methods and required to apply them to real research projects either provided by the instructor or from their research supervisors.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2260</span>
-                        <span class="course-title">Scanning Probe Microscopy Characterization and Nanofabrication</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2260</span>
+                                <span class="course-title">Scanning Probe Microscopy Characterization and Nanofabrication</span>
+                            </summary>
+                            <div class="course-description">The course concentrates on both theoretical and practical issues of advanced scanning problem microscopy (SPM) techniques. It introduces concepts, theoretical backgrounds, and operation principles of varieties of scanning probe microscopies; addresses the fundamental physical phenomena underlying the SPM imaging mechanism; covers the practical aspects of SPM characterization of a wide range of materials as well as operation devices; discusses SPM-based approaches to nanofabrication and nanolithography such as dip-pen nanolithography and nano-robotic manipulation.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3233</span>
-                        <span class="course-title">Semiconductor Device Modeling</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3233</span>
+                                <span class="course-title">Semiconductor Device Modeling</span>
+                            </summary>
+                            <div class="course-description">Covers advanced topics in the field of solid-state electronic devices such as the physics and theory of metal-semiconductor contacts, MOSFETs, and high electron mobility transistors.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2262</span>
-                        <span class="course-title">Low-Dimensional Nanoelectronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2262</span>
+                                <span class="course-title">Low-Dimensional Nanoelectronic Devices</span>
+                            </summary>
+                            <div class="course-description">This graduate course discusses the electrical transport, electrothermal interactions, and power dissipation in emerging low-dimensional (1D and 2D) nanoelectronics. Topics include band structures, electronic transport in 1D nanowire and nanotubes as well as layered 2D materials (graphene, transition metal dichalcogenides, black phosphorus, and etc.), electrothermal interactions in nanoelectronics, power dissipation in nanoelectronics, thermometry, and system-level power dissipation issues (breakdown, heat sink, etc.). This course is intended to bridge a gap between device operations, solid-state physics, thermal transport, and materials science.</div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -351,28 +473,58 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">ECE 2263</span>
-                        <span class="course-title">Emerging Memory Technology</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2263</span>
+                                <span class="course-title">Emerging Memory Technology</span>
+                            </summary>
+                            <div class="course-description">In today's big data era, trillions of sensors will connect every aspect of our lives to the Internet, constantly producing and processing an overwhelming amount of data. Conventional charge-based memory technology such as DRAM and Flash memory will not sustain the increasing demand for scalable, high-speed, energy-efficient and high density memory devices. In this special topic class, we will discuss the prospect and challenges of various emerging memory technology such as spin transfer torque random access memory (STT RAM), phase change memory (PCM), resistive random access memory (RRAM), conductive bridge random access memory (CBRAM) and possible applications in neuromorphic computing.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2231</span>
-                        <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2231</span>
+                                <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                            </summary>
+                            <div class="course-description">Fundamental quantum theory, electron in potential well, harmonic oscillator, band theory of solids, Kronig-Penny Model.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2235</span>
-                        <span class="course-title">Monolithic Integrated Circuits</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2235</span>
+                                <span class="course-title">Monolithic Integrated Circuits</span>
+                            </summary>
+                            <div class="course-description">Fabrication of integrated silicon monolithic circuits, thermal oxidation, solid state diffusion, epitaxial growth, ion implantation, photo and electron lithography, design considerations, active and passive elements in monolithic blocks, surface effects.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3233</span>
-                        <span class="course-title">Semiconductor Device Modeling</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3233</span>
+                                <span class="course-title">Semiconductor Device Modeling</span>
+                            </summary>
+                            <div class="course-description">Covers advanced topics in the field of solid-state electronic devices such as the physics and theory of metal-semiconductor contacts, MOSFETs, and high electron mobility transistors.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2262</span>
-                        <span class="course-title">Low-Dimensional Nanoelectronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2262</span>
+                                <span class="course-title">Low-Dimensional Nanoelectronic Devices</span>
+                            </summary>
+                            <div class="course-description">This graduate course discusses the electrical transport, electrothermal interactions, and power dissipation in emerging low-dimensional (1D and 2D) nanoelectronics. Topics include band structures, electronic transport in 1D nanowire and nanotubes as well as layered 2D materials (graphene, transition metal dichalcogenides, black phosphorus, and etc.), electrothermal interactions in nanoelectronics, power dissipation in nanoelectronics, thermometry, and system-level power dissipation issues (breakdown, heat sink, etc.). This course is intended to bridge a gap between device operations, solid-state physics, thermal transport, and materials science.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3162</span>
-                        <span class="course-title">Advanced Computer Microarchitecture</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2162</span>
+                                <span class="course-title">Computer Architecture 1</span>
+                            </summary>
+                            <div class="course-description">Review of basic architecture concepts, data representation, microprocessor and minicomputer architectures, memory and i/o subsystems, stack computers, parallel and pipelined computers</div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -387,28 +539,58 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">ECE 2240</span>
-                        <span class="course-title">Nano-Optics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2240</span>
+                                <span class="course-title">Nano-Optics</span>
+                            </summary>
+                            <div class="course-description">A graduate level course designed for students who want to understand the mechanisms of interaction of light and matter at the nanometer scale, and become acquainted with nano-optics-based technologies. Topics include: electromagnetic theory of optical interaction with matter, optical waves in periodic media, photonic bandgap structures, surface plasmons, optical interaction with metal nanostructures (metal nanoapertures and arrays, and metal nanoparticles), surface plasmon resonance spectroscopy, plasmon coupling and concentration/funneling of electromagnetic energy, surface-enhanced raman scattering, near-field imaging and microscopy, and negative refraction. Prerequisite: junior or senior level em theory course.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3235</span>
-                        <span class="course-title">Semiconductor Lasers</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3235</span>
+                                <span class="course-title">Semiconductor Lasers</span>
+                            </summary>
+                            <div class="course-description">Properties of heterojunctions, stimulated emission in semiconductors, carrier and optical confinement, fabrication and operating characteristics of semiconductor lasers including double-heterostructure lasers, quantum well lasers, distributed feedback lasers, surface emitting lasers, various modulation techniques of semiconductor lasers.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2272</span>
-                        <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2272</span>
+                                <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                            </summary>
+                            <div class="course-description">The goal of this course is to enable students to design basic photonic integrated circuits by providing them with an intuitive understanding of core photonic components (e.g. waveguides, couplers, resonators, etc.) as well as a solid grasp of the tools needed to simulate multi-component designs. By the end of the course, students should understand the steps needed to take a PIC design from original concept to fabrication at a foundry. This includes such topics as: on-chip filtering/routing using ring resonators and Bragg gratings; methods for optimizing bandwidth and on/off-chip coupling efficiency using edge and grating couplers; integrated high-speed silicon PN modulator design and optimization; integrated high-speed germanium PIN photodetector design and optimization; full photonic circuit simulation using the S-parameter method. Prerequisites: an undergraduate course covering the fundamentals of electromagnetic waves.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2390</span>
-                        <span class="course-title">Image Processing and Computer Vision</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2390</span>
+                                <span class="course-title">Image Processing and Computer Vision</span>
+                            </summary>
+                            <div class="course-description">This first level graduate course covers essential elements of image processing for computer vision and introductory subjects in computer vision; image segmentation: region-based, edge detection, scale space, active contours ; shape description, deformable templates; textures ; perspective camera model and its parameters; geometry of multiple (2) views, fundamental matrix; scene planes and homographies; consistent labeling; locating objects in 3-d space; motion analysis.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2523</span>
-                        <span class="course-title">Digital Signal Processing</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2523</span>
+                                <span class="course-title">Digital Signal Processing</span>
+                            </summary>
+                            <div class="course-description">Discrete-time signal processing, discrete Fourier transform and FFT implementation, design and stability considerations of FIR and IIR filters, filter implementation and finite register effects.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2525</span>
-                        <span class="course-title">Detection and Estimation Theory</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2525</span>
+                                <span class="course-title">Detection and Estimation Theory</span>
+                            </summary>
+                            <div class="course-description">A study of optimal techniques for extracting information from the observation of random variables or random signals. This includes hypothesis testing, estimation theory, optimal receiver design, wiener and Kalman-Bucy filtering, and applications such as digital communications and medical imaging.</div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -423,29 +605,59 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">Phys 3101</span>
-                        <span class="course-title">Intro to Nanophotonics</span>
-                        <span class="course-note">(taught by Zhujun Shi formerly of Meta)</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">Phys 3101</span>
+                                <span class="course-title">Intro to Nanophotonics</span>
+                                <span class="course-note">(taught by Zhujun Shi formerly of Meta)</span>
+                            </summary>
+                            <div class="course-description">This graduate course explores the physics and applications of manipulating light in nanostructures — from designing artificial optical materials to using photons for light-speed computation. Learn how nanophotonics drives breakthroughs in modern physics and everyday life! Topics include: Light-matter interaction, Guided wave optics, Optical resonances, Photonic crystals, Integrated photonics, Computational EM.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2240</span>
-                        <span class="course-title">Nano-Optics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2240</span>
+                                <span class="course-title">Nano-Optics</span>
+                            </summary>
+                            <div class="course-description">A graduate level course designed for students who want to understand the mechanisms of interaction of light and matter at the nanometer scale, and become acquainted with nano-optics-based technologies. Topics include: electromagnetic theory of optical interaction with matter, optical waves in periodic media, photonic bandgap structures, surface plasmons, optical interaction with metal nanostructures (metal nanoapertures and arrays, and metal nanoparticles), surface plasmon resonance spectroscopy, plasmon coupling and concentration/funneling of electromagnetic energy, surface-enhanced raman scattering, near-field imaging and microscopy, and negative refraction. Prerequisite: junior or senior level em theory course.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2390</span>
-                        <span class="course-title">Image Processing and Computer Vision</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2390</span>
+                                <span class="course-title">Image Processing and Computer Vision</span>
+                            </summary>
+                            <div class="course-description">This first level graduate course covers essential elements of image processing for computer vision and introductory subjects in computer vision; image segmentation: region-based, edge detection, scale space, active contours ; shape description, deformable templates; textures ; perspective camera model and its parameters; geometry of multiple (2) views, fundamental matrix; scene planes and homographies; consistent labeling; locating objects in 3-d space; motion analysis.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2264</span>
-                        <span class="course-title">Flexible Electronics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2264</span>
+                                <span class="course-title">Flexible Electronics</span>
+                            </summary>
+                            <div class="course-description">This course is designed to provide an understanding of scientific and technical aspects of the flexible electronics and to enable students to contribute to the rapidly developing flexible electronics information. The course aims to introduce graduate level students to semiconductor devices, modern electronic devices on flexible substrate, and wearable and stretchable devices.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2231</span>
-                        <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2231</span>
+                                <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                            </summary>
+                            <div class="course-description">Fundamental quantum theory, electron in potential well, harmonic oscillator, band theory of solids, Kronig-Penny Model.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3235</span>
-                        <span class="course-title">Semiconductor Lasers</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3235</span>
+                                <span class="course-title">Semiconductor Lasers</span>
+                            </summary>
+                            <div class="course-description">Properties of heterojunctions, stimulated emission in semiconductors, carrier and optical confinement, fabrication and operating characteristics of semiconductor lasers including double-heterostructure lasers, quantum well lasers, distributed feedback lasers, surface emitting lasers, various modulation techniques of semiconductor lasers.</div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -460,32 +672,67 @@
                 <p class="courses-label">Recommended Courses</p>
                 <div class="course-list">
                     <div class="course">
-                        <span class="course-number">ECE 2073</span>
-                        <span class="course-title">Introduction to Space Engineering</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2073</span>
+                                <span class="course-title">Introduction to Space Engineering</span>
+                            </summary>
+                            <div class="course-description">This course is a comprehensive overview of space engineering. Topics to be covered include: importance and applications of space, space environment, orbital mechanics, spacecraft dynamics, systems engineering, control systems, spacecraft subsystems (communication and data-handling subsystem, electrical power subsystem, environmental control and life-support subsystem, and structures), rocket propulsion, space operations, and space politics and economics.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2231</span>
-                        <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2231</span>
+                                <span class="course-title">Fundamentals of Semiconductor and Quantum Electronic Devices</span>
+                            </summary>
+                            <div class="course-description">Fundamental quantum theory, electron in potential well, harmonic oscillator, band theory of solids, Kronig-Penny Model.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 3235</span>
-                        <span class="course-title">Semiconductor Lasers</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 3235</span>
+                                <span class="course-title">Semiconductor Lasers</span>
+                            </summary>
+                            <div class="course-description">Properties of heterojunctions, stimulated emission in semiconductors, carrier and optical confinement, fabrication and operating characteristics of semiconductor lasers including double-heterostructure lasers, quantum well lasers, distributed feedback lasers, surface emitting lasers, various modulation techniques of semiconductor lasers.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2272</span>
-                        <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2272</span>
+                                <span class="course-title">Simulation and Design of Silicon Photonics</span>
+                            </summary>
+                            <div class="course-description">The goal of this course is to enable students to design basic photonic integrated circuits by providing them with an intuitive understanding of core photonic components (e.g. waveguides, couplers, resonators, etc.) as well as a solid grasp of the tools needed to simulate multi-component designs. By the end of the course, students should understand the steps needed to take a PIC design from original concept to fabrication at a foundry. This includes such topics as: on-chip filtering/routing using ring resonators and Bragg gratings; methods for optimizing bandwidth and on/off-chip coupling efficiency using edge and grating couplers; integrated high-speed silicon PN modulator design and optimization; integrated high-speed germanium PIN photodetector design and optimization; full photonic circuit simulation using the S-parameter method. Prerequisites: an undergraduate course covering the fundamentals of electromagnetic waves.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2390</span>
-                        <span class="course-title">Image Processing and Computer Vision</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2390</span>
+                                <span class="course-title">Image Processing and Computer Vision</span>
+                            </summary>
+                            <div class="course-description">This first level graduate course covers essential elements of image processing for computer vision and introductory subjects in computer vision; image segmentation: region-based, edge detection, scale space, active contours ; shape description, deformable templates; textures ; perspective camera model and its parameters; geometry of multiple (2) views, fundamental matrix; scene planes and homographies; consistent labeling; locating objects in 3-d space; motion analysis.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2523</span>
-                        <span class="course-title">Digital Signal Processing</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2523</span>
+                                <span class="course-title">Digital Signal Processing</span>
+                            </summary>
+                            <div class="course-description">Discrete-time signal processing, discrete Fourier transform and FFT implementation, design and stability considerations of FIR and IIR filters, filter implementation and finite register effects.</div>
+                        </details>
                     </div>
                     <div class="course">
-                        <span class="course-number">ECE 2525</span>
-                        <span class="course-title">Detection and Estimation Theory</span>
+                        <details>
+                            <summary>
+                                <span class="course-number">ECE 2525</span>
+                                <span class="course-title">Detection and Estimation Theory</span>
+                            </summary>
+                            <div class="course-description">A study of optimal techniques for extracting information from the observation of random variables or random signals. This includes hypothesis testing, estimation theory, optimal receiver design, wiener and Kalman-Bucy filtering, and applications such as digital communications and medical imaging.</div>
+                        </details>
                     </div>
                 </div>
             </div>
