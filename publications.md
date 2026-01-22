@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2026</h3>
 
+* Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor Bondarev and David Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” ***Reports on Progress in Physics*** 89, 018003 (2026) [Link](https://iopscience.iop.org/article/10.1088/1361-6633/ae2ba1)
+
 * Carlos A. Ríos Ocampo, Nathan Youngblood, "Multiplying matrices in a single pass with light," ***Nature Photonics*** 20, 3-4 (2026) [Link](https://doi.org/10.1038/s41566-025-01828-5)
 
 <h3>2025</h3>
@@ -22,8 +24,6 @@ use-site-title: false
 * Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptability on integrated photonic platform," *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
 
 * Sadra Rahimi Kari, Paolo Pintus, John E. Bowers, Matt Robbins, Nathan Youngblood, “Enabling High-Bandwidth Coherent Modulation Through Scalable Lithium Niobate Resonant Devices,” *Under Review* (2025) [Link](https://arxiv.org/abs/2502.10846)
-
-* Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor Bondarev and David Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” ***Reports on Progress in Physics*** (2025) [Link](https://iopscience.iop.org/article/10.1088/1361-6633/ae2ba1)
 
 * Yuzhi He, Purun Simon Cao, Shahin Hashemkhani, Yihan Liu, Daniel Vaz, Keya Joy, Nathan Youngblood, Rajkumar Kubendran, M. P. Anantram, Feng Xiong, "Artificial Synapse with Tunable Dynamic Range for Neuromorphic Computing with Ion Intercalated Bilayer Graphene," ***npj Unconventional Computing*** 2, 28 (2025) [Link](https://doi.org/10.1038/s44335-025-00042-4)
 
