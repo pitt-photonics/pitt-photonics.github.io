@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2026</h3>
 
+* Chih-Yu Lee, Yi-Siou Huang, Felix Adams, Chuanyu Lian, Hongyi Sun, Jie Zhao, Zichao Ye, Nathan Youngblood, Juejun Hu, Leslie H Allen, Yifei Mo, Ichiro Takeuchi, Carlos A. Ríos Ocampo, "Incorporating Si into Sb2Se3: Tailoring Optical Phase Change Materials via Nanocomposites," ***Advanced Optical Materials*** (2026) [Link](https://arxiv.org/abs/2510.14990)
+
 * Qiaochu Wan, Daniel Vaz, Li Xiang, Anshul Ramavath, Brandon Vargo, Juntong Ye, Jonathan Beaumariage, Kenji Watanabe, Takashi Taniguchi, Zheng Sun, Dmitry Smirnov, Nathan Youngblood, Igor Bondarev and David Snoke, “Light-Induced Electron Pairing in a Bilayer Structure,” ***Reports on Progress in Physics*** 89, 018003 (2026) [Link](https://iopscience.iop.org/article/10.1088/1361-6633/ae2ba1)
 
 * Carlos A. Ríos Ocampo, Nathan Youngblood, "Multiplying matrices in a single pass with light," ***Nature Photonics*** 20, 3-4 (2026) [Link](https://doi.org/10.1038/s41566-025-01828-5)
@@ -18,8 +20,6 @@ use-site-title: false
 <h3>2025</h3>
 
 * Xingyu Zhang, Nathan Rooney, Sadra R. Kari, Nicholas Nobile, Marcus Tamura, Zhimu Guo, Chuanyu Lian, Carlos A. Ríos Ocampo, Bhavin J Shastri, Feng Xiong, Nathan Youngblood, "Non-Volatile Trimming of Photonic Micro-Rings using Integrated and Electrically Programmable Phase-Change Elements," *Under Review* (2025)
-
-* Chih-Yu Lee, Yi-Siou Huang, Felix Adams, Chuanyu Lian, Hongyi Sun, Jie Zhao, Zichao Ye, Nathan Youngblood, Juejun Hu, Leslie H Allen, Yifei Mo, Ichiro Takeuchi, Carlos A. Ríos Ocampo, "Incorporating Si into Sb2Se3: Tailoring Optical Phase Change Materials via Nanocomposites," *Under Review* (2025) [Link](https://arxiv.org/abs/2510.14990)
 
 * Zhimu Guo, A. Aadhi, Adam N.McCaughan, Alexander N. Tait, Nathan Youngblood, Sonia M. Buckley, Bhavin J. Shastri, "Fully analog end-to-end online training with real-time adaptability on integrated photonic platform," *Under Review* (2025) [Link](https://arxiv.org/abs/2506.18041)
 
