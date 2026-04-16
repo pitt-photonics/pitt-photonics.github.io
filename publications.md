@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2026</h3>
 
+* Shenghan Gao, Kathy Lüdge, Francesco Da Ros, Nathan Youngblood, "Distributed Coherent Optical Computing via Injection-Locked Photonic Networks," ***Arxiv*** [Link](https://arxiv.org/abs/2604.13450)
+
 * Francis Vasquez-Aza, Hongyi Sun, Chuanyu Lian, Yi-Siou Huang, Chih-Yu Lee, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Carlos A. Ríos Ocampo, Georges Pavlidis, "Electrothermal Design of Silicon-Doped Microheaters for Optical Phase Change Memory," ***IEEE Transactions on Electron Devices***, 1-7 (2026) [Link](https://doi.org/10.1109/TED.2026.3667672)
 
 * Xingyu Zhang, Nathan Rooney, Sadra R. Kari, Nicholas Nobile, Marcus Tamura, Zhimu Guo, Chuanyu Lian, Carlos A. Ríos Ocampo, Bhavin J Shastri, Feng Xiong, Nathan Youngblood, "Non-Volatile Trimming of Photonic Micro-Rings using Integrated and Electrically Programmable Phase-Change Elements [Invited]," ***Optical Materials Express*** 16, 721-732 (2026) [Link](https://doi.org/10.1364/OME.586135)
