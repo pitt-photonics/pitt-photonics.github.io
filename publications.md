@@ -11,7 +11,9 @@ use-site-title: false
 
 <h3>2026</h3>
 
-* Shenghan Gao, Kathy Lüdge, Francesco Da Ros, Nathan Youngblood, "Distributed Coherent Optical Computing via Injection-Locked Photonic Networks," ***Arxiv*** [Link](https://arxiv.org/abs/2604.13450)
+* Shenghan Gao, Kathy Lüdge, Francesco Da Ros, Nathan Youngblood, "Distributed Coherent Optical Computing via Injection-Locked Photonic Networks," ***arXiv*** 2604.13450 (2026) [Link](https://arxiv.org/abs/2604.13450)
+
+* Hongyi Sun, Yi-Siou Huang, Junyeob Song, Francis Vásquez-Aza, Christopher S Whittington, Nathan Youngblood, Sharon M Weiss, Georges Pavlidis, Amit Agrawal, Carlos A. Ríos Ocampo, "Ultra-Thin Aluminum-Doped Silver for Transmissive Thermally Reconfigurable Visible Photonics," *Under Review* (2026) [Link](https://arxiv.org/abs/2603.17042)
 
 * Francis Vasquez-Aza, Hongyi Sun, Chuanyu Lian, Yi-Siou Huang, Chih-Yu Lee, Steven A. Vitale, Ichiro Takeuchi, Juejun Hu, Nathan Youngblood, Carlos A. Ríos Ocampo, Georges Pavlidis, "Electrothermal Design of Silicon-Doped Microheaters for Optical Phase Change Memory," ***IEEE Transactions on Electron Devices***, 1-7 (2026) [Link](https://doi.org/10.1109/TED.2026.3667672)
 
