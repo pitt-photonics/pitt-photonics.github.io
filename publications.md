@@ -11,6 +11,8 @@ use-site-title: false
 
 <h3>2026</h3>
 
+* Xingyu Zhang, Daniel Vaz, Chi-Yi Kao, Marcus Tamura, Xiong Feng, Carlos A. Ríos Ocampo, Bhavin J. Shastri, Nathan Youngblood, "Energy-Efficient Non-Volatile Photonic Switching via Composition-Engineered Sn-Doped GST," *Under Review* (2026)
+
 * Shenghan Gao, Kathy Lüdge, Francesco Da Ros, Nathan Youngblood, "Distributed Coherent Optical Computing via Injection-Locked Photonic Networks," ***arXiv*** 2604.13450 (2026) [Link](https://arxiv.org/abs/2604.13450)
 
 * Hongyi Sun, Yi-Siou Huang, Junyeob Song, Francis Vásquez-Aza, Christopher S Whittington, Nathan Youngblood, Sharon M Weiss, Georges Pavlidis, Amit Agrawal, Carlos A. Ríos Ocampo, "Ultra-Thin Aluminum-Doped Silver for Transmissive Thermally Reconfigurable Visible Photonics," *Under Review* (2026) [Link](https://arxiv.org/abs/2603.17042)
