@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrier distributions — Fermi level, temperature, bandgap</title>
+<style>
+  :root{
+    --ground:#e7ebee;      /* cool vellum */
+    --plate:#fcfdfd;       /* figure plate */
+    --ink:#14181c;
+    --muted:#59636b;
+    --rule:#c3ccd2;
+    --rule-soft:#dde3e7;
+    --electron:#1b5fa8;    /* cobalt */
+    --hole:#a8203c;        /* carmine */
+    --fermi:#2e7d5b;       /* viridian */
+    --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans: "Helvetica Neue",Helvetica,Arial,"Segoe UI",system-ui,sans-serif;
+    --mono: ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:var(--sans); font-size:15px; line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    padding:28px 22px 56px;
+  }
+  .page{max-width:1180px;margin:0 auto}
+
+  h1{
+    font-family:var(--sans); font-weight:600; font-size:22px;
+    letter-spacing:-.012em; margin:0 0 4px;
+  }
+  .standfirst{
+    font-family:var(--serif); font-size:16px; line-height:1.55;
+    color:var(--muted); margin:0 0 22px; max-width:70ch;
+  }
+  var,.v{font-family:var(--serif);font-style:italic}
+  sub,sup{font-size:.7em}
+
+  /* ---------- controls ---------- */
+  .controls{
+    display:grid; gap:0;
+    grid-template-columns:minmax(150px,auto) 1fr 1.35fr;
+    border-top:1px solid var(--ink); border-bottom:1px solid var(--rule);
+  }
+  .group{padding:14px 20px 16px; border-left:1px solid var(--rule-soft)}
+  .group:first-child{border-left:0;padding-left:0}
+  .glabel{
+    display:flex; align-items:baseline; gap:8px;
+    font-size:12.5px; color:var(--muted); margin-bottom:9px;
+  }
+  .glabel b{font-weight:600;color:var(--ink);font-size:13px;letter-spacing:.01em}
+  .readback{font-family:var(--mono);font-size:12.5px;color:var(--ink);margin-left:auto}
+
+  .seg{display:flex}
+  .seg button{
+    flex:1 1 0; padding:7px 4px; background:var(--plate); color:var(--ink);
+    border:1px solid var(--rule); border-left-width:0; cursor:pointer;
+    font-family:var(--serif); font-size:15px; line-height:1.2;
+  }
+  .seg button:first-child{border-left-width:1px;border-radius:3px 0 0 3px}
+  .seg button:last-child{border-radius:0 3px 3px 0}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--plate);border-color:var(--ink)}
+  .seg small{display:block;font-family:var(--sans);font-size:10.5px;color:var(--muted);margin-top:1px}
+  .seg button[aria-pressed="true"] small{color:#aab7bf}
+
+  input[type=range]{
+    -webkit-appearance:none; appearance:none; width:100%; height:22px;
+    background:transparent; margin:0; cursor:ew-resize;
+  }
+  input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--rule);border-radius:2px}
+  input[type=range]::-moz-range-track{height:2px;background:var(--rule);border-radius:2px}
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:15px;height:15px;border-radius:50%;
+    background:var(--plate);border:2px solid var(--ink);margin-top:-7px;
+  }
+  input[type=range]::-moz-range-thumb{
+    width:15px;height:15px;border-radius:50%;background:var(--plate);border:2px solid var(--ink)
+  }
+  input[type=range]:focus-visible{outline:2px solid var(--fermi);outline-offset:3px}
+  #ef::-webkit-slider-thumb{border-color:var(--fermi)}
+  #ef::-moz-range-thumb{border-color:var(--fermi)}
+
+  .jumps{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .jumps button{
+    padding:4px 9px;font-size:12px;font-family:var(--sans);color:var(--muted);
+    background:none;border:1px solid var(--rule-soft);border-radius:3px;cursor:pointer;
+  }
+  .jumps button:hover{color:var(--ink);border-color:var(--muted)}
+  .scale-note{font-size:11.5px;color:var(--muted);margin-top:7px;font-family:var(--mono)}
+
+  .opts{
+    display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;
+    padding:11px 0 13px;border-bottom:1px solid var(--ink);
+  }
+  .opts label{display:flex;gap:7px;align-items:center;font-size:13px;color:var(--muted);cursor:pointer}
+  .opts input{accent-color:var(--ink);width:14px;height:14px;margin:0}
+  .opts label:hover{color:var(--ink)}
+  .modewrap{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
+  .seg.tiny{display:inline-flex}
+  .seg.tiny button{
+    font-family:var(--sans);font-size:12px;padding:4px 9px;flex:0 0 auto;
+  }
+  #png{
+    margin-left:auto;padding:5px 12px;font-size:12.5px;background:none;
+    border:1px solid var(--rule);border-radius:3px;color:var(--ink);cursor:pointer;font-family:var(--sans);
+  }
+  #png:hover{border-color:var(--ink)}
+
+  /* ---------- figure plate ---------- */
+  .plate-wrap{overflow-x:auto;margin:24px 0 0;background:var(--plate);border:1px solid var(--rule)}
+  .plate{min-width:900px;padding:0}
+  canvas{display:block;width:100%}
+  figcaption{
+    font-family:var(--serif);font-size:14px;line-height:1.5;color:var(--ink);
+    max-width:82ch;margin:12px 2px 0;
+  }
+  figcaption b{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.01em}
+  figure{margin:0}
+
+  /* ---------- numeric readout ---------- */
+  .status{
+    display:inline-block;margin:26px 0 10px;padding:4px 10px;font-size:12.5px;
+    border:1px solid currentColor;border-radius:3px;font-family:var(--mono);
+  }
+  .status.ok{color:var(--muted)}
+  .status.warn{color:var(--hole)}
+
+  table.num{border-collapse:collapse;width:100%;font-size:13.5px}
+  table.num caption{
+    text-align:left;font-size:13px;font-weight:600;padding:0 0 8px;letter-spacing:.01em;
+  }
+  table.num th,table.num td{
+    padding:7px 14px 7px 0;text-align:left;border-bottom:1px solid var(--rule-soft);vertical-align:baseline;
+  }
+  table.num th{font-weight:400;color:var(--muted);width:1%;white-space:nowrap;font-family:var(--serif);font-size:14.5px}
+  table.num td{font-family:var(--mono);font-size:13px}
+  table.num td.gloss{font-family:var(--sans);color:var(--muted);font-size:12.5px;width:44%}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+
+  details{margin-top:34px;border-top:1px solid var(--ink);padding-top:12px}
+  summary{cursor:pointer;font-size:13.5px;font-weight:600;letter-spacing:.01em}
+  details .body{font-family:var(--serif);font-size:15px;line-height:1.62;max-width:76ch;color:#222b30}
+  details .body p{margin:14px 0}
+  details .body ul{margin:12px 0;padding-left:20px}
+  details .body li{margin:6px 0}
+  .eq{font-family:var(--serif);font-size:16px;margin:14px 0 14px 4px}
+  details table{border-collapse:collapse;font-size:13.5px;margin:16px 0}
+  details table th,details table td{padding:5px 20px 5px 0;text-align:left;border-bottom:1px solid var(--rule-soft)}
+  details table th{font-weight:600;font-family:var(--sans);font-size:12.5px}
+  details table td{font-family:var(--mono);font-size:12.5px}
+  details table td:first-child{font-family:var(--serif);font-size:14.5px}
+
+  @media (max-width:820px){
+    .controls{grid-template-columns:1fr}
+    .group{border-left:0;border-top:1px solid var(--rule-soft);padding-left:0;padding-right:0}
+    .group:first-child{border-top:0}
+    .cols{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Carrier distributions in a semiconductor</h1>
+  <p class="standfirst">
+    Move the Fermi level and temperature to see how the density of states and the occupancy
+    factors combine into the electron and hole distributions. Panels share one energy axis,
+    with <var>E</var><sub>v</sub> taken as zero.
+  </p>
+
+  <div class="controls">
+    <div class="group">
+      <div class="glabel"><b>Material</b></div>
+      <div class="seg" id="mat" role="group" aria-label="Material">
+        <button data-m="Ge"   aria-pressed="false">Ge<small>0.66 eV</small></button>
+        <button data-m="Si"   aria-pressed="true">Si<small>1.12 eV</small></button>
+        <button data-m="GaAs" aria-pressed="false">GaAs<small>1.42 eV</small></button>
+      </div>
+      <div class="scale-note" id="massNote"></div>
+    </div>
+
+    <div class="group">
+      <div class="glabel"><b>Temperature</b><span class="readback" id="tOut">300 K</span></div>
+      <input type="range" id="temp" min="50" max="700" step="1" value="300" aria-label="Temperature in kelvin">
+      <div class="jumps">
+        <button data-t="77">77 K</button>
+        <button data-t="200">200 K</button>
+        <button data-t="300">300 K</button>
+        <button data-t="500">500 K</button>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="glabel"><b>Fermi level</b><span class="readback" id="efOut"></span></div>
+      <input type="range" id="ef" min="-0.3" max="1.42" step="0.001" value="0.56" aria-label="Fermi level in eV above the valence band edge">
+      <div class="jumps">
+        <button data-p="p">Below midgap</button>
+        <button data-p="i">Intrinsic</button>
+        <button data-p="n">Above midgap</button>
+        <button data-p="deg">Degenerate</button>
+      </div>
+      <div class="scale-note" id="efDetail"></div>
+    </div>
+  </div>
+
+  <div class="opts">
+    <label><input type="checkbox" id="varshni"> Let <var>E</var><sub>g</sub> follow temperature (Varshni)</label>
+    <label><input type="checkbox" id="boltz"> Overlay Boltzmann approximation</label>
+    <span class="modewrap">Carrier distribution scale
+      <span class="seg tiny" id="mode" role="group" aria-label="Carrier distribution scale">
+        <button data-s="log"    aria-pressed="true">Log, fixed</button>
+        <button data-s="shared" aria-pressed="false">Linear, shared</button>
+        <button data-s="each"   aria-pressed="false">Linear, per band</button>
+      </span>
+    </span>
+    <button id="png">Save plate as PNG</button>
+  </div>
+
+  <figure>
+    <div class="plate-wrap"><div class="plate"><canvas id="cv" role="img"
+      aria-label="Four aligned panels: energy band diagram, density of states, occupancy factors, and carrier distributions"></canvas></div></div>
+    <figcaption><b>Figure 1</b> &nbsp;Coordinated sketches of the energy band diagram, the density of
+      states, the occupancy factors <var>f</var>(<var>E</var>) and 1&nbsp;&minus;&nbsp;<var>f</var>(<var>E</var>),
+      and the resulting carrier distributions <var>g</var><sub>c</sub><var>f</var> and
+      <var>g</var><sub>v</sub>(1&nbsp;&minus;&nbsp;<var>f</var>). The energy axis spans the same
+      2.2&nbsp;eV for every material, centered on that material's 300&nbsp;K <var>E</var><sub>i</sub>,
+      and the carrier axis spans a fixed 1E+00 to 1E+22&nbsp;cm<sup>&minus;3</sup>eV<sup>&minus;1</sup>
+      shared by both bands, so panels taken at different settings can be compared directly.
+      After Pierret, <i>Semiconductor Device Fundamentals</i>, Fig.&nbsp;2.16.</figcaption>
+  </figure>
+
+  <div id="status" class="status ok"></div>
+
+  <div class="cols">
+    <table class="num">
+      <caption>Band and statistics parameters</caption>
+      <tbody>
+        <tr><th><var>kT</var></th><td id="v_kt"></td><td class="gloss">Thermal energy</td></tr>
+        <tr><th><var>E</var><sub>g</sub></th><td id="v_eg"></td><td class="gloss">Bandgap at this temperature</td></tr>
+        <tr><th><var>N</var><sub>C</sub></th><td id="v_nc"></td><td class="gloss">Effective conduction band density of states</td></tr>
+        <tr><th><var>N</var><sub>V</sub></th><td id="v_nv"></td><td class="gloss">Effective valence band density of states</td></tr>
+        <tr><th><var>E</var><sub>i</sub> &minus; midgap</th><td id="v_ei"></td><td class="gloss">Intrinsic level offset, (3<var>kT</var>/4)&thinsp;ln(<var>m</var><sub>p</sub>*/<var>m</var><sub>n</sub>*)</td></tr>
+        <tr><th><var>n</var><sub>i</sub></th><td id="v_ni"></td><td class="gloss">Intrinsic carrier concentration</td></tr>
+      </tbody>
+    </table>
+
+    <table class="num">
+      <caption>Carrier concentrations</caption>
+      <tbody>
+        <tr><th><var>n</var></th><td id="v_n"></td><td class="gloss">Area under <var>g</var><sub>c</sub><var>f</var>, integrated numerically</td></tr>
+        <tr><th><var>p</var></th><td id="v_p"></td><td class="gloss">Area under <var>g</var><sub>v</sub>(1&nbsp;&minus;&nbsp;<var>f</var>)</td></tr>
+        <tr><th><var>n</var> &minus; <var>p</var></th><td id="v_net"></td><td class="gloss">Net ionized doping required for neutrality</td></tr>
+        <tr><th><var>np</var>/<var>n</var><sub>i</sub><sup>2</sup></th><td id="v_np"></td><td class="gloss">Unity while Boltzmann statistics hold</td></tr>
+        <tr><th><var>n</var>/<var>n</var><sub>Boltz</sub></th><td id="v_nr"></td><td class="gloss">Error incurred by the Boltzmann approximation</td></tr>
+        <tr><th><var>p</var>/<var>p</var><sub>Boltz</sub></th><td id="v_pr"></td><td class="gloss">Same test on the valence band side</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details>
+    <summary>Model, parameters, and what is left out</summary>
+    <div class="body">
+      <p>Energies are referenced to the valence band edge, so <var>E</var><sub>v</sub>&nbsp;=&nbsp;0 and
+      <var>E</var><sub>c</sub>&nbsp;=&nbsp;<var>E</var><sub>g</sub>. The three ingredients are exactly
+      as specified:</p>
+      <div class="eq"><var>f</var>(<var>E</var>) = 1 / {1 + exp[(<var>E</var> &minus; <var>E</var><sub>F</sub>)/<var>kT</var>]}</div>
+      <div class="eq"><var>g</var><sub>c</sub>(<var>E</var>) = <var>m</var><sub>n</sub>*&thinsp;&radic;[2<var>m</var><sub>n</sub>*(<var>E</var> &minus; <var>E</var><sub>c</sub>)] / (&pi;<sup>2</sup>&#8463;<sup>3</sup>),&nbsp;&nbsp;<var>E</var> &ge; <var>E</var><sub>c</sub></div>
+      <div class="eq"><var>g</var><sub>v</sub>(<var>E</var>) = <var>m</var><sub>p</sub>*&thinsp;&radic;[2<var>m</var><sub>p</sub>*(<var>E</var><sub>v</sub> &minus; <var>E</var>)] / (&pi;<sup>2</sup>&#8463;<sup>3</sup>),&nbsp;&nbsp;<var>E</var> &le; <var>E</var><sub>v</sub></div>
+      <p>In practical units this is <var>g</var>(<var>E</var>) = 6.812&times;10<sup>21</sup>
+      (<var>m</var>*/<var>m</var><sub>0</sub>)<sup>3/2</sup> &radic;(&Delta;<var>E</var> in eV) cm<sup>&minus;3</sup>eV<sup>&minus;1</sup>,
+      with the factor of two for spin already contained in the expression above. The same coefficient
+      reproduces <var>N</var><sub>C</sub> = 2.51&times;10<sup>19</sup>(<var>m</var>*/<var>m</var><sub>0</sub>)<sup>3/2</sup>&nbsp;cm<sup>&minus;3</sup>
+      at 300&nbsp;K, which is the internal consistency check for the numbers in the tables.</p>
+
+      <p>Both axes are held fixed so that two settings can be compared by eye. The energy
+      window runs from &minus;0.35&nbsp;eV to <var>E</var><sub>g</sub>(300&nbsp;K)&nbsp;+&nbsp;0.35&nbsp;eV
+      and depends on the material alone, never on temperature or Fermi level; the Fermi level
+      slider stops 50&nbsp;meV short of each end so its marker always stays on the plate. The
+      carrier distribution axis is a fixed logarithmic decade scale from 1 to
+      10<sup>22</sup>&nbsp;cm<sup>&minus;3</sup>eV<sup>&minus;1</sup>, shared by both bands.
+      Two consequences are worth pointing out in class: the Boltzmann tail becomes a straight
+      line whose slope is 1/<var>kT</var>, and any part of a distribution falling below
+      1&nbsp;cm<sup>&minus;3</sup>eV<sup>&minus;1</sup> is simply not drawn, which is why the
+      minority carrier lobe disappears entirely once the material is strongly doped or cold.
+      The printed peak values under the panel are exact regardless of what fits on the axis.</p>
+
+      <p><var>n</var> and <var>p</var> are obtained by numerical quadrature of the plotted
+      distributions, i.e. as Fermi&ndash;Dirac integrals of order 1/2, not from the Boltzmann
+      approximation. The substitution <var>u</var> = &radic;(<var>E</var> &minus; <var>E</var><sub>c</sub>)
+      removes the square-root singularity at the band edge; Simpson's rule on 2000 intervals then
+      gives roughly six significant figures. The last two table rows compare the quadrature with
+      <var>n</var><sub>Boltz</sub> = <var>N</var><sub>C</sub>exp[&minus;(<var>E</var><sub>c</sub> &minus; <var>E</var><sub>F</sub>)/<var>kT</var>],
+      so the onset of degeneracy is visible as a numerical ratio rather than only as a warning.</p>
+
+      <table>
+        <thead><tr><th></th><th>Ge</th><th>Si</th><th>GaAs</th></tr></thead>
+        <tbody>
+          <tr><td><var>m</var><sub>n</sub>*/<var>m</var><sub>0</sub></td><td>0.55</td><td>1.18</td><td>0.066</td></tr>
+          <tr><td><var>m</var><sub>p</sub>*/<var>m</var><sub>0</sub></td><td>0.37</td><td>0.81</td><td>0.52</td></tr>
+          <tr><td><var>E</var><sub>g</sub>(300 K)</td><td>0.66 eV</td><td>1.12 eV</td><td>1.42 eV</td></tr>
+          <tr><td><var>E</var><sub>g</sub>(0), &alpha;, &beta;</td><td>0.7437, 4.774e-4, 235</td><td>1.170, 4.730e-4, 636</td><td>1.519, 5.405e-4, 204</td></tr>
+        </tbody>
+      </table>
+      <p>The effective masses are the 300&nbsp;K density-of-states values tabulated in Pierret,
+      Table&nbsp;2.1. Other compilations differ: Green's widely used values for silicon are 1.09 and
+      1.15, which change <var>N</var><sub>C</sub> and <var>N</var><sub>V</sub> by tens of percent
+      while leaving every curve shape unaffected. If the numbers here are to be compared against a
+      different table, that is the parameter to check first.</p>
+      <p>The optional temperature dependence uses the Varshni form
+      <var>E</var><sub>g</sub>(<var>T</var>) = <var>E</var><sub>g</sub>(0) &minus; &alpha;<var>T</var><sup>2</sup>/(<var>T</var> + &beta;),
+      with the parameters listed above; it is off by default so that the tabulated 300&nbsp;K gap is
+      used at every temperature.</p>
+
+      <p>Deliberate simplifications, all of which matter somewhere in a real device:</p>
+      <ul>
+        <li>Parabolic, isotropic bands with temperature-independent effective masses. Band
+          non-parabolicity is what makes GaAs, with its very light electron, degenerate at
+          modest doping.</li>
+        <li>No dopant levels, so no freeze-out and no incomplete ionization. The Fermi level is an
+          independent input here; in a real sample it is fixed by the doping through charge
+          neutrality, and the <var>n</var>&nbsp;&minus;&nbsp;<var>p</var> row states which net
+          ionized doping the chosen <var>E</var><sub>F</sub> would correspond to.</li>
+        <li>No bandgap narrowing, band tails, or impurity banding, all of which appear at the
+          concentrations reached by the degenerate preset.</li>
+        <li>Only the single lowest conduction band minimum is represented through one
+          density-of-states mass; the satellite valleys in GaAs are not included.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<script>
+"use strict";
+
+/* ------------------------------------------------------------------ physics */
+const KB   = 8.617333262e-5;   // eV/K
+const GC   = 6.812e21;         // cm^-3 eV^-1 ; g = GC * (m*/m0)^1.5 * sqrt(dE[eV])
+const SQPI = 0.8862269255;     // sqrt(pi)/2
+
+const MAT = {
+  Ge:   {label:"Ge",   mn:0.55,  mp:0.37, Eg300:0.66, E0:0.7437, a:4.774e-4, b:235},
+  Si:   {label:"Si",   mn:1.18,  mp:0.81, Eg300:1.12, E0:1.170,  a:4.730e-4, b:636},
+  GaAs: {label:"GaAs", mn:0.066, mp:0.52, Eg300:1.42, E0:1.519,  a:5.405e-4, b:204}
+};
+
+const st = {mat:"Si", T:300, EF:0.56, varshni:false, scale:"log", boltz:false};
+
+/* fixed energy window, referenced to the 300 K gap so sliders never move the axis */
+const EPAD = 0.35;                    // eV shown beyond each band edge
+/* Every material gets the same energy span, centered on its own 300 K intrinsic
+   level, so the vertical scale is identical for Ge, Si and GaAs and E_i sits on the
+   same center line in all three. The half-span is set by whichever material needs the
+   most room on either side of its E_i (GaAs), plus EPAD past its band edges. */
+const KT300 = KB*300;
+const ei300 = m => 0.5*m.Eg300 + 0.75*KT300*Math.log(m.mp/m.mn);
+const EHALF = EPAD + Math.max(...Object.values(MAT).map(m =>
+                Math.max(ei300(m), m.Eg300 - ei300(m))));
+const LOGMIN = 0, LOGMAX = 22;        // fixed decades of cm^-3 eV^-1 on the log axis
+const FLOOR = Math.pow(10, LOGMIN);
+
+const gapOf = (m,T) => st.varshni ? m.E0 - m.a*T*T/(T+m.b) : m.Eg300;
+
+function fermi(E, EF, kT){
+  const x = (E-EF)/kT;
+  if (x >  650) return 0;
+  if (x < -650) return 1;
+  return 1/(1+Math.exp(x));
+}
+
+/* 1 - f(E), written as 1/(1+exp[(E_F-E)/kT]) rather than as a subtraction.
+   Evaluating 1 - f directly loses the hole occupancy entirely once f is within
+   one double-precision epsilon of unity, i.e. for (E_F-E) > ~36 kT. */
+function fermiBar(E, EF, kT){
+  const x = (EF-E)/kT;
+  if (x >  650) return 0;
+  if (x < -650) return 1;
+  return 1/(1+Math.exp(x));
+}
+
+/* Fermi-Dirac integral of order 1/2, in cm^-3.
+   delta = EF-Ec for electrons, Ev-EF for holes (identical integrand). */
+function fdHalf(gamma, kT, delta){
+  const umax = Math.sqrt(Math.max(delta,0) + 35*kT);
+  const N = 2000, h = umax/N;
+  let s = 0;
+  for (let i=0;i<=N;i++){
+    const u = i*h;
+    const x = (u*u - delta)/kT;
+    const f = x>650 ? 0 : (x<-650 ? 1 : 1/(1+Math.exp(x)));
+    const w = (i===0||i===N) ? 1 : (i&1 ? 4 : 2);
+    s += w*2*u*u*f;
+  }
+  return GC*Math.pow(gamma,1.5)*s*h/3;
+}
+
+/* ------------------------------------------------------------------ format */
+function sci(x, d=2){
+  if (!isFinite(x)) return "\u2014";
+  if (x === 0) return "0";
+  const sign = x<0 ? "\u2212" : "";
+  x = Math.abs(x);
+  let e = Math.floor(Math.log10(x));
+  let m = x/Math.pow(10,e);
+  if (m >= 9.995){ m/=10; e++; }
+  const ex = (e<0?"-":"+") + String(Math.abs(e)).padStart(2,"0");
+  return sign + m.toFixed(d) + "E" + ex;
+}
+const fx = (x,d=3) => (x<0 ? "\u2212" : "") + Math.abs(x).toFixed(d);
+
+/* ------------------------------------------------------------------ canvas */
+const cv = document.getElementById("cv");
+const ctx = cv.getContext("2d");
+const CSS = getComputedStyle(document.documentElement);
+const C = k => CSS.getPropertyValue(k).trim();
+
+const SERIF = '"Iowan Old Style",Palatino,Georgia,serif';
+const SANS  = '"Helvetica Neue",Helvetica,Arial,sans-serif';
+const CAP   = '13px "Helvetica Neue",Helvetica,Arial,sans-serif';  /* panel footers */
+const AXN   = '12px "Helvetica Neue",Helvetica,Arial,sans-serif';  /* log decade ticks */
+
+/* draws "E_c", "g_{c}(E)f(E)" etc. with real subscripts; returns width */
+function sym(x, y, str, size, align="left", italic=true, color=null){
+  const parts = [];
+  for (let i=0;i<str.length;i++){
+    if (str[i] === "_"){
+      if (str[i+1] === "{"){
+        const j = str.indexOf("}", i);
+        parts.push([str.slice(i+2,j), true]); i = j;
+      } else { parts.push([str[i+1], true]); i++; }
+    } else {
+      const last = parts[parts.length-1];
+      if (last && !last[1]) last[0] += str[i]; else parts.push([str[i], false]);
+    }
+  }
+  const face = s => (italic ? "italic " : "") + s.toFixed(1) + "px " + SERIF;
+  let w = 0;
+  for (const [s,isSub] of parts){ ctx.font = face(isSub?size*0.7:size); w += ctx.measureText(s).width; }
+  let cx = align==="left" ? x : align==="center" ? x-w/2 : x-w;
+  if (color) ctx.fillStyle = color;
+  ctx.textBaseline = "alphabetic";
+  for (const [s,isSub] of parts){
+    ctx.font = face(isSub?size*0.7:size);
+    ctx.fillText(s, cx, y + (isSub?size*0.24:0));
+    cx += ctx.measureText(s).width;
+  }
+  return w;
+}
+
+function line(x1,y1,x2,y2,color,width,dash){
+  ctx.save();
+  ctx.beginPath(); ctx.setLineDash(dash||[]);
+  ctx.strokeStyle = color; ctx.lineWidth = width||1;
+  ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+  ctx.restore();
+}
+
+function niceCeil(x){
+  if (!(x>0)) return 1;
+  const e = Math.floor(Math.log10(x)), p = Math.pow(10,e), m = x/p;
+  const s = m<=1?1 : m<=1.5?1.5 : m<=2?2 : m<=2.5?2.5 : m<=3?3 : m<=4?4 :
+            m<=5?5 : m<=6?6 : m<=8?8 : 10;
+  return s*p;
+}
+
+function niceStep(range, target){
+  const raw = range/target, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p;
+  return (n<1.5?1:n<3?2:n<7?5:10)*p;
+}
+
+/* ------------------------------------------------------------------ render */
+function render(){
+  const M = MAT[st.mat], T = st.T, kT = KB*T;
+  const Eg = gapOf(M,T), Ev = 0, Ec = Eg, EF = st.EF;
+
+  /* -------- numbers -------- */
+  const NC = GC*Math.pow(M.mn,1.5)*SQPI*Math.pow(kT,1.5);
+  const NV = GC*Math.pow(M.mp,1.5)*SQPI*Math.pow(kT,1.5);
+  const ni = Math.sqrt(NC*NV)*Math.exp(-Eg/(2*kT));
+  const Ei = 0.5*(Ec+Ev) + 0.75*kT*Math.log(M.mp/M.mn);
+  const n  = fdHalf(M.mn, kT, EF-Ec);
+  const p  = fdHalf(M.mp, kT, Ev-EF);
+  const nB = NC*Math.exp(-(Ec-EF)/kT);
+  const pB = NV*Math.exp(-(EF-Ev)/kT);
+  const nondeg = (Ec-EF > 3*kT) && (EF-Ev > 3*kT);
+
+  document.getElementById("v_kt").textContent = (1000*kT).toFixed(2)+" meV";
+  document.getElementById("v_eg").textContent = Eg.toFixed(4)+" eV";
+  document.getElementById("v_nc").textContent = sci(NC)+" cm\u207B\u00B3";
+  document.getElementById("v_nv").textContent = sci(NV)+" cm\u207B\u00B3";
+  document.getElementById("v_ei").textContent = (Ei-0.5*Eg>=0?"+":"\u2212")+Math.abs(1000*(Ei-0.5*Eg)).toFixed(1)+" meV";
+  document.getElementById("v_ni").textContent = sci(ni)+" cm\u207B\u00B3";
+  document.getElementById("v_n").textContent  = sci(n)+" cm\u207B\u00B3";
+  document.getElementById("v_p").textContent  = sci(p)+" cm\u207B\u00B3";
+  document.getElementById("v_net").textContent= sci(n-p)+" cm\u207B\u00B3";
+  const ratio = (n>0 && p>0 && ni>0)
+    ? Math.exp(Math.log(n)+Math.log(p)-2*Math.log(ni)) : NaN;
+  document.getElementById("v_np").textContent = isFinite(ratio) ? ratio.toFixed(4) : "\u2014";
+  document.getElementById("v_nr").textContent = nB>0 ? (n/nB).toFixed(4) : "\u2014";
+  document.getElementById("v_pr").textContent = pB>0 ? (p/pB).toFixed(4) : "\u2014";
+
+  const stEl = document.getElementById("status");
+  if (nondeg){
+    stEl.className = "status ok";
+    stEl.innerHTML = "Nondegenerate: <var>E</var><sub>F</sub> sits more than 3<var>kT</var> inside the gap, so Boltzmann statistics are usable.";
+  } else {
+    stEl.className = "status warn";
+    stEl.innerHTML = "Degenerate: <var>E</var><sub>F</sub> lies within 3<var>kT</var> of a band edge, so the Boltzmann approximation overestimates the carrier density.";
+  }
+
+  /* -------- readbacks -------- */
+  document.getElementById("tOut").textContent = T+" K";
+  document.getElementById("efOut").textContent = fx(EF)+" eV above E_v";
+  document.getElementById("efDetail").textContent =
+    "E_c \u2212 E_F = "+fx(Ec-EF)+" eV    E_F \u2212 E_i = "+fx(EF-Ei)+" eV";
+  document.getElementById("massNote").textContent =
+    "m*_n/m\u2080 = "+M.mn+"   m*_p/m\u2080 = "+M.mp;
+
+  /* -------- geometry -------- */
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  const host = cv.parentElement;
+  const W = Math.max(900, host.clientWidth), H = 580;
+  cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr);
+  cv.style.height = H+"px";
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.fillStyle = C("--plate"); ctx.fillRect(0,0,W,H);
+
+  const mT=62, mB=76, mL=76, mR=26, gap=26;
+  const ph = H-mT-mB;
+  const pw = (W-mL-mR-3*gap)/4;
+  const px = i => mL + i*(pw+gap);
+
+  /* Same span for every material, centered on its 300 K E_i; it must not move with T
+     or E_F, so the axis stays comparable across Ge, Si and GaAs. Both slider end stops
+     (-0.30 eV and Eg300+0.30 eV) sit inside it with 130 meV to spare. */
+  const Emid = ei300(M);
+  const Emin = Emid - EHALF, Emax = Emid + EHALF;
+  const Y = E => mT + ph*(Emax-E)/(Emax-Emin);
+  const clampY = y => Math.min(Math.max(y, mT+16), mT+ph-6);
+
+  const ink=C("--ink"), muted=C("--muted"), rule=C("--rule"), soft=C("--rule-soft");
+  const el=C("--electron"), ho=C("--hole"), fm=C("--fermi");
+
+  /* -------- sampling -------- */
+  const NS = 420;
+  const uc = Math.sqrt(Math.max(Emax-Ec,0)), uv = Math.sqrt(Math.max(Ev-Emin,0));
+  const cb = [], vb = [];
+  for (let i=0;i<=NS;i++){
+    const u = uc*i/NS, E = Ec+u*u, g = GC*Math.pow(M.mn,1.5)*u;
+    cb.push({E, g, d:g*fermi(E,EF,kT), b:g*Math.exp(-(E-EF)/kT)});
+  }
+  for (let i=0;i<=NS;i++){
+    const u = uv*i/NS, E = Ev-u*u, g = GC*Math.pow(M.mp,1.5)*u;
+    vb.push({E, g, d:g*fermiBar(E,EF,kT), b:g*Math.exp(-(EF-E)/kT)});
+  }
+  const gMax = niceCeil(Math.max(cb[NS].g, vb[NS].g, 1e-30));
+  const dcMax = Math.max(...cb.map(o=>o.d), 1e-300);
+  const dvMax = Math.max(...vb.map(o=>o.d), 1e-300);
+  const dShared = niceCeil(Math.max(dcMax, dvMax));
+  const sc = st.scale === "each" ? dcMax : dShared;
+  const sv = st.scale === "each" ? dvMax : dShared;
+
+  /* occupancy samples: uniform grid, densified around E_F */
+  const occ = [];
+  for (let i=0;i<=300;i++) occ.push(Emin + (Emax-Emin)*i/300);
+  for (let i=0;i<=240;i++){
+    const e = EF + 12*kT*(i/120 - 1);
+    if (e>Emin && e<Emax) occ.push(e);
+  }
+  occ.sort((a,b)=>a-b);
+
+  /* -------- energy axis -------- */
+  const step = niceStep(Emax-Emin, 8);
+  ctx.textAlign = "right";
+  for (let t=Math.ceil(Emin/step)*step; t<=Emax+1e-9; t+=step){
+    const y = Y(t);
+    line(mL-9, y, mL-4, y, rule, 1);
+    ctx.fillStyle = muted; ctx.font = "11.5px "+SANS;
+    ctx.textBaseline = "middle";
+    ctx.fillText((Math.abs(t)<1e-9?0:t).toFixed(2), mL-14, y);
+  }
+  ctx.textAlign = "left";
+  line(mL-9, mT, mL-9, mT+ph, rule, 1);
+  ctx.save();
+  ctx.translate(20, mT+ph/2); ctx.rotate(-Math.PI/2);
+  sym(0, 0, "E  (eV),  E_v = 0", 13.5, "center", true, muted);
+  ctx.restore();
+
+  /* -------- panel titles + shared band rules -------- */
+  const titles = ["Energy band diagram","Density of states","Occupancy factors","Carrier distributions"];
+  ctx.textBaseline = "alphabetic";
+  for (let i=0;i<4;i++){
+    ctx.fillStyle = ink; ctx.font = "600 13px "+SANS; ctx.textAlign = "center";
+    ctx.fillText(titles[i], px(i)+pw/2, mT-30);
+    ctx.textAlign = "left";
+    line(px(i), mT-20, px(i)+pw, mT-20, soft, 1);
+    /* alignment rules at the three critical energies */
+    line(px(i), Y(Ec), px(i)+pw, Y(Ec), soft, 1);
+    line(px(i), Y(Ev), px(i)+pw, Y(Ev), soft, 1);
+    line(px(i), Y(EF), px(i)+pw, Y(EF), fm, 1, [2,4]);
+    /* baseline */
+    line(px(i), mT+ph, px(i)+pw, mT+ph, rule, 1);
+  }
+
+  /* ============ panel 1 : band diagram ============ */
+  {
+    const x0 = px(0), x1 = x0+pw;
+    ctx.fillStyle = "rgba(27,95,168,0.07)"; ctx.fillRect(x0, mT, pw, Y(Ec)-mT);
+    ctx.fillStyle = "rgba(168,32,60,0.07)"; ctx.fillRect(x0, Y(Ev), pw, mT+ph-Y(Ev));
+    line(x0, Y(Ec), x1, Y(Ec), ink, 2);
+    line(x0, Y(Ev), x1, Y(Ev), ink, 2);
+    line(x0, Y(EF), x1, Y(EF), fm, 1.6, [7,4]);
+    line(x0+pw*0.06, Y(Ei), x0+pw*0.94, Y(Ei), muted, 1, [1,4]);
+    const lx = x0 + 10;
+    ctx.fillStyle = ink; sym(lx, Y(Ec)-8, "E_c", 15);
+    ctx.fillStyle = ink; sym(lx, Y(Ev)+18, "E_v", 15);
+    sym(x1-8, Y(EF)-7, "E_F", 15, "right", true, fm);
+    sym(x1-8, Y(Ei)+15, "E_i", 12.5, "right", true, muted);
+    ctx.fillStyle = muted; ctx.font = CAP; ctx.textAlign = "center";
+    ctx.fillText(MAT[st.mat].label+",  Eg = "+Eg.toFixed(3)+" eV", x0+pw/2, mT+ph+22);
+    ctx.fillText(T+" K,  kT = "+(1000*kT).toFixed(1)+" meV", x0+pw/2, mT+ph+38);
+    ctx.textAlign = "left";
+  }
+
+  /* ============ panel 2 : density of states ============ */
+  {
+    const x0 = px(1), span = pw*0.9;
+    const X = g => x0 + span*g/gMax;
+    line(x0, mT, x0, mT+ph, rule, 1, [2,4]);
+    ctx.lineWidth = 1.9; ctx.lineJoin = "round";
+    ctx.strokeStyle = el; ctx.beginPath();
+    cb.forEach((o,i)=> i? ctx.lineTo(X(o.g),Y(o.E)) : ctx.moveTo(X(o.g),Y(o.E)));
+    ctx.stroke();
+    ctx.strokeStyle = ho; ctx.beginPath();
+    vb.forEach((o,i)=> i? ctx.lineTo(X(o.g),Y(o.E)) : ctx.moveTo(X(o.g),Y(o.E)));
+    ctx.stroke();
+    const ac = cb[Math.round(0.78*NS)], av = vb[Math.round(0.78*NS)];
+    sym(X(ac.g)+12, clampY(Y(ac.E)+5), "g_c(E)", 14.5, "left", true, el);
+    sym(X(av.g)+12, clampY(Y(av.E)+5), "g_v(E)", 14.5, "left", true, ho);
+    ctx.fillStyle = muted; ctx.font = CAP; ctx.textAlign = "center";
+    ctx.fillText("0 to "+sci(gMax)+" cm\u207B\u00B3eV\u207B\u00B9", x0+pw/2, mT+ph+22);
+    ctx.fillText("shared scale, both bands", x0+pw/2, mT+ph+38);
+    ctx.textAlign = "left";
+  }
+
+  /* ============ panel 3 : occupancy factors ============ */
+  {
+    const x0 = px(2), span = pw*0.9;
+    const X = v => x0 + span*v;
+    line(x0, mT, x0, mT+ph, rule, 1, [2,4]);
+    line(X(1), mT, X(1), mT+ph, soft, 1, [2,4]);
+    ctx.lineWidth = 1.9;
+    ctx.strokeStyle = ink; ctx.beginPath();
+    occ.forEach((E,i)=>{ const x=X(fermi(E,EF,kT)), y=Y(E); i?ctx.lineTo(x,y):ctx.moveTo(x,y); });
+    ctx.stroke();
+    ctx.save(); ctx.setLineDash([6,4]);
+    ctx.strokeStyle = muted; ctx.beginPath();
+    occ.forEach((E,i)=>{ const x=X(fermiBar(E,EF,kT)), y=Y(E); i?ctx.lineTo(x,y):ctx.moveTo(x,y); });
+    ctx.stroke(); ctx.restore();
+    ctx.fillStyle = fm; ctx.beginPath(); ctx.arc(X(0.5), Y(EF), 3.4, 0, 7); ctx.fill();
+    sym(X(0.20), clampY(Y(EF)-ph*0.26), "f(E)", 14.5, "right", true, ink);
+    sym(X(0.30), clampY(Y(EF)+ph*0.26), "1 \u2212 f(E)", 14.5, "right", true, muted);
+    ctx.fillStyle = muted; ctx.font = CAP; ctx.textAlign = "center";
+    ctx.fillText("0 to 1", x0+pw/2, mT+ph+22);
+    ctx.fillText("solid f(E), dashed 1 \u2212 f(E)", x0+pw/2, mT+ph+38);
+    ctx.textAlign = "left";
+  }
+
+  /* ============ panel 4 : carrier distributions ============ */
+  {
+    const x0 = px(3), span = pw*0.9, xr = x0+span;
+    const logMode = st.scale === "log";
+
+    /* one horizontal mapping, either fixed log decades or a linear full scale */
+    const XL = v => x0 + span*(Math.log10(v)-LOGMIN)/(LOGMAX-LOGMIN);
+    const map = (v, max) => logMode
+      ? Math.min(XL(Math.max(v, FLOOR)), xr)
+      : x0 + span*Math.min(v/max, 1.0);
+
+    if (logMode){
+      for (let d=LOGMIN; d<=LOGMAX; d++){
+        const x = XL(Math.pow(10,d)), major = (d-LOGMIN)%5 === 0;
+        line(x, mT, x, mT+ph, major?soft:"rgba(20,24,28,0.05)", 1);
+        if (major){
+          ctx.font = AXN; ctx.fillStyle = muted; ctx.textAlign = "center";
+          ctx.fillText("1E+"+String(d).padStart(2,"0"), x, mT+ph+16); ctx.textAlign = "left";
+        }
+      }
+    }
+    line(x0, mT, x0, mT+ph, rule, 1, [2,4]);
+
+    /* Draw one lobe. In log mode the curve is broken wherever it drops through the
+       floor, so the band edge (where g -> 0) does not smear along the axis. */
+    const lobe = (arr, key, max, stroke, fill, dashed) => {
+      let run = [];
+      const flush = () => {
+        if (run.length > 1){
+          if (!dashed){
+            ctx.beginPath(); ctx.moveTo(x0, Y(run[0].E));
+            run.forEach(o=> ctx.lineTo(map(o[key],max), Y(o.E)));
+            ctx.lineTo(x0, Y(run[run.length-1].E)); ctx.closePath();
+            ctx.fillStyle = fill; ctx.fill();
+          }
+          ctx.save();
+          if (dashed){ ctx.setLineDash([5,4]); ctx.globalAlpha = 0.75; }
+          ctx.lineWidth = dashed ? 1.3 : 1.9; ctx.strokeStyle = stroke;
+          ctx.beginPath();
+          run.forEach((o,i)=>{ const x=map(o[key],max), y=Y(o.E); i?ctx.lineTo(x,y):ctx.moveTo(x,y); });
+          ctx.stroke(); ctx.restore();
+        }
+        run = [];
+      };
+      for (const o of arr){
+        if (logMode ? o[key] > FLOOR : o[key] > 0) run.push(o); else flush();
+      }
+      flush();
+    };
+
+    lobe(cb, "d", sc, el, "rgba(27,95,168,0.20)");
+    lobe(vb, "d", sv, ho, "rgba(168,32,60,0.18)");
+    if (st.boltz){
+      lobe(cb, "b", sc, el, null, true);
+      lobe(vb, "b", sv, ho, null, true);
+    }
+
+    const pkC = cb.reduce((a,o)=> o.d>a.d?o:a, cb[0]);
+    const pkV = vb.reduce((a,o)=> o.d>a.d?o:a, vb[0]);
+    const place = (v, E, txt, color, dy) => {
+      const x = logMode ? Math.min(map(v,1), xr) : x0+span*0.50;
+      const left = logMode ? (x < x0+span*0.45) : true;
+      sym(left ? x+9 : x-9, clampY(Y(E)+dy), txt, 13.5, left?"left":"right", true, color);
+    };
+    place(pkC.d, pkC.E, "g_c(E)f(E)", el, -11);
+    place(pkV.d, pkV.E, "g_v(E)[1 \u2212 f(E)]", ho, 19);
+
+    const y1 = logMode ? 35 : 22, y2 = logMode ? 52 : 38;
+    ctx.font = CAP; ctx.textAlign = "center";
+    ctx.fillStyle = el;
+    ctx.fillText("electron peak "+sci(dcMax,2)+" cm\u207B\u00B3eV\u207B\u00B9", x0+pw/2, mT+ph+y1);
+    ctx.fillStyle = ho;
+    ctx.fillText("hole peak "+sci(dvMax,2)+" cm\u207B\u00B3eV\u207B\u00B9", x0+pw/2, mT+ph+y2);
+    if (!logMode){
+      ctx.fillStyle = muted;
+      ctx.fillText(st.scale === "each" ? "each band fills its own panel width"
+                                       : "0 to "+sci(dShared)+", shared", x0+pw/2, mT+ph+56);
+    }
+    ctx.textAlign = "left";
+  }
+}
+
+/* ------------------------------------------------------------------ wiring */
+const $ = id => document.getElementById(id);
+const efSlider = $("ef"), tSlider = $("temp");
+
+function setMaterial(key){
+  st.mat = key;
+  const M = MAT[key];
+  document.querySelectorAll("#mat button").forEach(b=>
+    b.setAttribute("aria-pressed", String(b.dataset.m === key)));
+  efSlider.min = -0.30;
+  efSlider.max = (M.Eg300 + 0.30).toFixed(3);
+  preset("i");   /* land on the new material's E_i rather than carrying E_F over */
+}
+
+function preset(kind){
+  const M = MAT[st.mat], kT = KB*st.T, Eg = gapOf(M, st.T);
+  const Ei = 0.5*Eg + 0.75*kT*Math.log(M.mp/M.mn);
+  const off = Math.min(0.15, 0.22*Eg);
+  const v = kind==="p" ? off : kind==="n" ? Eg-off : kind==="deg" ? Eg+0.05 : Ei;
+  st.EF = Math.min(Math.max(v, +efSlider.min), +efSlider.max);
+  efSlider.value = st.EF;
+}
+
+document.querySelectorAll("#mat button").forEach(b=>
+  b.addEventListener("click", ()=>{ setMaterial(b.dataset.m); render(); }));
+document.querySelectorAll(".jumps button[data-t]").forEach(b=>
+  b.addEventListener("click", ()=>{ st.T = +b.dataset.t; tSlider.value = st.T; render(); }));
+document.querySelectorAll(".jumps button[data-p]").forEach(b=>
+  b.addEventListener("click", ()=>{ preset(b.dataset.p); render(); }));
+tSlider.addEventListener("input", e=>{ st.T = +e.target.value; render(); });
+efSlider.addEventListener("input", e=>{ st.EF = +e.target.value; render(); });
+$("varshni").addEventListener("change", e=>{ st.varshni = e.target.checked; render(); });
+$("boltz").addEventListener("change",  e=>{ st.boltz  = e.target.checked; render(); });
+document.querySelectorAll("#mode button").forEach(b=>
+  b.addEventListener("click", ()=>{
+    st.scale = b.dataset.s;
+    document.querySelectorAll("#mode button").forEach(o=>
+      o.setAttribute("aria-pressed", String(o.dataset.s === st.scale)));
+    render();
+  }));
+
+$("png").addEventListener("click", ()=>{
+  cv.toBlob(blob=>{
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "carrier_distributions_"+st.mat+"_"+st.T+"K.png";
+    a.click(); URL.revokeObjectURL(a.href);
+  });
+});
+
+let raf = 0;
+window.addEventListener("resize", ()=>{
+  cancelAnimationFrame(raf); raf = requestAnimationFrame(render);
+});
+
+setMaterial("Si");
+render();
+</script>
+</body>
+</html>
