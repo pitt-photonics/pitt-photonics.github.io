@@ -11,7 +11,7 @@ use-site-title: false
 
 <h3>2026</h3>
 
-* Xingyu Zhang, Daniel Vaz, Chi-Yi Kao, Marcus Tamura, Xiong Feng, Carlos A. Ríos Ocampo, Bhavin J. Shastri, Nathan Youngblood, "Energy-Efficient Non-Volatile Photonic Switching via Composition-Engineered Sn-Doped GST," *Under Review* (2026)
+* Xingyu Zhang, Daniel Vaz, Chi-Yi Kao, Marcus Tamura, Xiong Feng, Carlos A. Ríos Ocampo, Bhavin J. Shastri, Nathan Youngblood, "Energy-Efficient Non-Volatile Photonic Switching via Composition-Engineered Sn-Doped GST," ***arXiv*** 2609.38404 (2026) [Link](https://arxiv.org/abs/2609.38404)
 
 * Shenghan Gao, Kathy Lüdge, Francesco Da Ros, Nathan Youngblood, "Distributed Coherent Optical Computing via Injection-Locked Photonic Networks," ***arXiv*** 2604.13450 (2026) [Link](https://arxiv.org/abs/2604.13450)
 

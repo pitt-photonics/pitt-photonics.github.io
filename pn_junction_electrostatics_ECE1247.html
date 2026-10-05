@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pn junction electrostatics — depletion region, field, potential, bands</title>
+<style>
+  :root{
+    --ground:#e7ebee;      /* cool vellum */
+    --plate:#fcfdfd;       /* figure plate */
+    --ink:#14181c;
+    --muted:#59636b;
+    --rule:#c3ccd2;
+    --rule-soft:#dde3e7;
+    --electron:#1b5fa8;    /* cobalt  : n side, donors, electrons */
+    --hole:#a8203c;        /* carmine : p side, acceptors, holes */
+    --fermi:#2e7d5b;       /* viridian: equilibrium Fermi level */
+    --exact:#6b3f9e;       /* plum    : numerical Poisson solution */
+    --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans: "Helvetica Neue",Helvetica,Arial,"Segoe UI",system-ui,sans-serif;
+    --mono: ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:var(--sans); font-size:15px; line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    padding:28px 22px 56px;
+  }
+  .page{max-width:1180px;margin:0 auto}
+
+  h1{
+    font-family:var(--sans); font-weight:600; font-size:22px;
+    letter-spacing:-.012em; margin:0 0 4px;
+  }
+  .standfirst{
+    font-family:var(--serif); font-size:16px; line-height:1.55;
+    color:var(--muted); margin:0 0 22px; max-width:70ch;
+  }
+  var,.v{font-family:var(--serif);font-style:italic}
+  sub,sup{font-size:.7em}
+
+  /* ---------- controls ---------- */
+  .controls{
+    display:grid; gap:0;
+    grid-template-columns:1fr 1fr 1.2fr;
+    border-top:1px solid var(--ink); border-bottom:1px solid var(--rule);
+  }
+  .group{padding:14px 20px 16px; border-left:1px solid var(--rule-soft)}
+  .group:first-child{border-left:0;padding-left:0}
+  .group:last-child{padding-right:0}
+  .glabel{
+    display:flex; align-items:baseline; gap:8px;
+    font-size:12.5px; color:var(--muted); margin-bottom:9px;
+  }
+  .glabel b{font-weight:600;color:var(--ink);font-size:13px;letter-spacing:.01em}
+  .readback{font-family:var(--mono);font-size:12.5px;color:var(--ink);margin-left:auto;white-space:nowrap}
+
+  .seg{display:flex}
+  .seg button{
+    flex:1 1 0; padding:7px 4px; background:var(--plate); color:var(--ink);
+    border:1px solid var(--rule); border-left-width:0; cursor:pointer;
+    font-family:var(--serif); font-size:15px; line-height:1.2;
+  }
+  .seg button:first-child{border-left-width:1px;border-radius:3px 0 0 3px}
+  .seg button:last-child{border-radius:0 3px 3px 0}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--plate);border-color:var(--ink)}
+
+  input[type=range]{
+    -webkit-appearance:none; appearance:none; width:100%; height:22px;
+    background:transparent; margin:0; cursor:ew-resize;
+  }
+  input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--rule);border-radius:2px}
+  input[type=range]::-moz-range-track{height:2px;background:var(--rule);border-radius:2px}
+  input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none;width:15px;height:15px;border-radius:50%;
+    background:var(--plate);border:2px solid var(--ink);margin-top:-7px;
+  }
+  input[type=range]::-moz-range-thumb{
+    width:15px;height:15px;border-radius:50%;background:var(--plate);border:2px solid var(--ink)
+  }
+  input[type=range]:focus-visible{outline:2px solid var(--fermi);outline-offset:3px}
+  #na::-webkit-slider-thumb{border-color:var(--hole)}
+  #na::-moz-range-thumb{border-color:var(--hole)}
+  #nd::-webkit-slider-thumb{border-color:var(--electron)}
+  #nd::-moz-range-thumb{border-color:var(--electron)}
+  button:focus-visible{outline:2px solid var(--fermi);outline-offset:2px}
+
+  .jumps{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .jumps button{
+    padding:4px 9px;font-size:12px;font-family:var(--sans);color:var(--muted);
+    background:none;border:1px solid var(--rule-soft);border-radius:3px;cursor:pointer;
+  }
+  .jumps button:hover{color:var(--ink);border-color:var(--muted)}
+  .scale-note{font-size:11.5px;color:var(--muted);margin-top:7px;font-family:var(--mono)}
+
+  .opts{
+    display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;
+    padding:11px 0 13px;border-bottom:1px solid var(--ink);
+  }
+  .opts label{display:flex;gap:7px;align-items:center;font-size:13px;color:var(--muted);cursor:pointer}
+  .opts input{accent-color:var(--ink);width:14px;height:14px;margin:0}
+  .opts label:hover{color:var(--ink)}
+  .modewrap{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--muted)}
+  .seg.tiny{display:inline-flex}
+  .seg.tiny button{
+    font-family:var(--sans);font-size:12px;padding:4px 9px;flex:0 0 auto;
+  }
+  .actions{margin-left:auto;display:flex;gap:8px}
+  .actions button{
+    padding:5px 12px;font-size:12.5px;background:none;
+    border:1px solid var(--rule);border-radius:3px;color:var(--ink);cursor:pointer;font-family:var(--sans);
+  }
+  .actions button:hover{border-color:var(--ink)}
+
+  /* ---------- figure plate ---------- */
+  .plate-wrap{overflow-x:auto;margin:24px 0 0;background:var(--plate);border:1px solid var(--rule)}
+  .plate{min-width:900px;padding:0}
+  canvas{display:block;width:100%}
+  figcaption{
+    font-family:var(--serif);font-size:14px;line-height:1.5;color:var(--ink);
+    max-width:82ch;margin:12px 2px 0;
+  }
+  figcaption b{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.01em}
+  figure{margin:0}
+
+  /* ---------- numeric readout ---------- */
+  .statusrow{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin:26px 0 12px}
+  .status{
+    display:inline-block;padding:4px 10px;font-size:12.5px;max-width:100%;
+    border:1px solid currentColor;border-radius:3px;font-family:var(--mono);
+  }
+  .status.ok{color:var(--muted)}
+  .status.warn{color:var(--hole)}
+
+  table.num{border-collapse:collapse;width:100%;font-size:13.5px}
+  table.num caption{
+    text-align:left;font-size:13px;font-weight:600;padding:0 0 8px;letter-spacing:.01em;
+  }
+  table.num th,table.num td{
+    padding:7px 14px 7px 0;text-align:left;border-bottom:1px solid var(--rule-soft);vertical-align:baseline;
+  }
+  table.num th{font-weight:400;color:var(--muted);width:1%;white-space:nowrap;font-family:var(--serif);font-size:14.5px}
+  table.num td{font-family:var(--mono);font-size:13px;white-space:nowrap}
+  table.num td.gloss{font-family:var(--sans);color:var(--muted);font-size:12.5px;width:46%;white-space:normal}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+
+  details{margin-top:34px;border-top:1px solid var(--ink);padding-top:12px}
+  summary{cursor:pointer;font-size:13.5px;font-weight:600;letter-spacing:.01em}
+  details .body{font-family:var(--serif);font-size:15px;line-height:1.62;max-width:76ch;color:#222b30}
+  details .body p{margin:14px 0}
+  details .body ul{margin:12px 0;padding-left:20px}
+  details .body li{margin:6px 0}
+  .eq{font-family:var(--serif);font-size:16px;margin:14px 0 14px 4px}
+  details table{border-collapse:collapse;font-size:13.5px;margin:16px 0}
+  details table th,details table td{padding:5px 20px 5px 0;text-align:left;border-bottom:1px solid var(--rule-soft)}
+  details table th{font-weight:600;font-family:var(--sans);font-size:12.5px}
+  details table td{font-family:var(--mono);font-size:12.5px}
+  details table td:first-child{font-family:var(--serif);font-size:14.5px}
+
+  @media (max-width:820px){
+    .controls{grid-template-columns:1fr}
+    .group{border-left:0;border-top:1px solid var(--rule-soft);padding-left:0;padding-right:0}
+    .group:first-child{border-top:0}
+    .cols{grid-template-columns:1fr}
+    .actions{margin-left:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Electrostatics of the step pn junction</h1>
+  <p class="standfirst">
+    Set the doping on each side of an abrupt silicon junction at 300&nbsp;K and apply a bias
+    to see how the depletion region, charge density, electric field, potential, and energy
+    bands respond. Every panel shares one position axis, with the p side on the left and the
+    metallurgical junction at <var>x</var>&nbsp;=&nbsp;0.
+  </p>
+
+  <div class="controls">
+    <div class="group">
+      <div class="glabel"><b>p-side doping, <var>N</var><sub>A</sub></b><span class="readback" id="naOut"></span></div>
+      <input type="range" id="na" min="10" max="19" step="0.01" value="16" aria-label="Acceptor concentration on the p side, log10 of cm^-3">
+      <div class="jumps">
+        <button data-na="12">1E+12</button>
+        <button data-na="15">1E+15</button>
+        <button data-na="17">1E+17</button>
+        <button data-na="19">1E+19</button>
+      </div>
+      <div class="scale-note" id="naDetail"></div>
+    </div>
+
+    <div class="group">
+      <div class="glabel"><b>n-side doping, <var>N</var><sub>D</sub></b><span class="readback" id="ndOut"></span></div>
+      <input type="range" id="nd" min="10" max="19" step="0.01" value="15.30" aria-label="Donor concentration on the n side, log10 of cm^-3">
+      <div class="jumps">
+        <button data-nd="12">1E+12</button>
+        <button data-nd="15">1E+15</button>
+        <button data-nd="17">1E+17</button>
+        <button data-nd="19">1E+19</button>
+      </div>
+      <div class="scale-note" id="ndDetail"></div>
+    </div>
+
+    <div class="group">
+      <div class="glabel"><b>Applied voltage, <var>V</var><sub>A</sub></b><span class="readback" id="vaOut"></span></div>
+      <input type="range" id="va" min="-5" max="0.66" step="0.005" value="0" aria-label="Applied voltage in volts, positive for forward bias">
+      <div class="jumps">
+        <button data-v="-5">&minus;5 V</button>
+        <button data-v="-1">&minus;1 V</button>
+        <button data-v="0">Equilibrium</button>
+        <button data-v="half"><span>Forward, <var>V</var><sub>bi</sub>/2</span></button>
+      </div>
+      <div class="scale-note" id="vaDetail"></div>
+    </div>
+  </div>
+
+  <div class="opts">
+    <label><input type="checkbox" id="eqov" checked> <span>Overlay equilibrium (<var>V</var><sub>A</sub>&nbsp;=&nbsp;0)</span></label>
+    <label><input type="checkbox" id="exact"> Overlay exact Poisson solution</label>
+    <label><input type="checkbox" id="qfl"> Carry quasi-Fermi levels through the depletion region</label>
+    <span class="modewrap">Charge density scale
+      <span class="seg tiny" id="rho" role="group" aria-label="Charge density scale">
+        <button data-s="lin" aria-pressed="true">Linear</button>
+        <button data-s="log" aria-pressed="false">Log magnitude</button>
+      </span>
+    </span>
+    <span class="actions">
+      <button id="refit">Rescale axes</button>
+      <button id="png">Save plate as PNG</button>
+    </span>
+  </div>
+
+  <figure>
+    <div class="plate-wrap"><div class="plate"><canvas id="cv" role="img"
+      aria-label="Five vertically aligned panels sharing one position axis: depletion region sketch, energy band diagram, charge density, electric field, and electrostatic potential"></canvas></div></div>
+    <figcaption><b>Figure 1</b> &nbsp;Coordinated sketches of the depletion region, the energy band
+      diagram, and the charge density, electric field, and electrostatic potential of a silicon step
+      junction in the depletion approximation, Eqs.&nbsp;(5.32)&ndash;(5.38). The Fermi level on the
+      p side is the zero of energy and stays fixed, so under bias the n side moves by
+      <var>qV</var><sub>A</sub> and the equilibrium solution can be overlaid dashed. Axes are refit
+      whenever the doping changes but only widen while the bias is adjusted, so a sweep of
+      <var>V</var><sub>A</sub> is seen against one fixed frame; <i>Rescale axes</i> refits them to the
+      present bias. After Pierret, <i>Semiconductor Device Fundamentals</i>, Figs.&nbsp;5.11 and 5.12.</figcaption>
+  </figure>
+
+  <div id="status" class="statusrow"></div>
+
+  <div class="cols">
+    <table class="num">
+      <caption>Quasineutral regions</caption>
+      <tbody>
+        <tr><th><var>p</var><sub>p0</sub></th><td id="v_pp0"></td><td class="gloss">Majority holes on the p side</td></tr>
+        <tr><th><var>n</var><sub>p0</sub></th><td id="v_np0"></td><td class="gloss">Minority electrons on the p side, <var>n</var><sub>i</sub><sup>2</sup>/<var>p</var><sub>p0</sub></td></tr>
+        <tr><th><var>n</var><sub>n0</sub></th><td id="v_nn0"></td><td class="gloss">Majority electrons on the n side</td></tr>
+        <tr><th><var>p</var><sub>n0</sub></th><td id="v_pn0"></td><td class="gloss">Minority holes on the n side, <var>n</var><sub>i</sub><sup>2</sup>/<var>n</var><sub>n0</sub></td></tr>
+        <tr><th><var>E</var><sub>i</sub> &minus; <var>E</var><sub>F</sub>, p side</th><td id="v_eip"></td><td class="gloss"><var>kT</var>&thinsp;ln(<var>p</var><sub>p0</sub>/<var>n</var><sub>i</sub>)</td></tr>
+        <tr><th><var>E</var><sub>F</sub> &minus; <var>E</var><sub>i</sub>, n side</th><td id="v_ein"></td><td class="gloss"><var>kT</var>&thinsp;ln(<var>n</var><sub>n0</sub>/<var>n</var><sub>i</sub>)</td></tr>
+        <tr><th><var>V</var><sub>bi</sub></th><td id="v_vbi"></td><td class="gloss">Sum of the two rows above, divided by <var>q</var>; Eq.&nbsp;(5.10) when <var>N</var>&nbsp;&#8811;&nbsp;<var>n</var><sub>i</sub></td></tr>
+      </tbody>
+    </table>
+
+    <table class="num">
+      <caption>Depletion region at the applied bias</caption>
+      <tbody>
+        <tr><th><var>V</var><sub>bi</sub> &minus; <var>V</var><sub>A</sub></th><td id="v_vj"></td><td class="gloss">Potential drop across the depletion region</td></tr>
+        <tr><th><var>x</var><sub>p</sub></th><td id="v_xp"></td><td class="gloss">Penetration into the p side, Eq.&nbsp;(5.34)</td></tr>
+        <tr><th><var>x</var><sub>n</sub></th><td id="v_xn"></td><td class="gloss">Penetration into the n side, Eq.&nbsp;(5.37); <var>x</var><sub>n</sub>/<var>x</var><sub>p</sub> = <var>N</var><sub>A</sub>/<var>N</var><sub>D</sub></td></tr>
+        <tr><th><var>W</var></th><td id="v_w"></td><td class="gloss">Depletion width, Eq.&nbsp;(5.38)</td></tr>
+        <tr><th>&#8496;(0)</th><td id="v_e0"></td><td class="gloss">Peak field at the junction, &minus;<var>qN</var><sub>D</sub><var>x</var><sub>n</sub>/<var>K</var><sub>S</sub>&epsilon;<sub>0</sub></td></tr>
+        <tr><th><var>L</var><sub>D</sub>, p / n</th><td id="v_ld"></td><td class="gloss">Extrinsic Debye lengths, [<var>K</var><sub>S</sub>&epsilon;<sub>0</sub><var>kT</var>/(<var>q</var><sup>2</sup><var>N</var>)]<sup>1/2</sup>, the width of the depletion edge</td></tr>
+        <tr><th><var>Q</var>/<var>A</var></th><td id="v_q"></td><td class="gloss">Depletion charge per area on each side, <var>qN</var><sub>A</sub><var>x</var><sub>p</sub> = <var>qN</var><sub>D</sub><var>x</var><sub>n</sub></td></tr>
+        <tr><th><var>C</var><sub>J</sub>/<var>A</var></th><td id="v_cj"></td><td class="gloss">Junction capacitance per area, <var>K</var><sub>S</sub>&epsilon;<sub>0</sub>/<var>W</var></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <details>
+    <summary>Model, parameters, and what is left out</summary>
+    <div class="body">
+      <p>The junction is an ideal step: <var>N</var><sub>A</sub> acceptors for <var>x</var>&nbsp;&lt;&nbsp;0,
+      <var>N</var><sub>D</sub> donors for <var>x</var>&nbsp;&gt;&nbsp;0, all ionized, with nondegenerate
+      (Boltzmann) statistics throughout. Far from the junction the carrier concentrations follow from
+      charge neutrality,</p>
+      <div class="eq"><var>p</var><sub>p0</sub> = <var>N</var><sub>A</sub>/2 + [(<var>N</var><sub>A</sub>/2)<sup>2</sup> + <var>n</var><sub>i</sub><sup>2</sup>]<sup>1/2</sup>,&nbsp;&nbsp;&nbsp;
+        <var>n</var><sub>n0</sub> = <var>N</var><sub>D</sub>/2 + [(<var>N</var><sub>D</sub>/2)<sup>2</sup> + <var>n</var><sub>i</sub><sup>2</sup>]<sup>1/2</sup></div>
+      <p>and the built-in voltage is</p>
+      <div class="eq"><var>V</var><sub>bi</sub> = (<var>kT</var>/<var>q</var>)&thinsp;ln(<var>p</var><sub>p0</sub><var>n</var><sub>n0</sub>/<var>n</var><sub>i</sub><sup>2</sup>)</div>
+      <p>which is Pierret's Eq.&nbsp;(5.10), (<var>kT</var>/<var>q</var>)&thinsp;ln(<var>N</var><sub>A</sub><var>N</var><sub>D</sub>/<var>n</var><sub>i</sub><sup>2</sup>),
+      whenever both dopings are well above <var>n</var><sub>i</sub>. The two forms differ noticeably only
+      at the bottom of the slider range; at <var>N</var><sub>A</sub>&nbsp;=&nbsp;<var>N</var><sub>D</sub>&nbsp;=&nbsp;10<sup>10</sup>&nbsp;cm<sup>&minus;3</sup>
+      the textbook form would give <var>V</var><sub>bi</sub>&nbsp;=&nbsp;0, whereas the material is in fact
+      nearly intrinsic and supports only about one <var>kT</var>/<var>q</var>.</p>
+
+      <p>The depletion-region quantities are exactly Eqs.&nbsp;(5.32)&ndash;(5.38), with
+      <var>V</var>(&minus;<var>x</var><sub>p</sub>)&nbsp;=&nbsp;0 and the substitution
+      <var>V</var><sub>bi</sub>&nbsp;&rarr;&nbsp;<var>V</var><sub>bi</sub>&nbsp;&minus;&nbsp;<var>V</var><sub>A</sub>
+      for the biased case. The band diagram is the upside-down potential,
+      <var>E</var><sub>c</sub>(<var>x</var>) = <var>E</var><sub>c</sub>(&minus;&infin;) &minus; <var>qV</var>(<var>x</var>),
+      with the p-side Fermi level as the zero of energy. <var>E</var><sub>i</sub> sits
+      (3<var>kT</var>/4)&thinsp;ln(<var>m</var><sub>p</sub>*/<var>m</var><sub>n</sub>*)&nbsp;=&nbsp;&minus;7.3&nbsp;meV
+      from midgap. Under bias, <var>E</var><sub>Fp</sub> and <var>E</var><sub>Fn</sub> are drawn flat in
+      their own quasineutral regions and separated by <var>qV</var><sub>A</sub>, as in Fig.&nbsp;5.12; the
+      optional extension through the depletion region is the usual quasi-equilibrium assumption that
+      is taken up again in the derivation of the ideal diode equation.</p>
+
+      <p>The exact overlay solves the full nonlinear Poisson equation,</p>
+      <div class="eq"><var>d</var><sup>2</sup><var>V</var>/<var>dx</var><sup>2</sup> = &minus;(<var>q</var>/<var>K</var><sub>S</sub>&epsilon;<sub>0</sub>)(<var>p</var> &minus; <var>n</var> + <var>N</var><sub>D</sub> &minus; <var>N</var><sub>A</sub>),&nbsp;&nbsp;
+        <var>p</var> = <var>p</var><sub>p0</sub>e<sup>&minus;<var>qV</var>/<var>kT</var></sup>,&nbsp;&nbsp;
+        <var>n</var> = <var>n</var><sub>p0</sub>e<sup><var>q</var>(<var>V</var>+<var>V</var><sub>A</sub>)/<var>kT</var></sup></div>
+      <p>with both quasi-Fermi levels flat across the structure and
+      <var>V</var>&nbsp;=&nbsp;0 and <var>V</var><sub>bi</sub>&nbsp;&minus;&nbsp;<var>V</var><sub>A</sub>
+      imposed at the two ends. It is discretized by box integration on a mesh that is graded down to a
+      small fraction of the shorter Debye length at <var>x</var>&nbsp;=&nbsp;0 and reaches 14 Debye
+      lengths past each depletion edge and solved by damped Newton iteration, starting from the
+      depletion-approximation potential. It is hidden under high-level injection, where the flat
+      quasi-Fermi level assumption no longer holds. The comparison shows what the depletion
+      approximation throws away: mobile-carrier tails a few Debye lengths wide at each edge of the
+      depletion region. For moderate doping at equilibrium the two solutions are nearly
+      indistinguishable on a linear scale; the difference grows as
+      (<var>V</var><sub>bi</sub>&nbsp;&minus;&nbsp;<var>V</var><sub>A</sub>)/(<var>kT</var>/<var>q</var>)
+      shrinks, which happens for light doping and for forward bias. The log-magnitude charge scale
+      makes the exponential tails visible in every case. In a strongly one-sided junction the exact
+      solution also shows a dipole a few nanometers wide at <var>x</var>&nbsp;=&nbsp;0, where majority
+      carriers from the heavily doped side spill across the step, carrying a field spike well above
+      &#8496;(0) and a drop of a few <var>kT</var>/<var>q</var>. That feature belongs to the
+      idealization of a perfectly abrupt step, which no real junction is, and at those doping levels
+      its magnitude is also affected by degeneracy.</p>
+
+      <table>
+        <thead><tr><th>Parameter</th><th>Value used</th></tr></thead>
+        <tbody>
+          <tr><td><var>K</var><sub>S</sub></td><td>11.8</td></tr>
+          <tr><td>&epsilon;<sub>0</sub></td><td>8.854E-14 F/cm</td></tr>
+          <tr><td><var>q</var></td><td>1.602E-19 C</td></tr>
+          <tr><td><var>kT</var>/<var>q</var> at 300 K</td><td>0.0259 V</td></tr>
+          <tr><td><var>n</var><sub>i</sub> at 300 K</td><td>1.0E+10 cm^-3</td></tr>
+          <tr><td><var>E</var><sub>g</sub></td><td>1.12 eV</td></tr>
+          <tr><td><var>m</var><sub>n</sub>*/<var>m</var><sub>0</sub>, <var>m</var><sub>p</sub>*/<var>m</var><sub>0</sub></td><td>1.18, 0.81</td></tr>
+        </tbody>
+      </table>
+      <p>These are Pierret's 300&nbsp;K values, chosen so that the numbers here agree with worked
+      examples and homework in the text. More recent measurements put silicon's <var>n</var><sub>i</sub>
+      near 9.7&times;10<sup>9</sup>&nbsp;cm<sup>&minus;3</sup>, which raises every <var>V</var><sub>bi</sub>
+      by roughly 2&nbsp;mV and changes nothing visible on the plate.</p>
+
+      <p>On the plate, the position window spans the larger of the equilibrium and present
+      depletion regions plus 30% of that width on each side (more when the exact overlay needs
+      room for its tails). The linear charge-density scale is set by the larger doping, so a
+      one-sided junction shows the heavily doped side as a tall narrow spike and the lightly doped
+      side as a low plateau of equal area; this is correct, and the log-magnitude scale shows both
+      at once.</p>
+
+      <p>Deliberate simplifications, all of which matter somewhere in a real diode:</p>
+      <ul>
+        <li>The entire applied voltage appears across the depletion region. Voltage drops in the
+          quasineutral regions and contacts are neglected, which is why, as Pierret notes, the
+          formulation fails as <var>V</var><sub>A</sub> approaches <var>V</var><sub>bi</sub>. The
+          forward bias slider stops at <var>V</var><sub>bi</sub>&nbsp;&minus;&nbsp;2<var>kT</var>/<var>q</var>.</li>
+        <li>Boltzmann statistics and complete ionization at every doping. In silicon at 300&nbsp;K,
+          doping above roughly 1&ndash;2&times;10<sup>18</sup>&nbsp;cm<sup>&minus;3</sup> places
+          <var>E</var><sub>F</sub> within 3<var>kT</var> of a band edge, and the page flags this.
+          Bandgap narrowing, which lowers <var>V</var><sub>bi</sub> at these concentrations, is not
+          modeled.</li>
+        <li>No breakdown. The peak field is compared with an approximate avalanche field from Sze's
+          empirical fit for one-sided abrupt silicon junctions,
+          &#8496;<sub>crit</sub>&nbsp;&asymp;&nbsp;4&times;10<sup>5</sup>/[1&nbsp;&minus;&nbsp;(1/3)log<sub>10</sub>(<var>N</var>/10<sup>16</sup>)]&nbsp;V/cm,
+          evaluated with <var>N</var>&nbsp;=&nbsp;<var>N</var><sub>A</sub><var>N</var><sub>D</sub>/(<var>N</var><sub>A</sub>&nbsp;+&nbsp;<var>N</var><sub>D</sub>)
+          and clamped to 10<sup>14</sup>&ndash;10<sup>18</sup>&nbsp;cm<sup>&minus;3</sup>. Treat the
+          resulting warning as a rough guide; heavily doped junctions break down by tunneling
+          instead.</li>
+        <li>One dimension, no surfaces, interface charge, or graded profile.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<script>
+"use strict";
+
+/* ------------------------------------------------------------------ physics
+   Silicon at 300 K, Pierret's conventions. cgs-practical units throughout:
+   lengths in cm, concentrations in cm^-3, fields in V/cm, energies in eV. */
+const Q    = 1.602e-19;          // C
+const EPS0 = 8.854e-14;          // F/cm
+const KS   = 11.8;
+const EPS  = KS*EPS0;            // F/cm
+const VT   = 0.0259;             // kT/q at 300 K, V
+const NI   = 1.0e10;             // cm^-3
+const EG   = 1.12;               // eV
+const MN = 1.18, MP = 0.81;      // density-of-states effective masses
+const DEI   = 0.75*VT*Math.log(MP/MN);   // E_i - midgap (eV), about -7.3 meV
+const EC_EI = 0.5*EG - DEI;              // E_c - E_i
+const EI_EV = 0.5*EG + DEI;              // E_i - E_v
+const VAMIN = -5, VSTEP = 0.005;
+
+const st = {lna:16, lnd:15.30, VA:0, eqov:true, exact:false, qfl:false, rho:"lin"};
+let fit = null;
+
+const bulk  = N => N/2 + Math.sqrt(N*N/4 + NI*NI);
+const debye = N => Math.sqrt(EPS*VT/(Q*N));
+const exq   = a => Math.exp(Math.max(-700, Math.min(700, a)));
+
+function junction(NA, ND, VA){
+  const pp0 = bulk(NA), nn0 = bulk(ND);
+  const np0 = NI*NI/pp0, pn0 = NI*NI/nn0;
+  const Vbi = VT*Math.log(pp0*nn0/(NI*NI));
+  const Vj  = Vbi - VA;
+  const k   = 2*EPS*Vj/(Q*(NA+ND));
+  const xn  = Math.sqrt(k*NA/ND), xp = Math.sqrt(k*ND/NA);
+  return {NA, ND, VA, pp0, nn0, np0, pn0, Vbi, Vj, xn, xp, W:xn+xp,
+          Emax: Q*ND*xn/EPS};
+}
+
+/* Eqs. (5.32)-(5.37) and their continuation into the quasineutral regions */
+function Vdep(J, x){
+  if (x <= -J.xp) return 0;
+  if (x <= 0)     return Q*J.NA/(2*EPS)*(J.xp+x)*(J.xp+x);
+  if (x <  J.xn)  return J.Vj - Q*J.ND/(2*EPS)*(J.xn-x)*(J.xn-x);
+  return J.Vj;
+}
+function Edep(J, x){
+  if (x <= -J.xp || x >= J.xn) return 0;
+  if (x <= 0) return -Q*J.NA/EPS*(J.xp+x);
+  return -Q*J.ND/EPS*(J.xn-x);
+}
+
+/* Full nonlinear Poisson equation with flat quasi-Fermi levels, box integration,
+   damped Newton. psi = qV/kT, p = pp0 exp(-psi), n = np0 exp(psi + vA). */
+function solveExact(J){
+  const LDp = debye(J.pp0), LDn = debye(J.nn0);
+  const Lp = J.xp + 14*LDp, Ln = J.xn + 14*LDn;
+  /* graded mesh: fine at the junction, where the majority-carrier spill-over of the
+     heavier side lives on its own (short) Debye length, then uniform */
+  const h0 = Math.min(LDp, LDn)/12;
+  const sideMesh = L => {
+    const hmax = L/700, d = [0]; let h = Math.min(h0, hmax);
+    while (d[d.length-1] < L){ d.push(d[d.length-1] + h); h = Math.min(h*1.06, hmax); }
+    const s = L/d[d.length-1];
+    return d.map(v => v*s);
+  };
+  const dp_ = sideMesh(Lp), dn_ = sideMesh(Ln);
+  const Np = dp_.length-1, M = Np + dn_.length-1;
+  const x = new Float64Array(M+1), psi = new Float64Array(M+1);
+  for (let i=0;i<=Np;i++) x[i] = -dp_[Np-i];
+  for (let i=1;i<dn_.length;i++) x[Np+i] = dn_[i];
+  x[Np] = 0;
+  const vA = J.VA/VT, psiR = J.Vj/VT, kap = Q/(EPS*VT);
+  for (let i=0;i<=M;i++) psi[i] = Vdep(J, x[i])/VT;
+  psi[0] = 0; psi[M] = psiR;
+
+  const F = new Float64Array(M+1), a = new Float64Array(M+1), b = new Float64Array(M+1),
+        c = new Float64Array(M+1), cp = new Float64Array(M+1), dp = new Float64Array(M+1),
+        d = new Float64Array(M+1);
+  let ok = false;
+  for (let it=0; it<400; it++){
+    for (let i=1;i<M;i++){
+      const hL = x[i]-x[i-1], hR = x[i+1]-x[i];
+      const NL = i<=Np ? -J.NA : J.ND, NR = i<Np ? -J.NA : J.ND;
+      const p = J.pp0*exq(-psi[i]), n = J.np0*exq(psi[i]+vA);
+      F[i] = (psi[i+1]-psi[i])/hR - (psi[i]-psi[i-1])/hL
+           + kap*(0.5*(hL+hR)*(p-n) + 0.5*hL*NL + 0.5*hR*NR);
+      a[i] = 1/hL; c[i] = 1/hR;
+      b[i] = -1/hL - 1/hR - kap*0.5*(hL+hR)*(p+n);
+    }
+    for (let i=1;i<M;i++){
+      const m = i===1 ? b[i] : b[i] - a[i]*cp[i-1];
+      cp[i] = c[i]/m;
+      dp[i] = (-F[i] - (i===1 ? 0 : a[i]*dp[i-1]))/m;
+    }
+    d[M-1] = dp[M-1];
+    for (let i=M-2;i>=1;i--) d[i] = dp[i] - cp[i]*d[i+1];
+    let maxd = 0;
+    for (let i=1;i<M;i++){
+      const s = Math.sign(d[i])*Math.log1p(Math.abs(d[i]));   /* logarithmic damping */
+      psi[i] += s;
+      if (Math.abs(d[i]) > maxd) maxd = Math.abs(d[i]);
+    }
+    if (!isFinite(maxd)) break;
+    if (maxd < 1e-9){ ok = true; break; }
+  }
+  if (!ok) return null;
+
+  const V = Array.from(psi, v => v*VT);
+  const rho = [];                     /* rho/q, with the doping step drawn explicitly */
+  for (let i=0;i<=M;i++){
+    const pn = J.pp0*exq(-psi[i]) - J.np0*exq(psi[i]+vA);
+    if (i < Np) rho.push([x[i], pn - J.NA]);
+    else if (i === Np){ rho.push([0, pn - J.NA]); rho.push([0, pn + J.ND]); }
+    else rho.push([x[i], pn + J.ND]);
+  }
+  const Ef = []; let Epk = 0;
+  for (let i=0;i<M;i++){
+    const e = -(V[i+1]-V[i])/(x[i+1]-x[i]);
+    Ef.push([0.5*(x[i]+x[i+1]), e]);
+    if (Math.abs(e) > Epk) Epk = Math.abs(e);
+  }
+  return {x:Array.from(x), V, rho, Ef, Epk};
+}
+
+function breakdownField(NA, ND){
+  const N = Math.min(Math.max(NA*ND/(NA+ND), 1e14), 1e18);
+  return 4e5/(1 - Math.log10(N/1e16)/3);
+}
+
+/* ------------------------------------------------------------------ format */
+function sci(x, d=2){
+  if (!isFinite(x)) return "\u2014";
+  if (x === 0) return "0";
+  const sign = x<0 ? "\u2212" : "";
+  x = Math.abs(x);
+  let e = Math.floor(Math.log10(x));
+  let m = x/Math.pow(10,e);
+  if (m >= 9.995){ m/=10; e++; }
+  const ex = (e<0?"-":"+") + String(Math.abs(e)).padStart(2,"0");
+  return sign + m.toFixed(d) + "E" + ex;
+}
+const fx = (x,d=3) => (x<0 ? "\u2212" : "") + Math.abs(x).toFixed(d);
+const fxs = (x,d=3) => (x<0 ? "\u2212" : x>0 ? "+" : "") + Math.abs(x).toFixed(d);
+function fmtLen(cm){
+  const um = cm*1e4;
+  if (um < 0.1) return (cm*1e7).toPrecision(4)+" nm";
+  return um.toPrecision(4)+" \u00B5m";
+}
+
+/* ------------------------------------------------------------------ canvas */
+const cv = document.getElementById("cv");
+const ctx = cv.getContext("2d");
+const CSS = getComputedStyle(document.documentElement);
+const C = k => CSS.getPropertyValue(k).trim();
+
+const SERIF = '"Iowan Old Style",Palatino,Georgia,serif';
+const SANS  = '"Helvetica Neue",Helvetica,Arial,sans-serif';
+const CAP   = '12.5px "Helvetica Neue",Helvetica,Arial,sans-serif';
+
+/* Draws math-ish labels: "_x" or "_{..}" subscript, "^x" or "^{..}" superscript,
+   a backtick toggles between italic and roman. Returns the width. */
+function sym(x, y, str, size, align="left", italic=true, color=null, dry=false){
+  const parts = []; let it = italic;
+  for (let i=0;i<str.length;i++){
+    const ch = str[i];
+    if (ch === "`"){ it = !it; continue; }
+    if (ch === "_" || ch === "^"){
+      const k = ch === "_" ? 1 : 2; let s;
+      if (str[i+1] === "{"){ const j = str.indexOf("}", i); s = str.slice(i+2, j); i = j; }
+      else { s = str[i+1]; i++; }
+      parts.push({s, k, it});
+    } else {
+      const last = parts[parts.length-1];
+      if (last && last.k === 0 && last.it === it) last.s += ch; else parts.push({s:ch, k:0, it});
+    }
+  }
+  const face = p => (p.it ? "italic " : "") + (p.k ? size*0.7 : size).toFixed(1) + "px " + SERIF;
+  let w = 0;
+  for (const p of parts){ ctx.font = face(p); w += ctx.measureText(p.s).width; }
+  if (dry) return w;
+  let cx = align==="left" ? x : align==="center" ? x-w/2 : x-w;
+  if (color) ctx.fillStyle = color;
+  ctx.textBaseline = "alphabetic"; ctx.textAlign = "left";
+  for (const p of parts){
+    ctx.font = face(p);
+    const dy = p.k===1 ? size*0.24 : p.k===2 ? -size*0.38 : 0;
+    ctx.fillText(p.s, cx, y+dy);
+    cx += ctx.measureText(p.s).width;
+  }
+  return w;
+}
+
+function line(x1,y1,x2,y2,color,width,dash){
+  ctx.save();
+  ctx.beginPath(); ctx.setLineDash(dash||[]);
+  ctx.strokeStyle = color; ctx.lineWidth = width||1;
+  ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+  ctx.restore();
+}
+function poly(pts, color, width, dash, alpha){
+  if (pts.length < 2) return;
+  ctx.save(); ctx.setLineDash(dash||[]);
+  if (alpha) ctx.globalAlpha = alpha;
+  ctx.strokeStyle = color; ctx.lineWidth = width; ctx.lineJoin = "round";
+  ctx.beginPath();
+  pts.forEach((p,i)=> i ? ctx.lineTo(p[0],p[1]) : ctx.moveTo(p[0],p[1]));
+  ctx.stroke(); ctx.restore();
+}
+function arrowHead(x, y, dx, dy, color){
+  const L = 6, Wd = 3;
+  ctx.save(); ctx.fillStyle = color; ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(x - dx*L - dy*Wd, y - dy*L + dx*Wd);
+  ctx.lineTo(x - dx*L + dy*Wd, y - dy*L - dx*Wd);
+  ctx.closePath(); ctx.fill(); ctx.restore();
+}
+function niceStep(range, target){
+  const raw = range/target, p = Math.pow(10, Math.floor(Math.log10(raw))), n = raw/p;
+  return (n<1.5?1:n<3?2:n<7?5:10)*p;
+}
+const decs = step => Math.max(0, -Math.floor(Math.log10(step) + 1e-9));
+const tickNum = (v, step) => { const s = (Math.abs(v) < step*1e-6 ? 0 : v).toFixed(decs(step));
+                               return s.replace("-", "\u2212"); };
+
+/* right-margin labels, pushed apart so they never overlap */
+function marginLabels(list, top, bottom, x0){
+  list = list.filter(Boolean).sort((a,b)=>a.y-b.y);
+  const gap = 15;
+  list.forEach((o,i)=>{ o.yy = Math.max(o.y, i ? list[i-1].yy+gap : top+4); });
+  for (let i=list.length-1;i>=0;i--){
+    const lim = i===list.length-1 ? bottom : list[i+1].yy-gap;
+    if (list[i].yy > lim) list[i].yy = lim;
+  }
+  for (const o of list){
+    if (Math.abs(o.yy-o.y) > 3) line(x0-3, o.y, x0+3, o.yy, o.c, 0.8);
+    sym(x0+6, o.yy+4.5, o.t, o.s||14, "left", true, o.c);
+  }
+}
+
+/* ------------------------------------------------------------------ axes fit */
+function needFit(NA, ND, VA){
+  const Jc = junction(NA, ND, VA), J0 = junction(NA, ND, 0);
+  const xp = Math.max(Jc.xp, J0.xp), xn = Math.max(Jc.xn, J0.xn), W = xp + xn;
+  let mp = 0.3*W, mn = 0.3*W;
+  if (st.exact){ mp = Math.max(mp, 6*debye(Jc.pp0)); mn = Math.max(mn, 6*debye(Jc.nn0)); }
+  return {xL:-(xp+mp), xR:xn+mn, Vj:Math.max(Jc.Vj, J0.Vj), Emax:Math.max(Jc.Emax, J0.Emax)};
+}
+
+/* ------------------------------------------------------------------ render */
+const $ = id => document.getElementById(id);
+
+function draw(){
+  const NA = Math.pow(10, st.lna), ND = Math.pow(10, st.lnd), VA = st.VA;
+  const J  = junction(NA, ND, VA), J0 = junction(NA, ND, 0);
+  const biased = Math.abs(VA) > 1e-9;
+  const EcP = VT*Math.log(J.pp0/NI) + EC_EI;      /* E_c in the p bulk, E_Fp = 0 */
+  const LDp = debye(NA), LDn = debye(ND);
+  const eta = J.Vj/VT;
+  const vA  = VA/VT;
+  const hiInj = VA > 0 && Math.max(J.np0*Math.expm1(vA)/J.pp0, J.pn0*Math.expm1(vA)/J.nn0) > 0.1;
+  let ex = null, exFail = false;
+  if (st.exact && !hiInj){ ex = solveExact(J); exFail = !ex; }
+
+  /* -------- tables -------- */
+  const cm3 = " cm\u207B\u00B3";
+  $("v_pp0").textContent = sci(J.pp0)+cm3;
+  $("v_np0").textContent = sci(J.np0)+cm3;
+  $("v_nn0").textContent = sci(J.nn0)+cm3;
+  $("v_pn0").textContent = sci(J.pn0)+cm3;
+  $("v_eip").textContent = (VT*Math.log(J.pp0/NI)).toFixed(4)+" eV";
+  $("v_ein").textContent = (VT*Math.log(J.nn0/NI)).toFixed(4)+" eV";
+  $("v_vbi").textContent = J.Vbi.toFixed(4)+" V";
+  $("v_vj").textContent  = J.Vj.toFixed(4)+" V";
+  $("v_xp").textContent  = fmtLen(J.xp);
+  $("v_xn").textContent  = fmtLen(J.xn);
+  $("v_w").textContent   = fmtLen(J.W);
+  $("v_e0").textContent  = sci(-J.Emax)+" V/cm";
+  $("v_ld").textContent  = fmtLen(LDp)+" / "+fmtLen(LDn);
+  $("v_q").textContent   = sci(Q*NA*J.xp)+" C/cm\u00B2";
+  $("v_cj").textContent  = sci(EPS/J.W)+" F/cm\u00B2";
+
+  /* -------- status -------- */
+  const msgs = [];
+  const efv = EI_EV - VT*Math.log(J.pp0/NI);     /* E_F - E_v, p side */
+  const ecf = EC_EI - VT*Math.log(J.nn0/NI);     /* E_c - E_F, n side */
+  const Ecrit = breakdownField(NA, ND);
+  const rp = J.xp/LDp, rn = J.xn/LDn, rD = Math.max(rp, rn), sD = rn >= rp ? "n" : "p";
+  if (hiInj) msgs.push(["warn",
+    "High-level injection: the injected minority carrier density exceeds 10% of the majority density. "+
+    "A large current would flow and the quasineutral voltage drops could no longer be neglected, so the "+
+    "depletion approximation curves are only indicative here and the exact overlay is hidden."]);
+  else if (rD < 3) msgs.push(["warn",
+    "<var>V</var><sub>bi</sub> &minus; <var>V</var><sub>A</sub> is only "+eta.toFixed(1)+
+    " <var>kT</var>/<var>q</var>, so <var>x</var><sub>"+sD+"</sub> spans just "+rD.toFixed(1)+
+    " Debye lengths. The depletion edges are smeared over a large fraction of <var>W</var>, and the depletion approximation is unreliable. Turn on the exact Poisson overlay to compare."]);
+  else if (rD < 5) msgs.push(["ok",
+    "Depletion approximation usable but rough: <var>x</var><sub>"+sD+"</sub> spans "+rD.toFixed(1)+
+    " Debye lengths, so the carrier tails at the depletion edges are a visible fraction of <var>W</var>. The exact overlay shows how much."]);
+  if (efv < 3*VT || ecf < 3*VT){
+    const s = [];
+    if (efv < 3*VT) s.push("<var>E</var><sub>F</sub> &minus; <var>E</var><sub>v</sub> = "+(efv/VT).toFixed(1)+"<var>kT</var> on the p side");
+    if (ecf < 3*VT) s.push("<var>E</var><sub>c</sub> &minus; <var>E</var><sub>F</sub> = "+(ecf/VT).toFixed(1)+"<var>kT</var> on the n side");
+    msgs.push(["warn", "Near degeneracy: "+s.join(" and ")+
+      ". The Boltzmann statistics used throughout become approximate, and bandgap narrowing (not modeled) also lowers <var>V</var><sub>bi</sub> at this doping."]);
+  }
+  if (J.Emax > Ecrit) msgs.push(["warn",
+    "|&#8496;(0)| = "+sci(J.Emax)+" V/cm exceeds the approximate breakdown field, about "+sci(Ecrit,1)+
+    " V/cm for this doping. A real diode would already be in avalanche or tunneling breakdown; the curves show the electrostatics alone."]);
+  if (exFail) msgs.push(["warn", "The exact Poisson solution did not converge at this setting and is not drawn."]);
+  if (!msgs.length) msgs.push(["ok",
+    "Depletion approximation in good standing: <var>V</var><sub>bi</sub> &minus; <var>V</var><sub>A</sub> = "+
+    eta.toFixed(0)+" <var>kT</var>/<var>q</var> and <var>x</var><sub>"+sD+"</sub> spans "+rD.toFixed(1)+
+    " Debye lengths, so the depletion edges are sharp on the scale of <var>W</var>."]);
+  $("status").innerHTML = msgs.map(m=>'<div class="status '+m[0]+'">'+m[1]+'</div>').join("");
+
+  /* -------- readbacks -------- */
+  $("naOut").textContent = sci(NA)+cm3;
+  $("ndOut").textContent = sci(ND)+cm3;
+  $("vaOut").textContent = fxs(VA)+" V";
+  $("naDetail").textContent = "E_F \u2212 E_v = "+fx(efv)+" eV   x_p = "+fmtLen(J.xp);
+  $("ndDetail").textContent = "E_c \u2212 E_F = "+fx(ecf)+" eV   x_n = "+fmtLen(J.xn);
+  $("vaDetail").textContent = "V_bi = "+J.Vbi.toFixed(3)+" V   forward stop "+(+$("va").max).toFixed(3)+" V";
+
+  /* -------- geometry -------- */
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  const host = cv.parentElement;
+  const Wc = Math.max(900, host.clientWidth);
+  const mL = 92, mR = 86, plotL = mL, plotR = Wc - mR, pw = plotR - plotL;
+  const r0 = {top:44, h:50};
+  const r1 = {top:r0.top+r0.h+46, h:236};
+  const r2 = {top:r1.top+r1.h+46, h:122};
+  const r3 = {top:r2.top+r2.h+46, h:122};
+  const r4 = {top:r3.top+r3.h+46, h:122};
+  const rows = [r0, r1, r2, r3, r4];
+  rows.forEach(r=> r.b = r.top + r.h);
+  const H = r4.b + 62;
+  cv.width = Math.round(Wc*dpr); cv.height = Math.round(H*dpr);
+  cv.style.height = H+"px";
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const plate = C("--plate");
+  ctx.fillStyle = plate; ctx.fillRect(0,0,Wc,H);
+
+  const ink=C("--ink"), muted=C("--muted"), rule=C("--rule"), soft=C("--rule-soft");
+  const el=C("--electron"), ho=C("--hole"), fm=C("--fermi"), exc=C("--exact");
+
+  const X = x => plotL + pw*(x - fit.xL)/(fit.xR - fit.xL);
+  const clip = r => { ctx.save(); ctx.beginPath(); ctx.rect(plotL, r.top, pw, r.h); ctx.clip(); };
+
+  /* position samples, with the breakpoints included exactly */
+  const xs = [];
+  for (let i=0;i<=900;i++) xs.push(fit.xL + (fit.xR-fit.xL)*i/900);
+  xs.push(-J.xp, 0, J.xn, -J0.xp, J0.xn);
+  xs.sort((a,b)=>a-b);
+
+  /* exact solution, padded with its boundary values out to the window edges */
+  let exV = null, exRho = null, exE = null;
+  if (ex){
+    exV = ex.x.map((x,i)=>[x, ex.V[i]]);
+    exV.unshift([Math.min(fit.xL, ex.x[0]), 0]); exV.push([Math.max(fit.xR, ex.x[ex.x.length-1]), J.Vj]);
+    exRho = ex.rho.slice(); exRho.unshift([Math.min(fit.xL, ex.x[0]), 0]); exRho.push([Math.max(fit.xR, ex.x[ex.x.length-1]), 0]);
+    exE = ex.Ef.slice(); exE.unshift([Math.min(fit.xL, ex.x[0]), 0]); exE.push([Math.max(fit.xR, ex.x[ex.x.length-1]), 0]);
+  }
+
+  /* -------- row titles -------- */
+  const title = (r, t) => {
+    ctx.fillStyle = ink; ctx.font = "600 13px "+SANS; ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    ctx.fillText(t, plotL, r.top-16);
+    line(plotL, r.top-9, plotR, r.top-9, soft, 1);
+  };
+  const readout = (r, s) => sym(plotR, r.top-16, s, 13, "right", true, muted);
+  const ylabel = (r, s) => {
+    ctx.save(); ctx.translate(24, r.top + r.h/2); ctx.rotate(-Math.PI/2);
+    sym(0, 0, s, 13, "center", true, muted); ctx.restore();
+  };
+  const yticks = (r, lo, hi, map, step, fmt) => {
+    ctx.font = "11.5px "+SANS; ctx.fillStyle = muted; ctx.textAlign = "right"; ctx.textBaseline = "middle";
+    for (let t = Math.ceil(lo/step - 1e-9)*step; t <= hi + 1e-9*step; t += step){
+      const y = map(t);
+      if (y < r.top - 1 || y > r.b + 1) continue;
+      line(plotL-6, y, plotL-1, y, rule, 1);
+      ctx.fillStyle = muted; ctx.font = "11.5px "+SANS; ctx.textAlign = "right"; ctx.textBaseline = "middle";
+      ctx.fillText(fmt ? fmt(t) : tickNum(t, step), plotL-10, y);
+    }
+    line(plotL-1, r.top, plotL-1, r.b, rule, 1);
+    ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+  };
+
+  /* -------- shared x axis -------- */
+  const span = fit.xR - fit.xL;
+  const nm = span < 2e-5;                          /* under 0.2 um: show nm */
+  const unit = nm ? 1e-7 : 1e-4;
+  const xstep = niceStep(span/unit, 9);
+  const xt = [];
+  for (let t = Math.ceil(fit.xL/unit/xstep - 1e-9)*xstep; t <= fit.xR/unit + 1e-9; t += xstep) xt.push(t);
+
+  /* alignment rules through every row */
+  for (const r of rows){
+    line(X(0), r.top, X(0), r.b, soft, 1);
+    line(X(-J.xp), r.top, X(-J.xp), r.b, soft, 1, [2,4]);
+    line(X(J.xn),  r.top, X(J.xn),  r.b, soft, 1, [2,4]);
+    for (const t of xt) line(X(t*unit), r.b, X(t*unit), r.b+4, rule, 1);
+    line(plotL, r.b, plotR, r.b, rule, 1);
+  }
+  ctx.font = "11.5px "+SANS; ctx.fillStyle = muted; ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+  for (const t of xt) ctx.fillText(tickNum(t, xstep), X(t*unit), r4.b+18);
+  sym(plotL+pw/2, r4.b+44, "x` ("+(nm?"nm":"\u00B5m")+"), measured from the metallurgical junction", 13.5, "center", true, muted);
+
+  /* ============ row 0 : depletion region sketch (Fig. 5.11a) ============ */
+  {
+    title(r0, "Depletion region");
+    /* legend */
+    const items = [{t:"`Depletion approximation", c:ink, d:[]}];
+    if (st.eqov && biased) items.push({t:"`Equilibrium, `V_A` = 0", c:muted, d:[5,4]});
+    if (ex) items.push({t:"`Exact Poisson solution", c:exc, d:[]});
+    let lx = plotR;
+    for (let i=items.length-1;i>=0;i--){
+      const it = items[i], w = sym(0,0,it.t,12.5,"left",true,null,true);
+      lx -= w; sym(lx, r0.top-16, it.t, 12.5, "left", true, muted);
+      lx -= 26; line(lx, r0.top-20, lx+20, r0.top-20, it.c, 1.8, it.d);
+      lx -= 16;
+    }
+
+    const y0 = r0.top, bh = 30;
+    const xa = X(-J.xp), xj = X(0), xb = X(J.xn);
+    ctx.fillStyle = "rgba(168,32,60,0.10)"; ctx.fillRect(plotL, y0, xa-plotL, bh);
+    ctx.fillStyle = plate;                  ctx.fillRect(xa, y0, xb-xa, bh);
+    ctx.fillStyle = "rgba(27,95,168,0.10)"; ctx.fillRect(xb, y0, plotR-xb, bh);
+
+    /* ionized dopants: the same number on each side, since N_A x_p = N_D x_n */
+    const wp = xj-xa, wn = xb-xj;
+    const ncol = Math.min(9, Math.floor(Math.max(wp,wn)/18), Math.floor(Math.min(wp,wn)/9));
+    if (ncol >= 1){
+      ctx.font = "13px "+SANS; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      for (let r=0;r<2;r++) for (let k=0;k<ncol;k++){
+        const yy = y0 + bh*(r+0.5)/2 + 0.5;
+        ctx.fillStyle = ho; ctx.fillText("\u2212", xa + wp*(k+0.5)/ncol, yy);
+        ctx.fillStyle = el; ctx.fillText("+", xj + wn*(k+0.5)/ncol, yy);
+      }
+      ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    }
+    ctx.strokeStyle = ink; ctx.lineWidth = 1; ctx.strokeRect(plotL+0.5, y0+0.5, pw-1, bh);
+    line(xj, y0, xj, y0+bh, ink, 1.3);
+    line(xa, y0, xa, y0+bh, muted, 1.2);
+    line(xb, y0, xb, y0+bh, muted, 1.2);
+    if (st.eqov && biased){
+      line(X(-J0.xp), y0, X(-J0.xp), y0+bh, muted, 1, [3,3]);
+      line(X(J0.xn),  y0, X(J0.xn),  y0+bh, muted, 1, [3,3]);
+    }
+    if (xa-plotL > 26) sym((plotL+xa)/2, y0+bh/2+6, "P", 17, "center", true, ho);
+    if (plotR-xb > 26) sym((xb+plotR)/2, y0+bh/2+6, "N", 17, "center", true, el);
+
+    const ya = y0 + bh + 12;
+    line(xa, ya-4, xa, ya+4, ink, 1); line(xb, ya-4, xb, ya+4, ink, 1);
+    line(xa, ya, xb, ya, ink, 1);
+    if (xb - xa > 18){ arrowHead(xa, ya, -1, 0, ink); arrowHead(xb, ya, 1, 0, ink); }
+    const wl = "W` = "+fmtLen(J.W);
+    const ww = sym(0,0,wl,13.5,"left",true,null,true);
+    if (xb + 10 + ww < plotR) sym(xb+10, ya+4.5, wl, 13.5, "left", true, ink);
+    else sym(xa-10, ya+4.5, wl, 13.5, "right", true, ink);
+  }
+
+  /* ============ row 1 : energy band diagram (Fig. 5.12) ============ */
+  {
+    const r = r1;
+    title(r, biased ? "Energy band diagram, "+(VA>0?"forward":"reverse")+" bias" : "Energy band diagram, equilibrium");
+    readout(r, biased ? "E_{Fn}` \u2212 `E_{Fp}` = `qV_A` = "+fxs(VA)+" eV"
+                      : "E_F` constant, `E_c` \u2212 `E_F` = "+fx(ecf)+" eV on the n side");
+    const pad = 0.07*(fit.Vj+EG) + 0.05;
+    const Etop = EcP + pad, Ebot = EcP - fit.Vj - EG - pad;
+    const YE = E => r.top + r.h*(Etop - E)/(Etop - Ebot);
+    ylabel(r, "E` (eV),  `E_{Fp}` = 0");
+    yticks(r, Ebot, Etop, YE, niceStep(Etop-Ebot, 6));
+
+    const Ec = (Jx,x) => EcP - Vdep(Jx,x);
+    clip(r);
+    /* band tints */
+    ctx.beginPath(); ctx.moveTo(plotL, r.top);
+    xs.forEach(x=> ctx.lineTo(X(x), YE(Ec(J,x)))); ctx.lineTo(plotR, r.top); ctx.closePath();
+    ctx.fillStyle = "rgba(27,95,168,0.07)"; ctx.fill();
+    ctx.beginPath(); ctx.moveTo(plotL, r.b);
+    xs.forEach(x=> ctx.lineTo(X(x), YE(Ec(J,x)-EG))); ctx.lineTo(plotR, r.b); ctx.closePath();
+    ctx.fillStyle = "rgba(168,32,60,0.07)"; ctx.fill();
+
+    if (st.eqov && biased){
+      poly(xs.map(x=>[X(x), YE(Ec(J0,x))]),    muted, 1.1, [5,4], 0.8);
+      poly(xs.map(x=>[X(x), YE(Ec(J0,x)-EG)]), muted, 1.1, [5,4], 0.8);
+    }
+    poly(xs.map(x=>[X(x), YE(Ec(J,x)-EC_EI)]), muted, 1.2, [1,3]);
+    poly(xs.map(x=>[X(x), YE(Ec(J,x))]),    ink, 2);
+    poly(xs.map(x=>[X(x), YE(Ec(J,x)-EG)]), ink, 2);
+    if (exV){
+      poly(exV.map(p=>[X(p[0]), YE(EcP - p[1])]),      exc, 1.6, [], 0.9);
+      poly(exV.map(p=>[X(p[0]), YE(EcP - p[1] - EG)]), exc, 1.6, [], 0.9);
+    }
+
+    /* Fermi level(s) */
+    if (!biased){
+      line(plotL, YE(0), plotR, YE(0), fm, 1.6, [7,4]);
+    } else {
+      line(plotL, YE(0), X(-J.xp), YE(0), ho, 1.7, [7,4]);
+      line(X(J.xn), YE(VA), plotR, YE(VA), el, 1.7, [7,4]);
+      if (st.qfl){
+        line(X(-J.xp), YE(0),  X(J.xn), YE(0),  ho, 1.1, [2,3]);
+        line(X(-J.xp), YE(VA), X(J.xn), YE(VA), el, 1.1, [2,3]);
+      }
+      if (X(-J.xp) - plotL > 40) sym(plotL+8, YE(0)-6, "E_{Fp}", 14, "left", true, ho);
+    }
+
+    /* q(Vbi - VA) bracket in the n-side quasineutral region */
+    const bx = plotR - 118, yA = YE(EcP), yB = YE(EcP - J.Vj);
+    if (bx > X(J.xn) + 14 && yB - yA > 26){
+      line(X(-J.xp), yA, bx+8, yA, muted, 1, [1,3]);
+      line(bx, yA+1, bx, yB-1, muted, 1);
+      arrowHead(bx, yA, 0, -1, muted); arrowHead(bx, yB, 0, 1, muted);
+      sym(bx+8, (yA+yB)/2+5, biased ? "q`(`V_{bi}` \u2212 `V_A`)" : "qV_{bi}", 13.5, "left", true, muted);
+    }
+    ctx.restore();
+
+    const EcR = EcP - J.Vj;
+    marginLabels([
+      {y:YE(EcR), t:"E_c", c:ink},
+      {y:YE(VA), t:biased ? "E_{Fn}" : "E_F", c:biased ? el : fm},
+      {y:YE(EcR-EC_EI), t:"E_i", c:muted, s:13},
+      {y:YE(EcR-EG), t:"E_v", c:ink}
+    ], r.top, r.b, plotR+4);
+  }
+
+  /* ============ row 2 : charge density (Fig. 5.11b) ============ */
+  {
+    const r = r2, mid = r.top + r.h/2, Nmax = Math.max(NA, ND);
+    title(r, "Charge density");
+    let Yr, ylab;
+    if (st.rho === "lin"){
+      const e = Math.floor(Math.log10(Nmax)), R = 1.18*Nmax/Math.pow(10,e);
+      Yr = v => mid - (r.h/2)*(v/Math.pow(10,e))/R;
+      ylab = "\u03C1/q` ("+(e ? "10^{"+e+"} " : "")+"cm^{\u22123})";
+      yticks(r, -R, R, v=>mid-(r.h/2)*v/R, niceStep(2*R, 4));
+    } else {
+      const lo = Math.floor(Math.log10(Math.min(NA,ND))) - 2, hi = Math.floor(Math.log10(Nmax)) + 1;
+      Yr = v => {
+        const m = Math.abs(v); if (m < Math.pow(10,lo)) return mid;
+        const t = Math.min((Math.log10(m)-lo)/(hi-lo), 1);
+        return mid - Math.sign(v)*t*(r.h/2);
+      };
+      ylab = "|\u03C1|/q` (cm^{\u22123}), log, signed";
+      const every = Math.max(1, Math.ceil((hi-lo)/3));
+      for (let d=lo; d<=hi; d++){
+        for (const s of [1,-1]){
+          const y = Yr(s*Math.pow(10,d));
+          line(plotL-4, y, plotL-1, y, rule, 1);
+          line(plotL, y, plotR, y, "rgba(20,24,28,0.045)", 1);
+          if ((hi-d) % every === 0 && Math.abs(y-mid) > 13) sym(plotL-9, y+4, (s<0?"\u2212":"")+"`10^{"+d+"}", 11.5, "right", true, muted);
+        }
+      }
+      line(plotL-1, r.top, plotL-1, r.b, rule, 1);
+      ctx.font = "11.5px "+SANS; ctx.fillStyle = muted; ctx.textAlign = "right"; ctx.textBaseline = "middle";
+      ctx.fillText("0", plotL-10, mid); ctx.textAlign = "left"; ctx.textBaseline = "alphabetic";
+    }
+    ylabel(r, ylab);
+    readout(r, "`\u2212`qN_A` on [\u2212`x_p`, 0],  +`qN_D` on [0, `x_n`],  `qN_Ax_p` = `qN_Dx_n");
+
+    clip(r);
+    line(plotL, mid, plotR, mid, rule, 1);
+    const xa = X(-J.xp), xj = X(0), xb = X(J.xn);
+    const wpp = Math.max(xj-xa, 1.5), wnn = Math.max(xb-xj, 1.5);
+    ctx.fillStyle = "rgba(168,32,60,0.20)"; ctx.fillRect(xj-wpp, mid, wpp, Yr(-NA)-mid);
+    ctx.fillStyle = "rgba(27,95,168,0.20)"; ctx.fillRect(xj, Yr(ND), wnn, mid-Yr(ND));
+    poly([[xj-wpp,mid],[xj-wpp,Yr(-NA)],[xj,Yr(-NA)],[xj,mid]], ho, 1.8);
+    poly([[xj,mid],[xj,Yr(ND)],[xj+wnn,Yr(ND)],[xj+wnn,mid]], el, 1.8);
+    if (st.eqov && biased){
+      poly([[X(-J0.xp),mid],[X(-J0.xp),Yr(-NA)],[xj,Yr(-NA)]], muted, 1.1, [5,4]);
+      poly([[xj,Yr(ND)],[X(J0.xn),Yr(ND)],[X(J0.xn),mid]], muted, 1.1, [5,4]);
+    }
+    if (exRho) poly(exRho.map(p=>[X(p[0]), Yr(p[1])]), exc, 1.5, [], 0.9);
+    ctx.restore();
+    marginLabels([
+      {y:Yr(ND),  t:"`+`N_D", c:el},
+      {y:Yr(-NA), t:"`\u2212`N_A", c:ho}
+    ], r.top, r.b, plotR+4);
+  }
+
+  /* ============ row 3 : electric field (Fig. 5.11c) ============ */
+  {
+    const r = r3;
+    title(r, "Electric field");
+    const e = Math.floor(Math.log10(fit.Emax)), sc = Math.pow(10, e);
+    const Ehi = 0.14*fit.Emax/sc, Elo = -1.12*fit.Emax/sc;
+    const YF = v => r.top + r.h*(Ehi - v/sc)/(Ehi - Elo);
+    ylabel(r, "\u2130` ("+(e ? "10^{"+e+"} " : "")+"V/cm)");
+    yticks(r, Elo, Ehi, v => r.top + r.h*(Ehi - v)/(Ehi - Elo), niceStep(Ehi-Elo, 5));
+    readout(r, "\u2130(0)` = "+sci(-J.Emax)+" V/cm"+(ex ? ",  exact peak "+sci(-ex.Epk)+" V/cm" : ""));
+
+    clip(r);
+    line(plotL, YF(0), plotR, YF(0), rule, 1);
+    ctx.beginPath(); ctx.moveTo(X(fit.xL), YF(0));
+    xs.forEach(x=> ctx.lineTo(X(x), YF(Edep(J,x)))); ctx.lineTo(X(fit.xR), YF(0)); ctx.closePath();
+    ctx.fillStyle = "rgba(20,24,28,0.07)"; ctx.fill();
+    if (st.eqov && biased) poly(xs.map(x=>[X(x), YF(Edep(J0,x))]), muted, 1.1, [5,4], 0.9);
+    poly(xs.map(x=>[X(x), YF(Edep(J,x))]), ink, 1.9);
+    if (exE) poly(exE.map(p=>[X(p[0]), YF(p[1])]), exc, 1.5, [], 0.9);
+    ctx.restore();
+    marginLabels([{y:YF(-J.Emax), t:"\u2130(0)", c:ink}], r.top, r.b, plotR+4);
+  }
+
+  /* ============ row 4 : electrostatic potential (Fig. 5.11d) ============ */
+  {
+    const r = r4;
+    title(r, "Electrostatic potential");
+    const Vhi = 1.14*fit.Vj, Vlo = -0.12*fit.Vj;
+    const YV = v => r.top + r.h*(Vhi - v)/(Vhi - Vlo);
+    ylabel(r, "V` (V)");
+    yticks(r, Vlo, Vhi, YV, niceStep(Vhi-Vlo, 5));
+    readout(r, "V` = 0 at \u2212`x_p,   `V` = `V_{bi}` \u2212 `V_A` = "+J.Vj.toFixed(3)+" V for `x` \u2265 `x_n");
+
+    clip(r);
+    line(plotL, YV(0), plotR, YV(0), rule, 1);
+    line(plotL, YV(J.Vj), plotR, YV(J.Vj), soft, 1, [2,4]);
+    if (st.eqov && biased) poly(xs.map(x=>[X(x), YV(Vdep(J0,x))]), muted, 1.1, [5,4], 0.9);
+    poly(xs.map(x=>[X(x), YV(Vdep(J,x))]), ink, 1.9);
+    if (exV) poly(exV.map(p=>[X(p[0]), YV(p[1])]), exc, 1.5, [], 0.9);
+    ctx.restore();
+    marginLabels([
+      {y:YV(J.Vj), t: biased ? "V_{bi}` \u2212 `V_A" : "V_{bi}", c:ink, s:13},
+      (st.eqov && biased) ? {y:YV(J0.Vj), t:"V_{bi}", c:muted, s:13} : null
+    ], r.top, r.b, plotR+4);
+  }
+}
+
+/* ------------------------------------------------------------------ wiring */
+const naS = $("na"), ndS = $("nd"), vaS = $("va");
+
+function update(kind){
+  const NA = Math.pow(10, st.lna), ND = Math.pow(10, st.lnd);
+  const J0 = junction(NA, ND, 0);
+  const vmax = Math.max(0, Math.floor((J0.Vbi - 2*VT)/VSTEP + 1e-9)*VSTEP);
+  vaS.min = VAMIN; vaS.max = vmax.toFixed(3);
+  if (st.VA > vmax) st.VA = +vmax.toFixed(3);
+  vaS.value = st.VA;
+  naS.value = st.lna; ndS.value = st.lnd;
+  const need = needFit(NA, ND, st.VA);
+  if (!fit || kind === "dope" || kind === "refit") fit = need;
+  else if (kind === "bias") fit = {
+    xL: Math.min(fit.xL, need.xL), xR: Math.max(fit.xR, need.xR),
+    Vj: Math.max(fit.Vj, need.Vj), Emax: Math.max(fit.Emax, need.Emax)};
+  draw();
+}
+
+naS.addEventListener("input", e=>{ st.lna = +e.target.value; update("dope"); });
+ndS.addEventListener("input", e=>{ st.lnd = +e.target.value; update("dope"); });
+vaS.addEventListener("input", e=>{ st.VA  = +e.target.value; update("bias"); });
+document.querySelectorAll("button[data-na]").forEach(b=>
+  b.addEventListener("click", ()=>{ st.lna = +b.dataset.na; update("dope"); }));
+document.querySelectorAll("button[data-nd]").forEach(b=>
+  b.addEventListener("click", ()=>{ st.lnd = +b.dataset.nd; update("dope"); }));
+document.querySelectorAll("button[data-v]").forEach(b=>
+  b.addEventListener("click", ()=>{
+    if (b.dataset.v === "half"){
+      const J0 = junction(Math.pow(10,st.lna), Math.pow(10,st.lnd), 0);
+      st.VA = Math.round(J0.Vbi/2/VSTEP)*VSTEP;
+    } else st.VA = +b.dataset.v;
+    st.VA = +st.VA.toFixed(3);
+    update("bias");
+  }));
+$("eqov").addEventListener("change", e=>{ st.eqov  = e.target.checked; update("view"); });
+$("exact").addEventListener("change",e=>{ st.exact = e.target.checked; update("refit"); });
+$("qfl").addEventListener("change",  e=>{ st.qfl   = e.target.checked; update("view"); });
+document.querySelectorAll("#rho button").forEach(b=>
+  b.addEventListener("click", ()=>{
+    st.rho = b.dataset.s;
+    document.querySelectorAll("#rho button").forEach(o=>
+      o.setAttribute("aria-pressed", String(o.dataset.s === st.rho)));
+    update("view");
+  }));
+$("refit").addEventListener("click", ()=> update("refit"));
+
+$("png").addEventListener("click", ()=>{
+  cv.toBlob(blob=>{
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "pn_junction_NA"+sci(Math.pow(10,st.lna),1)+"_ND"+sci(Math.pow(10,st.lnd),1)+
+                 "_VA"+st.VA.toFixed(2)+"V.png";
+    a.click(); URL.revokeObjectURL(a.href);
+  });
+});
+
+let raf = 0;
+window.addEventListener("resize", ()=>{
+  cancelAnimationFrame(raf); raf = requestAnimationFrame(()=>update("view"));
+});
+
+st.lna = +naS.value; st.lnd = +ndS.value; st.VA = +vaS.value;
+st.eqov = $("eqov").checked; st.exact = $("exact").checked; st.qfl = $("qfl").checked;
+update("dope");
+</script>
+</body>
+</html>
